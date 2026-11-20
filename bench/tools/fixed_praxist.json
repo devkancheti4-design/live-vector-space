@@ -1,0 +1,20 @@
+[
+ {"q": "In one sentence, what is this codebase for?", "all": ["research", "autonomous|agent"]},
+ {"q": "Which folder deals with cloud file storage, deploying to rented GPU machines, and running containers?", "all": ["infrastructure"]},
+ {"q": "Which folder reports how the product is being used?", "all": ["product[_ ]usage"]},
+ {"q": "Which family of add-ons runs the AI agents themselves?", "all": ["agent[_ ]runtimes"]},
+ {"q": "Which family of add-ons provides the tools that agents call?", "all": ["\\btools\\b"]},
+ {"q": "Which family of add-ons is by far the biggest, by size?", "all": ["workflow[_ ]stages"]},
+ {"q": "About what share of the whole repository, by size, is tests?", "pct": [45, 60]},
+ {"q": "What example task ships with the repository?", "all": ["rocket[_ ]booster"]},
+ {"q": "Which file loads task specifications?", "all": ["task_spec"]},
+ {"q": "Which file holds the legal terms that a user must accept?", "all": ["user_agreement"]},
+ {"q": "Which folder holds the swappable add-on families, such as the ones for model providers and budget rules?", "all": ["\\bplugins\\b"]},
+ {"q": "By default, how many research agents work side by side in one generation, and how many of the best results move on each generation?", "all": ["\\b5\\b|five", "\\b2\\b|two"]},
+ {"q": "In fully automatic mode, what is the default longest time a run may last?", "all": ["5 ?days|five days|432000|432,000|5 ?\\* ?24 ?\\* ?3600|120 hours"]},
+ {"q": "When the research agent's model calls fail because of a billing problem, how long does it wait before trying again?", "all": ["20 ?min|twenty min|1200|1,200"]},
+ {"q": "By default, at most how many jobs may share one GPU?", "all": ["\\b4\\b|four"]},
+ {"q": "At what share of its memory limit does a run get a warning, and at what share is it shut down?", "all": ["\\b80\\b|0\\.8\\b|0\\.80", "\\b92\\b|0\\.92"]},
+ {"q": "After how many days is a cached baseline result considered stale?", "all": ["\\b30\\b|thirty"]},
+ {"q": "When a tool's reply is too long and gets split into pieces, how many characters is each piece by default?", "all": ["4000|4,000|4 000"]}
+]

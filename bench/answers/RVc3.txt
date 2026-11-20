@@ -1,0 +1,10 @@
+1. Reef: a framework for training and evolving AI agents/models from recorded agent runs (harness, records to samples to training jobs, serving, evaluation and activation), with many training recipes.
+2. record2sample, then sample2job
+3. reef/harness
+4. reef/inference
+5. reef/storage
+6. recipes/ (one package per method, e.g. gepa, opd, sdft, sdpo, sao, tttd)
+7. About 40% (tests is 496 of roughly 1,230 files; unsure by byte size)
+8. reef/evaluation
+9. reef/core
+10. scenario

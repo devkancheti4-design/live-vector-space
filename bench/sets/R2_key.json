@@ -1,0 +1,350 @@
+[
+ {
+  "kind": "fixed",
+  "all": [
+   "continual|self.?improving"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "order": [
+   "record2sample",
+   "sample2job"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "harness"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "inference"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "storage"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\brecipes\\b"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "pct": [
+   40,
+   55
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "evaluation"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\bcore\\b"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "scenario"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "dispatcher"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "artifact"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\bservice\\b"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\b60\\b|one minute|1 minute",
+   "3600|\\bhour\\b|60 min"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "3600|\\bhour\\b|60 min"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\b256\\b"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\b3\\b|three",
+   "1800|30 min|half an hour"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "2 ?MiB|2 ?MB|2097152|2,097,152|2 ?\\* ?1024 ?\\* ?1024"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\b23\\b"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "7 ?days|seven days|604800|604,800|7 ?\\* ?24 ?\\* ?3600|one week|1 week"
+  ]
+ },
+ {
+  "kind": "const",
+  "file": "recipes/sao/slime/__init__.py",
+  "line": 32,
+  "name": "DEFAULT_CRITIC_STEPS_PER_ACTOR",
+  "value": 2,
+  "expr": "2",
+  "desc": "Paper default: K critic updates per actor update."
+ },
+ {
+  "kind": "const",
+  "file": "recipes/sao/examples/ceobench/run.py",
+  "line": 42,
+  "name": "TRAIN_QUIET_S",
+  "value": 900.0,
+  "expr": "900.0",
+  "desc": "Training is quiescent once the step count holds for this long: longer than one step, or the drain would return while the rollout's last batch is still training."
+ },
+ {
+  "kind": "const",
+  "file": "tutorials/evolve-your-harness/run.py",
+  "line": 59,
+  "name": "INFERENCE_TIMEOUT_S",
+  "value": 300.0,
+  "expr": "300.0",
+  "desc": "The seconds a run waits for inference to start the scenario's model before it stops."
+ },
+ {
+  "kind": "const",
+  "file": "reef/evaluation/rollout_worker.py",
+  "line": 75,
+  "name": "LEASE_CHECK_S",
+  "value": 1.0,
+  "expr": "1.0",
+  "desc": "The seconds between two checks of a running trial's lease."
+ },
+ {
+  "kind": "const",
+  "file": "reef/storage/postgres.py",
+  "line": 42,
+  "name": "MAX_PARAMETERS",
+  "value": 65535,
+  "expr": "65535",
+  "desc": "The most parameters that one PostgreSQL statement takes."
+ },
+ {
+  "kind": "const",
+  "file": "recipes/beta/autoenvscaling/author.py",
+  "line": 63,
+  "name": "PROMPT_SESSION_CHARS",
+  "value": 240000,
+  "expr": "240_000",
+  "desc": "The prompt Designer reads the session from its prompt: the eval's session budget."
+ },
+ {
+  "kind": "const",
+  "file": "reef/execution/jobs.py",
+  "line": 27,
+  "name": "CLOSE_GRACE_S",
+  "value": 5.0,
+  "expr": "5.0",
+  "desc": "How long ``close()`` lets in-flight jobs finish before cancelling."
+ },
+ {
+  "kind": "const",
+  "file": "reef/execution/sandbox/modal.py",
+  "line": 48,
+  "name": "SANDBOX_MAX_TIMEOUT_S",
+  "value": 86400,
+  "expr": "86400",
+  "desc": "The longest life Modal grants a sandbox."
+ },
+ {
+  "kind": "const",
+  "file": "recipes/beta/autoenvscaling/checks.py",
+  "line": 67,
+  "name": "CALIBRATION_ERRORS",
+  "value": 3,
+  "expr": "3",
+  "desc": "The calibration's result keeps the errors of this many rollouts."
+ },
+ {
+  "kind": "const",
+  "file": "tests/inference/test_runtime_kinds.py",
+  "line": 14,
+  "name": "NOT_A_FACTORY",
+  "value": 7,
+  "expr": "7",
+  "desc": "A value a runtime kind reference can name that is not a factory class."
+ },
+ {
+  "kind": "const",
+  "file": "recipes/basic/harness/agent.py",
+  "line": 36,
+  "name": "INFERENCE_TIMEOUT_S",
+  "value": 300.0,
+  "expr": "300.0",
+  "desc": "The seconds that ``setup`` waits for inference to serve the scenario's model."
+ },
+ {
+  "kind": "const",
+  "file": "reef/harness/tree/checks.py",
+  "line": 165,
+  "name": "RECORD_TEXT_CAP",
+  "value": 20000,
+  "expr": "20_000",
+  "desc": "Characters kept per text in a record; a longer text ends in a clip marker."
+ },
+ {
+  "kind": "const",
+  "file": "docs/assets/render_harness_guides.py",
+  "line": 154,
+  "name": "TREE_W",
+  "value": 300,
+  "expr": "300",
+  "desc": "The tree box is narrower than a column, so the render arrow has room for its label."
+ },
+ {
+  "kind": "const",
+  "file": "recipes/sdft/examples/skill_stream/run.py",
+  "line": 56,
+  "name": "LR_WARMUP_STEPS",
+  "value": 10,
+  "expr": "10",
+  "desc": "serve.yaml's lr-warmup-iters; Megatron requires the decay span to be longer."
+ },
+ {
+  "kind": "func",
+  "file": "recipes/meta_harness/examples/terminal_bench/reef_terminus/runner.py",
+  "line": 156,
+  "name": "trial_record",
+  "doc": "One trial as the ``reef_terminus.trajectory.TrialReader`` reader expects it, its steps read from ``trial_dir`` alone."
+ },
+ {
+  "kind": "func",
+  "file": "recipes/beta/reefine/agent.py",
+  "line": 207,
+  "name": "tool_calls",
+  "doc": "The tools a pi session called and the ones that failed, in order, each cut to what a reader needs."
+ },
+ {
+  "kind": "func",
+  "file": "reef/train/component.py",
+  "line": 578,
+  "name": "check_job",
+  "doc": "Raise ``ValueError`` for a job this component cannot train. The default accepts every job."
+ },
+ {
+  "kind": "func",
+  "file": "reef/record2sample/reports.py",
+  "line": 71,
+  "name": "require_score",
+  "doc": "Read a finite reward for a training method that needs one."
+ },
+ {
+  "kind": "func",
+  "file": "recipes/meta_harness/examples/terminal_bench/harness/benchmark.py",
+  "line": 16,
+  "name": "task_paths",
+  "doc": "Refuse dataset drift before running any paid run."
+ },
+ {
+  "kind": "func",
+  "file": "tests/smoke/native_inference.py",
+  "line": 2004,
+  "name": "pending_stops",
+  "doc": "The set of the stops that the store holds, without their order: each route that left the published"
+ },
+ {
+  "kind": "func",
+  "file": "tests/harness/test_native_harness.py",
+  "line": 204,
+  "name": "write_tree",
+  "doc": "Write ``files`` under ``root``; the native root inside."
+ },
+ {
+  "kind": "func",
+  "file": "recipes/meta_harness/examples/terminal_bench/reef_terminus/execution.py",
+  "line": 22,
+  "name": "__call__",
+  "doc": "Refuse unisolated Python and local Docker nested in Reef's jail."
+ },
+ {
+  "kind": "func",
+  "file": "tests/harness/test_harness_render.py",
+  "line": 212,
+  "name": "test_codex_takes_no_config_key_from_a_tree",
+  "doc": "A Codex plugin carries no config key, so config.toml holds the run's defaults and the binding alone."
+ },
+ {
+  "kind": "func",
+  "file": "reef/inference/null.py",
+  "line": 69,
+  "name": "served_artifact",
+  "doc": "No route for any artifact: this runtime serves no requests."
+ },
+ {
+  "kind": "func",
+  "file": "reef/train/tinker_backend/parameters.py",
+  "line": 18,
+  "name": "rollout_settings",
+  "doc": "The ``rollout`` parameter of a task job. ``ValueError``: it is missing, malformed or has an unknown key."
+ },
+ {
+  "kind": "func",
+  "file": "reef/service/routes/__init__.py",
+  "line": 23,
+  "name": "register_routes",
+  "doc": "The routes of control's app. It serves the data routes too when its process runs the data service."
+ },
+ {
+  "kind": "func",
+  "file": "recipes/sdft/slime/objective.py",
+  "line": 29,
+  "name": "sdft_actor_pre_train",
+  "doc": "Move the teacher toward the policy (seeding it on the first step), then score every teacher sequence."
+ },
+ {
+  "kind": "func",
+  "file": "recipes/beta/reefine/examples/run.py",
+  "line": 165,
+  "name": "ensure_scenario",
+  "doc": "Create the scenario, with its root snapshot, if it does not exist yet; its harness manifest."
+ }
+]

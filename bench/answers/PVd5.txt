@@ -1,0 +1,10 @@
+1. It is Praxist, a platform and CLI for autonomous research control-plane code, running multi-generation research loops, single peers, and an orchestrator dashboard.
+2. unsure
+3. Possibly praxist/cli/product_usage (product usage consent), but the view does not confirm it; unsure
+4. unsure
+5. unsure
+6. unsure
+7. unsure
+8. unsure
+9. unsure
+10. unsure

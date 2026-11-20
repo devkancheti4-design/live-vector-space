@@ -1,0 +1,10 @@
+1. Reef is continual learning infrastructure for self-improving agents: shared records, service, runtime, scenarios, artifacts, a training loop with candidate evaluation, and a recipe contract that learning methods implement.
+2. unsure
+3. unsure
+4. reef/inference
+5. reef/storage
+6. unsure (the view says methods are separate packages selected by dotted class references, not in reef itself; the sibling recipes tree is only a cookbook)
+7. unsure
+8. reef/evaluation
+9. reef/core
+10. unsure (possibly the agent record, AgentRecord, but the view does not confirm)

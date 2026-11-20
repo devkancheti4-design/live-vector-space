@@ -1,0 +1,10 @@
+1. A framework (praxist) for running autonomous, plugin-based AI research workflows on user-defined tasks, with agent runtimes, model providers, tools, budgets, evaluations and delivery/CLI tooling.
+2. praxist/infrastructure/ (s3_utils.py, runpod.py, execute_autonomous.py)
+3. praxist/product_usage/ (also services/product_usage/ and tests/product_usage/)
+4. agent_runtimes
+5. tools
+6. unsure (the view gives file counts only, no sizes; plugins/ holds 201 files, but which family is biggest is not stated)
+7. unsure (sizes are not given; tests/ has 175 files of roughly 600 total, but that is a count, not a size)
+8. rocket_booster_recovery (also a Rust variant, rocket_booster_recovery_rust)
+9. praxist/task_spec.py
+10. praxist/user_agreement.py

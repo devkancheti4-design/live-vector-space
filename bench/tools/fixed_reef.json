@@ -1,0 +1,22 @@
+[
+ {"q": "In one sentence, what is this codebase for?", "all": ["continual|self.?improving"]},
+ {"q": "A recorded agent run turns into data for a training job in two steps. Name the two folders that do these steps, in order.", "order": ["record2sample", "sample2job"]},
+ {"q": "Which folder takes an agent's setup, runs the agent with it, and collects what happened?", "all": ["harness"]},
+ {"q": "Which folder puts trained model weights to work answering requests?", "all": ["inference"]},
+ {"q": "Which folder is responsible for saving the system's records, training samples and generated tasks?", "all": ["storage"]},
+ {"q": "Where do the individual training methods live, one package per method?", "all": ["\\brecipes\\b"]},
+ {"q": "About what share of the whole repository, by size, is tests?", "pct": [40, 55]},
+ {"q": "Which folder judges a newly trained candidate and decides whether it goes live?", "all": ["evaluation"]},
+ {"q": "Which folder holds the basic shared types and errors that every other part depends on?", "all": ["\\bcore\\b"]},
+ {"q": "What is the name of the unit the system trains and keeps state for, which can be committed and recovered?", "all": ["scenario"]},
+ {"q": "Which folder holds the one component, per running process, that is in charge of all scenarios and of the threads that train them?", "all": ["dispatcher"]},
+ {"q": "Which folder keeps every published version as a snapshot that is never changed afterwards?", "all": ["artifact"]},
+ {"q": "Which folder starts the system's processes and accepts requests from other programs over HTTP?", "all": ["\\bservice\\b"]},
+ {"q": "When starting up a trained model for serving fails, how long does the system wait before it retries on its own, and what is the longest it will ever wait between such retries?", "all": ["\\b60\\b|one minute|1 minute", "3600|\\bhour\\b|60 min"]},
+ {"q": "Finished work items are cleared out on a schedule. How much time passes between two clear-outs?", "all": ["3600|\\bhour\\b|60 min"]},
+ {"q": "When the system reads back the records it has used, at most how many record items does it read in one call?", "all": ["\\b256\\b"]},
+ {"q": "When the system makes up new practice tasks for itself, how many attempts does one generation get by default, and how much time do all those attempts get together?", "all": ["\\b3\\b|three", "1800|30 min|half an hour"]},
+ {"q": "An agent reaches its model through a small local gateway. At most how much of one model reply does the gateway keep for its records?", "all": ["2 ?MiB|2 ?MB|2097152|2,097,152|2 ?\\* ?1024 ?\\* ?1024"]},
+ {"q": "The system can keep its records in a relational database. Which version of the record layout does that database adapter read and write?", "all": ["\\b23\\b"]},
+ {"q": "How long does a data store keep a job's data folder that no job used?", "all": ["7 ?days|seven days|604800|604,800|7 ?\\* ?24 ?\\* ?3600|one week|1 week"]}
+]

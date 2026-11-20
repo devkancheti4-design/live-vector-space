@@ -1,0 +1,10 @@
+1. Reef is continual-learning infrastructure for self-improving agents (records agent runs, trains on them, evaluates and serves the improved result).
+2. reef/record2sample, then reef/sample2job
+3. reef/harness
+4. reef/inference
+5. reef/storage
+6. recipes/ (one package each)
+7. About 48% (tests ~7,004 KB of ~14.2 MB)
+8. reef/evaluation
+9. reef/core
+10. Scenario (reef/scenario holds scenario state, commit and recovery)

@@ -1,0 +1,50 @@
+48 questions about one codebase. Answer every one.
+
+1. In one sentence, what is this codebase for?
+2. A recorded agent run turns into data for a training job in two steps. Name the two folders that do these steps, in order.
+3. Which folder takes an agent's setup, runs the agent with it, and collects what happened?
+4. Which folder puts trained model weights to work answering requests?
+5. Which folder is responsible for saving the system's records, training samples and generated tasks?
+6. Where do the individual training methods live, one package per method?
+7. About what share of the whole repository, by size, is tests?
+8. Which folder judges a newly trained candidate and decides whether it goes live?
+9. Which folder holds the basic shared types and errors that every other part depends on?
+10. What is the name of the unit the system trains and keeps state for, which can be committed and recovered?
+11. Which folder holds the one component, per running process, that is in charge of all scenarios and of the threads that train them?
+12. Which folder keeps every published version as a snapshot that is never changed afterwards?
+13. Which folder starts the system's processes and accepts requests from other programs over HTTP?
+14. When starting up a trained model for serving fails, how long does the system wait before it retries on its own, and what is the longest it will ever wait between such retries?
+15. Finished work items are cleared out on a schedule. How much time passes between two clear-outs?
+16. When the system reads back the records it has used, at most how many record items does it read in one call?
+17. When the system makes up new practice tasks for itself, how many attempts does one generation get by default, and how much time do all those attempts get together?
+18. An agent reaches its model through a small local gateway. At most how much of one model reply does the gateway keep for its records?
+19. The system can keep its records in a relational database. Which version of the record layout does that database adapter read and write?
+20. How long does a data store keep a job's data folder that no job used?
+21. A constant is documented in the code as: "The passed health checks in a row that show a watcher at rest, and how long they may take." What is its value?
+22. A constant is documented in the code as: "The default of ``data.max_task_archive_bytes``: the most bytes of the body of a task archive upload. The route streams the body to a local file, so the limit bounds disk use, not memory." What is its value?
+23. A constant is documented in the code as: "Each provider model-list check during readiness waits at most this long, or the inference timeout if shorter. The managed owner budgets an ``open`` with the same limit." What is its value?
+24. A constant is documented in the code as: "The commits of one batch: the job's submission, its one checkpoint and its end." What is its value?
+25. A constant is documented in the code as: "The rollouts that must end before Reef checks ``max_failed_fraction``; a smaller evaluation checks at its end." What is its value?
+26. A constant is documented in the code as: "Harbor's time limits for a task whose ``task.toml`` names none, in seconds." What is its value?
+27. A constant is documented in the code as: "The most rewards of its verifier that a rollout keeps." What is its value?
+28. A constant is documented in the code as: "The most parents an adaptive generator keeps; the oldest go first." What is its value?
+29. A constant is documented in the code as: "Seconds between two health checks of the serving engines' service." What is its value?
+30. A constant is documented in the code as: "The steps a run takes unless --iterations says otherwise, as in the comparison: four full-history iterations." What is its value?
+31. A constant is documented in the code as: "Largest inference request body; weight uploads stream and are not bound by it." What is its value?
+32. A constant is documented in the code as: "The most files in one task." What is its value?
+33. A constant is documented in the code as: "The bound of one wait, for a host that runs many tests at once. No test waits a fixed time." What is its value?
+34. A constant is documented in the code as: "Admission bounds pattern length; the interpreter separately bounds search text and execution time." What is its value?
+35. Which function has this docstring: "Publish ``files`` as an artifact of ``component`` in ``scenario``, stored in the empty ``directory``."? Give its name and file.
+36. Which function has this docstring: "The plugin reference that ``value``, a ``package.module:ClassName`` string, makes; DescriptorError unless"? Give its name and file.
+37. Which function has this docstring: "Read one streamed turn, checking whether its HTTP body completes or fails."? Give its name and file.
+38. Which function has this docstring: "``binary`` is a kind the route admits: the name is the program to look for, the check is optional, and"? Give its name and file.
+39. Which function has this docstring: "The arguments the HTTP service gives Slime's parser for this resolved deployment config."? Give its name and file.
+40. Which function has this docstring: "Whether ``trigger`` (one of ``TRIGGERS``) requested this selection. The default is False: no queue item"? Give its name and file.
+41. Which function has this docstring: "``source`` rendered for terminus, with ``binding``'s overlays when given, and written under ``tmp_path``."? Give its name and file.
+42. Which function has this docstring: "A dispatcher of the test policy recipe whose training component's default start is the model ``model``."? Give its name and file.
+43. Which function has this docstring: "Ask the server to stop, then kill whatever of its tree survives ``timeout`` seconds."? Give its name and file.
+44. Which function has this docstring: "The text of ``instruction.md`` in any Harbor task directory, written by Reef or not; ``HarborTaskError``"? Give its name and file.
+45. Which function has this docstring: "The ``(model_path, runtime_load_id)`` of a name that ``full_weight_name`` made."? Give its name and file.
+46. Which function has this docstring: "Both start at the root snapshot; training moves both, activation moves only the active one, and train-from"? Give its name and file.
+47. Which function has this docstring: "Apply the JSON merge patch ``patch`` to ``target`` (RFC 7386) and return the result; ``target`` stays."? Give its name and file.
+48. Which function has this docstring: "RFC #1062: a scenario starts from an artifact item, and it has no model setting of its own."? Give its name and file.

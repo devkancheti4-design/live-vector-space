@@ -1,0 +1,350 @@
+[
+ {
+  "kind": "fixed",
+  "all": [
+   "continual|self.?improving"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "order": [
+   "record2sample",
+   "sample2job"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "harness"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "inference"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "storage"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\brecipes\\b"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "pct": [
+   40,
+   55
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "evaluation"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\bcore\\b"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "scenario"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "dispatcher"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "artifact"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\bservice\\b"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\b60\\b|one minute|1 minute",
+   "3600|\\bhour\\b|60 min"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "3600|\\bhour\\b|60 min"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\b256\\b"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\b3\\b|three",
+   "1800|30 min|half an hour"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "2 ?MiB|2 ?MB|2097152|2,097,152|2 ?\\* ?1024 ?\\* ?1024"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\b23\\b"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "7 ?days|seven days|604800|604,800|7 ?\\* ?24 ?\\* ?3600|one week|1 week"
+  ]
+ },
+ {
+  "kind": "const",
+  "file": "tests/smoke/native_inference.py",
+  "line": 222,
+  "name": "QUIET_CHECKS",
+  "value": 3,
+  "expr": "3",
+  "desc": "The passed health checks in a row that show a watcher at rest, and how long they may take."
+ },
+ {
+  "kind": "const",
+  "file": "reef/service/tasks.py",
+  "line": 24,
+  "name": "DEFAULT_MAX_TASK_ARCHIVE_BYTES",
+  "value": 536870912,
+  "expr": "512 * 1024 * 1024",
+  "desc": "The default of ``data.max_task_archive_bytes``: the most bytes of the body of a task archive upload. The route streams the body to a local file, so the limit bounds disk use, not memory."
+ },
+ {
+  "kind": "const",
+  "file": "reef/service/routing.py",
+  "line": 63,
+  "name": "MAX_READINESS_TIMEOUT_SECONDS",
+  "value": 10.0,
+  "expr": "10.0",
+  "desc": "Each provider model-list check during readiness waits at most this long, or the inference timeout if shorter. The managed owner budgets an ``open`` with the same limit."
+ },
+ {
+  "kind": "const",
+  "file": "tests/scenario/test_reef_concurrency.py",
+  "line": 74,
+  "name": "COMMITS_PER_JOB",
+  "value": 3,
+  "expr": "3",
+  "desc": "The commits of one batch: the job's submission, its one checkpoint and its end."
+ },
+ {
+  "kind": "const",
+  "file": "reef/service/artifact_evaluations.py",
+  "line": 96,
+  "name": "FAILURE_CHECK_ROLLOUTS",
+  "value": 10,
+  "expr": "10",
+  "desc": "The rollouts that must end before Reef checks ``max_failed_fraction``; a smaller evaluation checks at its end."
+ },
+ {
+  "kind": "const",
+  "file": "reef/execution/sandbox/task_environment.py",
+  "line": 40,
+  "name": "HARBOR_BUILD_TIMEOUT_S",
+  "value": 600,
+  "expr": "600",
+  "desc": "Harbor's time limits for a task whose ``task.toml`` names none, in seconds."
+ },
+ {
+  "kind": "const",
+  "file": "reef/evaluation/rollout_worker.py",
+  "line": 86,
+  "name": "MAX_VERIFIER_REWARDS",
+  "value": 64,
+  "expr": "64",
+  "desc": "The most rewards of its verifier that a rollout keeps."
+ },
+ {
+  "kind": "const",
+  "file": "recipes/beta/autoenvscaling/generator.py",
+  "line": 118,
+  "name": "MAX_PARENTS",
+  "value": 256,
+  "expr": "256",
+  "desc": "The most parents an adaptive generator keeps; the oldest go first."
+ },
+ {
+  "kind": "const",
+  "file": "reef/inference/serving.py",
+  "line": 59,
+  "name": "HEALTH_INTERVAL_S",
+  "value": 30.0,
+  "expr": "30.0",
+  "desc": "Seconds between two health checks of the serving engines' service."
+ },
+ {
+  "kind": "const",
+  "file": "recipes/meta_harness/examples/terminal_bench/run.py",
+  "line": 42,
+  "name": "DEFAULT_STEPS",
+  "value": 4,
+  "expr": "4",
+  "desc": "The steps a run takes unless --iterations says otherwise, as in the comparison: four full-history iterations."
+ },
+ {
+  "kind": "const",
+  "file": "reef/inference/remote/server.py",
+  "line": 32,
+  "name": "MAX_REQUEST_BYTES",
+  "value": 67108864,
+  "expr": "64 * 1024 * 1024",
+  "desc": "Largest inference request body; weight uploads stream and are not bound by it."
+ },
+ {
+  "kind": "const",
+  "file": "reef/storage/tasks.py",
+  "line": 69,
+  "name": "MAX_TASK_FILES",
+  "value": 100000,
+  "expr": "100_000",
+  "desc": "The most files in one task."
+ },
+ {
+  "kind": "const",
+  "file": "tests/reef_service/deploy/test_split_without_shared_directory.py",
+  "line": 72,
+  "name": "WAIT_SECONDS",
+  "value": 180.0,
+  "expr": "180.0",
+  "desc": "The bound of one wait, for a host that runs many tests at once. No test waits a fixed time."
+ },
+ {
+  "kind": "const",
+  "file": "reef/harness/tree/checks.py",
+  "line": 53,
+  "name": "NATIVE_PATTERN_MAX_LENGTH",
+  "value": 200,
+  "expr": "200",
+  "desc": "Admission bounds pattern length; the interpreter separately bounds search text and execution time."
+ },
+ {
+  "kind": "func",
+  "file": "reef/dispatcher/dispatcher.py",
+  "line": 914,
+  "name": "import_artifact",
+  "doc": "Publish ``files`` as an artifact of ``component`` in ``scenario``, stored in the empty ``directory``."
+ },
+ {
+  "kind": "func",
+  "file": "reef/harness/adapters/descriptor.py",
+  "line": 702,
+  "name": "parse_plugin_reference",
+  "doc": "The plugin reference that ``value``, a ``package.module:ClassName`` string, makes; DescriptorError unless"
+ },
+ {
+  "kind": "func",
+  "file": "tests/reef_service/test_reef_contracts.py",
+  "line": 833,
+  "name": "post_stream",
+  "doc": "Read one streamed turn, checking whether its HTTP body completes or fails."
+ },
+ {
+  "kind": "func",
+  "file": "tests/reef_service/harness/test_harness_requests.py",
+  "line": 680,
+  "name": "test_a_binary_item_names_the_program_and_its_check_stays_optional",
+  "doc": "``binary`` is a kind the route admits: the name is the program to look for, the check is optional, and"
+ },
+ {
+  "kind": "func",
+  "file": "tests/reef_service/deploy/test_training_startup.py",
+  "line": 51,
+  "name": "slime_argv",
+  "doc": "The arguments the HTTP service gives Slime's parser for this resolved deployment config."
+ },
+ {
+  "kind": "func",
+  "file": "reef/record2sample/service/worker.py",
+  "line": 85,
+  "name": "requested_by",
+  "doc": "Whether ``trigger`` (one of ``TRIGGERS``) requested this selection. The default is False: no queue item"
+ },
+ {
+  "kind": "func",
+  "file": "tests/recipes/meta_harness/test_terminus_tree.py",
+  "line": 32,
+  "name": "_render",
+  "doc": "``source`` rendered for terminus, with ``binding``'s overlays when given, and written under ``tmp_path``."
+ },
+ {
+  "kind": "func",
+  "file": "tests/scenario/test_reef_scenarios.py",
+  "line": 445,
+  "name": "weights_dispatcher",
+  "doc": "A dispatcher of the test policy recipe whose training component's default start is the model ``model``."
+ },
+ {
+  "kind": "func",
+  "file": "reef/inference/vllm/process.py",
+  "line": 30,
+  "name": "shutdown",
+  "doc": "Ask the server to stop, then kill whatever of its tree survives ``timeout`` seconds."
+ },
+ {
+  "kind": "func",
+  "file": "reef/core/tasks/harbor.py",
+  "line": 207,
+  "name": "task_instruction",
+  "doc": "The text of ``instruction.md`` in any Harbor task directory, written by Reef or not; ``HarborTaskError``"
+ },
+ {
+  "kind": "func",
+  "file": "reef/inference/interfaces.py",
+  "line": 113,
+  "name": "parse_full_weight_name",
+  "doc": "The ``(model_path, runtime_load_id)`` of a name that ``full_weight_name`` made."
+ },
+ {
+  "kind": "func",
+  "file": "tests/reef_service/test_artifact_versions.py",
+  "line": 75,
+  "name": "test_the_status_names_each_components_active_artifact_and_training_start",
+  "doc": "Both start at the root snapshot; training moves both, activation moves only the active one, and train-from"
+ },
+ {
+  "kind": "func",
+  "file": "reef/storage/data.py",
+  "line": 289,
+  "name": "merge_patch",
+  "doc": "Apply the JSON merge patch ``patch`` to ``target`` (RFC 7386) and return the result; ``target`` stays."
+ },
+ {
+  "kind": "func",
+  "file": "tests/reef_service/test_request_body_validation.py",
+  "line": 138,
+  "name": "test_create_and_update_refuse_the_retired_release_id_and_model_keys",
+  "doc": "RFC #1062: a scenario starts from an artifact item, and it has no model setting of its own."
+ }
+]

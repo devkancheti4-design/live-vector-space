@@ -1,0 +1,50 @@
+48 questions about one codebase. Answer every one.
+
+1. In one sentence, what is this codebase for?
+2. Which folder deals with cloud file storage, deploying to rented GPU machines, and running containers?
+3. Which folder reports how the product is being used?
+4. Which family of add-ons runs the AI agents themselves?
+5. Which family of add-ons provides the tools that agents call?
+6. Which family of add-ons is by far the biggest, by size?
+7. About what share of the whole repository, by size, is tests?
+8. What example task ships with the repository?
+9. Which file loads task specifications?
+10. Which file holds the legal terms that a user must accept?
+11. Which folder holds the swappable add-on families, such as the ones for model providers and budget rules?
+12. By default, how many research agents work side by side in one generation, and how many of the best results move on each generation?
+13. In fully automatic mode, what is the default longest time a run may last?
+14. When the research agent's model calls fail because of a billing problem, how long does it wait before trying again?
+15. By default, at most how many jobs may share one GPU?
+16. At what share of its memory limit does a run get a warning, and at what share is it shut down?
+17. After how many days is a cached baseline result considered stale?
+18. When a tool's reply is too long and gets split into pieces, how many characters is each piece by default?
+19. A constant is documented in the code as: "Original harness terminal reward constant." What is its value?
+20. Which function has this docstring: "Get leaderboard of results, optionally filtered by generation."? Give its name and file.
+21. Which function has this docstring: "Greedily encode the oldest rows without crossing either hard limit."? Give its name and file.
+22. Which function has this docstring: "Atomically write a sentinel and fsync the parent directory."? Give its name and file.
+23. Which function has this docstring: "Archive V1 storage and create the closed V2 event table."? Give its name and file.
+24. Which function has this docstring: "Add `(backport ...)` to the previous commit, using `(cherry picked from ...)`"? Give its name and file.
+25. Which function has this docstring: "Read a stored tool-result artifact by bounded character window."? Give its name and file.
+26. Which function has this docstring: "Return possible YAML bodies from a Chair response."? Give its name and file.
+27. Which function has this docstring: "A second call > 3 s after the first must not sleep."? Give its name and file.
+28. Which function has this docstring: "Distinguish shell background control from file-descriptor redirection."? Give its name and file.
+29. Which function has this docstring: "Emit a resource lifecycle trajectory event from the current scoped execution environment."? Give its name and file.
+30. Which function has this docstring: "Materialize canonical ledgers before a foreground research-loop run exits on TERM/INT."? Give its name and file.
+31. Which function has this docstring: "Return True for a usable independent PI memo."? Give its name and file.
+32. Which function has this docstring: "Write Praxist provider config to the user env file."? Give its name and file.
+33. Which function has this docstring: "Compute health + atomic-write to ``<out_dir>/graph_health.json``."? Give its name and file.
+34. Which function has this docstring: "Lazily load the archived iLQR reference + rk4-computed TV-LQR gains."? Give its name and file.
+35. Which function has this docstring: "Record completed legacy Claude Code tool usage for run diagnostics."? Give its name and file.
+36. Which function has this docstring: "Return the first generation whose completion requires a marker."? Give its name and file.
+37. Which function has this docstring: "Return whether observed task pressure permits requesting more work."? Give its name and file.
+38. Which function has this docstring: "Install bundled skills under one target-directory lifecycle lock."? Give its name and file.
+39. Which function has this docstring: "Return task-declared dataset aliases from a finding payload."? Give its name and file.
+40. Which function has this docstring: "Send ``sig`` to each pid; record permission errors as warnings."? Give its name and file.
+41. Which function has this docstring: "Stable-enough identity for mirrored digest entries."? Give its name and file.
+42. Which function has this docstring: "Insert a single edge. Returns edge_id if inserted, None if duplicate."? Give its name and file.
+43. Which function has this docstring: "Acquire an exclusive flock on `path`. Releases on context exit."? Give its name and file.
+44. Which function has this docstring: "Instantiate a selected executable plugin using its entrypoint factory."? Give its name and file.
+45. Which function has this docstring: "Deny new shell-launched work after close without blocking drain actions."? Give its name and file.
+46. Which function has this docstring: "Return True when a candidate duplicates known cells or mechanism text."? Give its name and file.
+47. Which function has this docstring: "Release an unused directed supply lease; consumed leases are idempotent."? Give its name and file.
+48. Which function has this docstring: "Best-effort age in seconds; None if started_at is unparseable."? Give its name and file.

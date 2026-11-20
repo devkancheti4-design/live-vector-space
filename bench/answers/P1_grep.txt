@@ -1,0 +1,48 @@
+1. Praxist is a platform (control plane) for running autonomous AI research: multi-agent research loops on tasks, with plugins, GPU/cloud infrastructure, and deliverables — praxist/__init__.py:1
+2. praxist/infrastructure (s3_utils.py, runpod.py, execute_autonomous.py) — praxist/infrastructure/__init__.py:1
+3. praxist/product_usage (also services/product_usage) — praxist/product_usage/__init__.py:1
+4. agent_runtimes (claude_sdk, codex_sdk) — praxist/plugins/agent_runtimes/__init__.py:1
+5. tools — praxist/plugins/tools/__init__.py:1
+6. workflow_stages (~2.9 MB of ~4.0 MB plugins) — praxist/plugins/workflow_stages/__init__.py:1
+7. About 50% (tests 6.4 MB of ~12.5 MB total) — tests/:1
+8. rocket_booster_recovery (plus rocket_booster_recovery_rust) — examples/rocket_booster_recovery:1
+9. praxist/task_spec.py (load_task_spec) — praxist/task_spec.py:1558
+10. praxist/user_agreement.py — praxist/user_agreement.py:1
+11. praxist/plugins — praxist/plugins/__init__.py:1
+12. 5 agents per generation (DEFAULT_COHORT_SIZE); top 2 promoted (DEFAULT_PROMOTE_TOP_K) — praxist/core/run_config.py:148,154
+13. 5 days (5 * 24 * 3600 seconds) — praxist/core/run_config.py:83
+14. 20 minutes (1200 s) — praxist/plugins/workflow_stages/research_loop/backend/agent.py:233
+15. 4 — praxist/plugins/workflow_stages/research_loop/backend/gpu_governor.py:57
+16. Warning at 80% (0.80), shutdown at 92% (0.92) — praxist/plugins/workflow_stages/research_loop/backend/orchestrator_status.py:38-39
+17. 30 days — praxist/plugins/workflow_stages/research_loop/backend/baseline_cache.py:86
+18. 4000 characters — praxist/plugins/tools/result_envelope.py:22
+19. STANDARD_TILT_KNEE_RAD = 0.10 (and STANDARD_SPEED_GATE_MPS = 4.0 follows) — examples/rocket_booster_recovery/vendor/frozen_c05_plant/terminal_reward.py:47
+20. write_metadata — templates/tasks/sam_optimizer/assets/dataset_metadata/resolve_dataset.py:72
+21. _gc_stale_entry — praxist/cli/stop.py:1051
+22. resolve_resume_target — praxist/cli/resume.py:394
+23. finding_filename — praxist/plugins/workflow_stages/research_loop/backend/tools/findings_sync.py:91
+24. result_artifact_key — praxist/plugins/workflow_stages/research_loop/backend/evidence_maturity.py:165
+25. agenda_metadata_sources_for_target — praxist/plugins/workflow_stages/research_loop/backend/multi_pi/agenda_metadata.py:144
+26. policy_for_ref — praxist/core/budget.py:30
+27. main — praxist/deliver.py:519
+28. dumps_manifest — praxist/core/registry.py:867
+29. provider_for_ref — praxist/core/modeling.py:162
+30. test_no_findings_records_warning — tests/unit/test_system_tools.py:198
+31. _gem_sidecar_source_generation_id — praxist/plugins/workflow_stages/research_loop/backend/gems.py:1311
+32. result_effective_config_metadata — praxist/plugins/workflow_stages/research_loop/backend/effective_config.py:65
+33. _unlink_run_state_if_unowned — praxist/infrastructure/product_usage.py:604
+34. test_recent_findings_empty_findings_dir_falls_back_to_shared — tests/unit/test_system_tools.py:394
+35. scheduler_active_process_groups — praxist/plugins/workflow_stages/research_loop/backend/experiment_scheduler_client.py:1038
+36. _relay_binary — praxist/plugins/agent_runtimes/codex_sdk/_relay.py:181
+37. fin_lift_effective — examples/rocket_booster_recovery/vendor/frozen_c05_plant/ppo_rocket_6dof_finned_jax.py:1020
+38. create_provider — praxist/plugins/model_providers/openrouter/adapter.py:9
+39. _prune_dead — praxist/plugins/workflow_stages/research_loop/backend/gpu_governor.py:219
+40. system_active_runs — praxist/plugins/tools/system/adapter.py:69
+41. copy_skill_tree — praxist/cli/_setup_common.py:350
+42. canonical_labels_for_candidate — praxist/plugins/workflow_stages/research_loop/backend/dig/labels.py:155
+43. _main — praxist/plugins/tools/evaluation_tools/__main__.py:26
+44. gpu_hours_since — praxist/core/execution_guards.py:357
+45. _action_description — scripts/build_docs_site.py:70
+46. normalize_maturity_policy — praxist/plugins/workflow_stages/research_loop/backend/evidence_maturity.py:349
+47. cmd_uninstall_skills — praxist/cli/install_skills.py:146
+48. _build_four_pi_spec — tests/unit/test_task_panel_topology_threading.py:42

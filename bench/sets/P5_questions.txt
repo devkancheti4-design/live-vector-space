@@ -1,0 +1,50 @@
+48 questions about one codebase. Answer every one.
+
+1. In one sentence, what is this codebase for?
+2. Which folder deals with cloud file storage, deploying to rented GPU machines, and running containers?
+3. Which folder reports how the product is being used?
+4. Which family of add-ons runs the AI agents themselves?
+5. Which family of add-ons provides the tools that agents call?
+6. Which family of add-ons is by far the biggest, by size?
+7. About what share of the whole repository, by size, is tests?
+8. What example task ships with the repository?
+9. Which file loads task specifications?
+10. Which file holds the legal terms that a user must accept?
+11. Which folder holds the swappable add-on families, such as the ones for model providers and budget rules?
+12. By default, how many research agents work side by side in one generation, and how many of the best results move on each generation?
+13. In fully automatic mode, what is the default longest time a run may last?
+14. When the research agent's model calls fail because of a billing problem, how long does it wait before trying again?
+15. By default, at most how many jobs may share one GPU?
+16. At what share of its memory limit does a run get a warning, and at what share is it shut down?
+17. After how many days is a cached baseline result considered stale?
+18. When a tool's reply is too long and gets split into pieces, how many characters is each piece by default?
+19. A constant is documented in the code as: "Strict-Jiang evaluator gate constants (source of truth: evaluations/swordfish_eval/run.py)." What is its value?
+20. Which function has this docstring: "Recognize a task's public evaluator or a conventional evaluator script."? Give its name and file.
+21. Which function has this docstring: "Return a fresh filesystem-safe identity for one agent invocation."? Give its name and file.
+22. Which function has this docstring: "A network value outside the vocabulary is rejected."? Give its name and file.
+23. Which function has this docstring: "Linear interpolation from `start` at progress=0 to `end` at progress=1."? Give its name and file.
+24. Which function has this docstring: "Bound late-fork races until verified run-owned work is stably absent."? Give its name and file.
+25. Which function has this docstring: "Roll forward a previously-started Gems reset transaction."? Give its name and file.
+26. Which function has this docstring: "``TASK_SPEC_PATH`` and ``SERVER_URL`` had zero readers; #75"? Give its name and file.
+27. Which function has this docstring: "Parse the PID from an ``orchestrator.lock`` payload."? Give its name and file.
+28. Which function has this docstring: "Register the ``praxist resolve`` subcommand on the parent parser."? Give its name and file.
+29. Which function has this docstring: "Return the operator-owned Codex home containing saved authentication."? Give its name and file.
+30. Which function has this docstring: "Build the evidence pack visible to one PI role under the retrieval policy."? Give its name and file.
+31. Which function has this docstring: "Return the identity that consumes one durable lane slot."? Give its name and file.
+32. Which function has this docstring: "Linear warmup in [0, warmup_fraction], then cosine/linear to end."? Give its name and file.
+33. Which function has this docstring: "Return the credential environment variable for a provider."? Give its name and file.
+34. Which function has this docstring: "Return a JSON-serializable view (tuples → lists)."? Give its name and file.
+35. Which function has this docstring: "Preserve Praxist physical UUID/MIG assignment across child launches."? Give its name and file.
+36. Which function has this docstring: "Trajectory bookend payload describing the model the agent ran with."? Give its name and file.
+37. Which function has this docstring: "Return the one validator failure class a Chair retry can safely repair."? Give its name and file.
+38. Which function has this docstring: "Stop one run while its lifecycle lock is held."? Give its name and file.
+39. Which function has this docstring: "Parse only the four explicitly approved Agent interaction keywords."? Give its name and file.
+40. Which function has this docstring: "A ``RunConfig`` with an empty ``model_credential_key_id`` represents"? Give its name and file.
+41. Which function has this docstring: "Flush and stop sidecars without masking the workflow exit condition."? Give its name and file.
+42. Which function has this docstring: "Default workspace falls back to ``<cwd>/runs`` when no arg given."? Give its name and file.
+43. Which function has this docstring: "``AGENT_MODEL`` is honored for backward compatibility."? Give its name and file.
+44. Which function has this docstring: "Expand canonical aggregate facts without traversing arbitrary metrics."? Give its name and file.
+45. Which function has this docstring: "C1-smooth Hermite step with zero slope at t=0 and t=1."? Give its name and file.
+46. Which function has this docstring: "Status collection remains available without a manifest or killpg permission."? Give its name and file.
+47. Which function has this docstring: "Read compact baseline ledgers and return best known value per metric."? Give its name and file.
+48. Which function has this docstring: "Infer finding_type when not explicit. Heuristic:"? Give its name and file.

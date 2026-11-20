@@ -1,0 +1,50 @@
+48 questions about one codebase. Answer every one.
+
+1. In one sentence, what is this codebase for?
+2. Which folder deals with cloud file storage, deploying to rented GPU machines, and running containers?
+3. Which folder reports how the product is being used?
+4. Which family of add-ons runs the AI agents themselves?
+5. Which family of add-ons provides the tools that agents call?
+6. Which family of add-ons is by far the biggest, by size?
+7. About what share of the whole repository, by size, is tests?
+8. What example task ships with the repository?
+9. Which file loads task specifications?
+10. Which file holds the legal terms that a user must accept?
+11. Which folder holds the swappable add-on families, such as the ones for model providers and budget rules?
+12. By default, how many research agents work side by side in one generation, and how many of the best results move on each generation?
+13. In fully automatic mode, what is the default longest time a run may last?
+14. When the research agent's model calls fail because of a billing problem, how long does it wait before trying again?
+15. By default, at most how many jobs may share one GPU?
+16. At what share of its memory limit does a run get a warning, and at what share is it shut down?
+17. After how many days is a cached baseline result considered stale?
+18. When a tool's reply is too long and gets split into pieces, how many characters is each piece by default?
+19. A constant is documented in the code as: "Per-generation safety cap in hours." What is its value?
+20. Which function has this docstring: "Return an entered runtime scope for lock and signal cleanup."? Give its name and file.
+21. Which function has this docstring: "The dataclass is frozen, so it works as a dict key / set member."? Give its name and file.
+22. Which function has this docstring: "Normalize must_explore_axes from task_spec.yaml."? Give its name and file.
+23. Which function has this docstring: "A custom provider ref is allowed through; runtime fails loudly later."? Give its name and file.
+24. Which function has this docstring: "Return the fixed current-user consent-record path for this platform."? Give its name and file.
+25. Which function has this docstring: "Get promoted frontier entries for one generation."? Give its name and file.
+26. Which function has this docstring: "Preserve the established Codex seam while adding a second host."? Give its name and file.
+27. Which function has this docstring: "Manifest entrypoint for the DeepSeek OpenAI-compatible provider alias."? Give its name and file.
+28. Which function has this docstring: "Atomic download: fetch to a tmp file, verify minimum size, then"? Give its name and file.
+29. Which function has this docstring: "Return a 2-vector of inertial lateral acceleration (y, z) to add."? Give its name and file.
+30. Which function has this docstring: "Safety-net metric lookup used when ingest-layer normalization"? Give its name and file.
+31. Which function has this docstring: "Extract a dataset-level metric statistic such as mean or max."? Give its name and file.
+32. Which function has this docstring: "Return unique mature experiment results for scheduler feedback."? Give its name and file.
+33. Which function has this docstring: "Return the same effective close horizon enforced by the trigger."? Give its name and file.
+34. Which function has this docstring: "Return whether a result-backed finding was published after ``cutoff``."? Give its name and file.
+35. Which function has this docstring: "Remove transient generation controls before rerunning its cohort."? Give its name and file.
+36. Which function has this docstring: "Return the current UTC timestamp used by Praxist run artifacts."? Give its name and file.
+37. Which function has this docstring: "Python-level (trace-time) effective far-outer lateral RCS dose."? Give its name and file.
+38. Which function has this docstring: "Persist an uncommitted cutoff without creating another artifact."? Give its name and file.
+39. Which function has this docstring: "Sort registry rows above ps-only above stale (most-relevant first)."? Give its name and file.
+40. Which function has this docstring: "Wait until a file (or files) exist + meet a minimum-size / contains-text"? Give its name and file.
+41. Which function has this docstring: "Issue #75 batch 6: explicit ``extra_bundled`` / ``extra_project``"? Give its name and file.
+42. Which function has this docstring: "Keep structural counters out of Pareto axes unless the task opts in."? Give its name and file.
+43. Which function has this docstring: "Manifest entrypoint for the OrcaRouter model-provider adapter."? Give its name and file.
+44. Which function has this docstring: "C03-adjacent fuel-margin-keyed landing-gear contact-height schedule."? Give its name and file.
+45. Which function has this docstring: "Write CLOSING_SIGNAL once close criteria are met but evals drain."? Give its name and file.
+46. Which function has this docstring: "Fetch findings from SQLite (local) or HTTP (server)."? Give its name and file.
+47. Which function has this docstring: "Record only an approved explicit Agent-interaction keyword."? Give its name and file.
+48. Which function has this docstring: "Stage one skill and atomically replace its validated destination."? Give its name and file.

@@ -1,0 +1,326 @@
+[
+ {
+  "kind": "fixed",
+  "all": [
+   "research",
+   "autonomous|agent"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "infrastructure"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "product[_ ]usage"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "agent[_ ]runtimes"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\btools\\b"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "workflow[_ ]stages"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "pct": [
+   45,
+   60
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "rocket[_ ]booster"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "task_spec"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "user_agreement"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\bplugins\\b"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\b5\\b|five",
+   "\\b2\\b|two"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "5 ?days|five days|432000|432,000|5 ?\\* ?24 ?\\* ?3600|120 hours"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "20 ?min|twenty min|1200|1,200"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\b4\\b|four"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\b80\\b|0\\.8\\b|0\\.80",
+   "\\b92\\b|0\\.92"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\b30\\b|thirty"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "4000|4,000|4 000"
+  ]
+ },
+ {
+  "kind": "const",
+  "file": "praxist/core/run_config.py",
+  "line": 151,
+  "name": "DEFAULT_PER_GENERATION_HOURS",
+  "value": 5,
+  "expr": "5",
+  "desc": "Per-generation safety cap in hours."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/workflow_stages/research_loop/backend/orchestrator_runtime.py",
+  "line": 129,
+  "name": "enter_orchestrator_runtime_scope",
+  "doc": "Return an entered runtime scope for lock and signal cleanup."
+ },
+ {
+  "kind": "func",
+  "file": "tests/unit/test_runtime_sandbox_intent.py",
+  "line": 33,
+  "name": "test_intent_is_hashable_and_frozen",
+  "doc": "The dataclass is frozen, so it works as a dict key / set member."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/task_spec.py",
+  "line": 76,
+  "name": "_normalize_must_explore_axes",
+  "doc": "Normalize must_explore_axes from task_spec.yaml."
+ },
+ {
+  "kind": "func",
+  "file": "tests/unit/test_cli_start.py",
+  "line": 1217,
+  "name": "test_precheck_silent_for_unknown_provider_plugin_ref",
+  "doc": "A custom provider ref is allowed through; runtime fails loudly later."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/product_usage/paths.py",
+  "line": 11,
+  "name": "consent_path",
+  "doc": "Return the fixed current-user consent-record path for this platform."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/workflow_stages/research_loop/backend/frontier.py",
+  "line": 5444,
+  "name": "get_summary_for_generation",
+  "doc": "Get promoted frontier entries for one generation."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/cli/setup.py",
+  "line": 568,
+  "name": "_install_setup_skills",
+  "doc": "Preserve the established Codex seam while adding a second host."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/model_providers/deepseek_alias/adapter.py",
+  "line": 8,
+  "name": "create_provider",
+  "doc": "Manifest entrypoint for the DeepSeek OpenAI-compatible provider alias."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/graph_maintainers/finding_graph_mvp/viz.py",
+  "line": 77,
+  "name": "_download",
+  "doc": "Atomic download: fetch to a tmp file, verify minimum size, then"
+ },
+ {
+  "kind": "func",
+  "file": "examples/rocket_booster_recovery/vendor/frozen_c05_plant/guidance_divert.py",
+  "line": 71,
+  "name": "compute_divert",
+  "doc": "Return a 2-vector of inertial lateral acceleration (y, z) to add."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/workflow_stages/research_loop/backend/frontier.py",
+  "line": 265,
+  "name": "_walk_for_metric",
+  "doc": "Safety-net metric lookup used when ingest-layer normalization"
+ },
+ {
+  "kind": "func",
+  "file": "templates/tasks/sam_optimizer/evaluations/pareto_tiered/run.py",
+  "line": 162,
+  "name": "dataset_metric_stat",
+  "doc": "Extract a dataset-level metric statistic such as mean or max."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/workflow_stages/research_loop/backend/synthesis_trigger.py",
+  "line": 853,
+  "name": "mature_result_count",
+  "doc": "Return unique mature experiment results for scheduler feedback."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/workflow_stages/research_loop/backend/cohort_runner.py",
+  "line": 38,
+  "name": "_effective_generation_cap_seconds",
+  "doc": "Return the same effective close horizon enforced by the trigger."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/workflow_stages/research_loop/backend/findings_collection.py",
+  "line": 2794,
+  "name": "finding_source_published_after",
+  "doc": "Return whether a result-backed finding was published after ``cutoff``."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/workflow_stages/research_loop/backend/cohort_runner.py",
+  "line": 313,
+  "name": "clear_generation_runtime_signals",
+  "doc": "Remove transient generation controls before rerunning its cohort."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/core/storage.py",
+  "line": 16,
+  "name": "utc_now",
+  "doc": "Return the current UTC timestamp used by Praxist run artifacts."
+ },
+ {
+  "kind": "func",
+  "file": "examples/rocket_booster_recovery/vendor/frozen_c05_plant/residual_mask.py",
+  "line": 179,
+  "name": "effective_lateral_dose_py",
+  "doc": "Python-level (trace-time) effective far-outer lateral RCS dose."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/workflow_stages/research_loop/backend/resume_state.py",
+  "line": 269,
+  "name": "write_boundary_evidence_checkpoint",
+  "doc": "Persist an uncommitted cutoff without creating another artifact."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/cli/status.py",
+  "line": 719,
+  "name": "_source_sort_key",
+  "doc": "Sort registry rows above ps-only above stale (most-relevant first)."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/tools/evaluation_tools/adapter.py",
+  "line": 626,
+  "name": "_handle_wait_for_file_impl",
+  "doc": "Wait until a file (or files) exist + meet a minimum-size / contains-text"
+ },
+ {
+  "kind": "func",
+  "file": "tests/unit/test_registry_edge_contracts.py",
+  "line": 417,
+  "name": "test_plugin_roots_defaults_extra_kwargs_bypass_env_reads",
+  "doc": "Issue #75 batch 6: explicit ``extra_bundled`` / ``extra_project``"
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/workflow_stages/research_loop/backend/research_memory_update.py",
+  "line": 121,
+  "name": "_is_auxiliary_numeric_metric",
+  "doc": "Keep structural counters out of Pareto axes unless the task opts in."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/model_providers/orcarouter/adapter.py",
+  "line": 8,
+  "name": "create_provider",
+  "doc": "Manifest entrypoint for the OrcaRouter model-provider adapter."
+ },
+ {
+  "kind": "func",
+  "file": "examples/rocket_booster_recovery/vendor/frozen_c05_plant/fuel_schedule.py",
+  "line": 96,
+  "name": "gear_height_multiplier",
+  "doc": "C03-adjacent fuel-margin-keyed landing-gear contact-height schedule."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/workflow_stages/research_loop/backend/synthesis_trigger.py",
+  "line": 1720,
+  "name": "begin_closing",
+  "doc": "Write CLOSING_SIGNAL once close criteria are met but evals drain."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/workflow_stages/research_loop/backend/tools/findings_sync.py",
+  "line": 400,
+  "name": "_fetch_all_findings",
+  "doc": "Fetch findings from SQLite (local) or HTTP (server)."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/product_usage/client.py",
+  "line": 71,
+  "name": "record_agent_reply",
+  "doc": "Record only an approved explicit Agent-interaction keyword."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/cli/install_skills.py",
+  "line": 825,
+  "name": "_replace_managed_skill",
+  "doc": "Stage one skill and atomically replace its validated destination."
+ }
+]

@@ -1,0 +1,12 @@
+10 questions about one codebase. Answer every one.
+
+1. In one sentence, what is this codebase for?
+2. A recorded agent run turns into data for a training job in two steps. Name the two folders that do these steps, in order.
+3. Which folder takes an agent's setup, runs the agent with it, and collects what happened?
+4. Which folder puts trained model weights to work answering requests?
+5. Which folder is responsible for saving the system's records, training samples and generated tasks?
+6. Where do the individual training methods live, one package per method?
+7. About what share of the whole repository, by size, is tests?
+8. Which folder judges a newly trained candidate and decides whether it goes live?
+9. Which folder holds the basic shared types and errors that every other part depends on?
+10. What is the name of the unit the system trains and keeps state for, which can be committed and recovered?

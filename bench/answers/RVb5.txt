@@ -1,0 +1,10 @@
+1. Reef is continual-learning infrastructure for self-improving agents: it turns agent records into training data, trains models, evaluates candidates and serves them.
+2. record2sample, then sample2job
+3. reef/harness
+4. reef/inference
+5. reef/storage
+6. recipes/ (one package per method, e.g. recipes/ace, gepa, sdpo)
+7. unsure
+8. reef/evaluation
+9. reef/core
+10. scenario

@@ -1,0 +1,206 @@
+{"cmd": "find", "args": ["Seconds between SIGTERM and SIGKILL"], "bytes": 2479}
+{"cmd": "find", "args": ["bounded wait for a closing trigger"], "bytes": 2023}
+{"cmd": "find", "args": ["Choose the default run_dir"], "bytes": 2261}
+{"cmd": "find", "args": ["Live PID + matching command prefix"], "bytes": 2355}
+{"cmd": "find", "args": ["first non-empty field from canonical candidate"], "bytes": 1894}
+{"cmd": "find", "args": ["Await one SDK phase"], "bytes": 2108}
+{"cmd": "find", "args": ["seen-check at pop time"], "bytes": 2011}
+{"cmd": "find", "args": ["most recent recorded gen ROI"], "bytes": 2635}
+{"cmd": "find", "args": ["re-exports must equal the canonical"], "bytes": 2807}
+{"cmd": "find", "args": ["binary's own pid"], "bytes": 2411}
+{"cmd": "find", "args": ["Tiny CLI so bash scripts"], "bytes": 2263}
+{"cmd": "find", "args": ["load + structurally validate the agenda"], "bytes": 2140}
+{"cmd": "find", "args": ["Index raw finding files"], "bytes": 2462}
+{"cmd": "find", "args": ["current UTC timestamp in compact"], "bytes": 2366}
+{"cmd": "find", "args": ["compatibility monitor subcommand"], "bytes": 1953}
+{"cmd": "find", "args": ["manifest-backed skill hosts"], "bytes": 2378}
+{"cmd": "find", "args": ["SIGKILL", "--in praxist"], "bytes": 1638}
+{"cmd": "find", "args": ["flush", "--in praxist"], "bytes": 1194}
+{"cmd": "find", "args": ["run_dir", "resolved", "--in praxist"], "bytes": 779}
+{"cmd": "find", "args": ["nuller"], "bytes": 215}
+{"cmd": "find", "args": ["pop time"], "bytes": 2108}
+{"cmd": "find", "args": ["ROI", "deltas"], "bytes": 951}
+{"cmd": "find", "args": ["agenda", "gen_id", "--in praxist"], "bytes": 1071}
+{"cmd": "find", "args": ["canonical ingest ids"], "bytes": 2624}
+{"cmd": "find", "args": ["preceding", "--in praxist"], "bytes": 356}
+{"cmd": "find", "args": ["compact ISO-8601"], "bytes": 2231}
+{"cmd": "find", "args": ["slots", "release", "--in praxist"], "bytes": 1111}
+{"cmd": "find", "args": ["request-wide"], "bytes": 2195}
+{"cmd": "find", "args": ["skill hosts"], "bytes": 1598}
+{"cmd": "find", "args": ["container"], "bytes": 2390}
+{"cmd": "find", "args": ["closing", "--in praxist"], "bytes": 1833}
+{"cmd": "find", "args": ["candidate containers"], "bytes": 2724}
+{"cmd": "find", "args": ["SDK phase"], "bytes": 2075}
+{"cmd": "find", "args": ["duplicate pushes"], "bytes": 2210}
+{"cmd": "find", "args": ["re-exports"], "bytes": 1809}
+{"cmd": "find", "args": ["parent shell"], "bytes": 2140}
+{"cmd": "find", "args": ["authored"], "bytes": 2640}
+{"cmd": "find", "args": ["UTC timestamp"], "bytes": 588}
+{"cmd": "find", "args": ["monitor", "--in praxist/cli"], "bytes": 1395}
+{"cmd": "find", "args": ["skill hosts"], "bytes": 1598}
+{"cmd": "find", "args": ["prompts_dir override"], "bytes": 2269}
+{"cmd": "find", "args": ["graph visualization"], "bytes": 1820}
+{"cmd": "find", "args": ["non-frontier"], "bytes": 2280}
+{"cmd": "find", "args": ["maturity telemetry"], "bytes": 2024}
+{"cmd": "find", "args": ["negative evidence"], "bytes": 2210}
+{"cmd": "find", "args": ["role metadata"], "bytes": 1920}
+{"cmd": "find", "args": ["DIG intent"], "bytes": 2525}
+{"cmd": "find", "args": ["vocabulary is rejected"], "bytes": 2000}
+{"cmd": "find", "args": ["mature-enough"], "bytes": 2363}
+{"cmd": "find", "args": ["praxist-uninstall"], "bytes": 211}
+{"cmd": "find", "args": ["env --chdir"], "bytes": 548}
+{"cmd": "find", "args": ["httpx fallback"], "bytes": 1801}
+{"cmd": "find", "args": ["ratio", "--in praxist/cli"], "bytes": 305}
+{"cmd": "find", "args": ["approval value"], "bytes": 2288}
+{"cmd": "find", "args": ["flush", "trigger"], "bytes": 1275}
+{"cmd": "find", "args": ["SDK", "controls"], "bytes": 1115}
+{"cmd": "find", "args": ["pushes"], "bytes": 559}
+{"cmd": "find", "args": ["re-export"], "bytes": 1906}
+{"cmd": "find", "args": ["canonical", "peer", "shell"], "bytes": 1819}
+{"cmd": "find", "args": ["compact", "UTC"], "bytes": 1389}
+{"cmd": "find", "args": ["uninstall", "--in praxist"], "bytes": 1415}
+{"cmd": "find", "args": ["chdir"], "bytes": 2035}
+{"cmd": "find", "args": ["uninstall"], "bytes": 1415}
+{"cmd": "find", "args": ["httpx"], "bytes": 1944}
+{"cmd": "find", "args": ["agenda", "structurally"], "bytes": 1239}
+{"cmd": "find", "args": ["hosts", "manifest-backed"], "bytes": 1161}
+{"cmd": "find", "args": ["base.jinja2"], "bytes": 2595}
+{"cmd": "find", "args": ["frontier", "validation", "signals"], "bytes": 1770}
+{"cmd": "find", "args": ["maturity"], "bytes": 1844}
+{"cmd": "find", "args": ["evidence-card"], "bytes": 992}
+{"cmd": "find", "args": ["digest"], "bytes": 2446}
+{"cmd": "find", "args": ["cohort-level"], "bytes": 2002}
+{"cmd": "find", "args": ["vocabulary"], "bytes": 2289}
+{"cmd": "find", "args": ["peers"], "bytes": 1583}
+{"cmd": "find", "args": ["stays"], "bytes": 2418}
+{"cmd": "find", "args": ["duplicate"], "bytes": 2156}
+{"cmd": "find", "args": ["equal", "canonical", "praxist.config"], "bytes": 1988}
+{"cmd": "find", "args": ["binary"], "bytes": 2106}
+{"cmd": "find", "args": ["self-contained"], "bytes": 2029}
+{"cmd": "find", "args": ["telemetry"], "bytes": 2309}
+{"cmd": "find", "args": ["negative"], "bytes": 1976}
+{"cmd": "find", "args": ["negative", "ledger"], "bytes": 1004}
+{"cmd": "find", "args": ["intent", "slots"], "bytes": 1290}
+{"cmd": "find", "args": ["mature", "peers"], "bytes": 714}
+{"cmd": "find", "args": ["console", "entrypoint"], "bytes": 1019}
+{"cmd": "find", "args": ["async", "POST"], "bytes": 993}
+{"cmd": "find", "args": ["candidate", "containers"], "bytes": 1481}
+{"cmd": "find", "args": ["prompts_dir"], "bytes": 2277}
+{"cmd": "find", "args": ["rendered"], "bytes": 1853}
+{"cmd": "find", "args": ["no warning", "--in tests"], "bytes": 2325}
+{"cmd": "find", "args": ["pop", "seen-check"], "bytes": 1020}
+{"cmd": "find", "args": ["praxist.config", "--in tests"], "bytes": 906}
+{"cmd": "find", "args": ["parent", "shell", "binary", "--in tests"], "bytes": 1676}
+{"cmd": "find", "args": ["bundled", "--in tests"], "bytes": 2291}
+{"cmd": "find", "args": ["ratio", "evidence", "cards"], "bytes": 1620}
+{"cmd": "find", "args": ["evidence-cards"], "bytes": 187}
+{"cmd": "find", "args": ["digest", "pack"], "bytes": 1079}
+{"cmd": "find", "args": ["vocabulary", "--in tests"], "bytes": 1433}
+{"cmd": "find", "args": ["result evidence"], "bytes": 843}
+{"cmd": "find", "args": ["static", "chdir"], "bytes": 1075}
+{"cmd": "find", "args": ["requests", "fallback", "async"], "bytes": 1744}
+{"cmd": "find", "args": ["post_json"], "bytes": 1931}
+{"cmd": "find", "args": ["evidence_cards"], "bytes": 187}
+{"cmd": "find", "args": ["operand"], "bytes": 2155}
+{"cmd": "find", "args": ["approval", "--in tests/unit/test_runtime_sandbox_intent.py"], "bytes": 455}
+{"cmd": "find", "args": ["praxist.config", "--in tests"], "bytes": 906}
+{"cmd": "find", "args": ["entry stays"], "bytes": 2520}
+{"cmd": "find", "args": ["duplicate pushes"], "bytes": 2210}
+{"cmd": "find", "args": ["negative_evidence"], "bytes": 2210}
+{"cmd": "find", "args": ["negative-evidence"], "bytes": 2210}
+{"cmd": "find", "args": ["mature-enough"], "bytes": 2363}
+{"cmd": "find", "args": ["collection", "ratio"], "bytes": 1234}
+{"cmd": "find", "args": ["ledger", "digest", "visible"], "bytes": 1951}
+{"cmd": "find", "args": ["stays", "--in tests"], "bytes": 2202}
+{"cmd": "find", "args": ["bundled", "base", "--in tests/unit"], "bytes": 1200}
+{"cmd": "get", "args": [7390], "bytes": 1762}
+{"cmd": "get", "args": [7456], "bytes": 2858}
+{"cmd": "get", "args": [9099], "bytes": 2922}
+{"cmd": "find", "args": ["praxist.config", "--in tests"], "bytes": 906}
+{"cmd": "find", "args": ["approval", "outside"], "bytes": 1249}
+{"cmd": "find", "args": ["pushes"], "bytes": 559}
+{"cmd": "find", "args": ["re-exports", "--in tests"], "bytes": 1129}
+{"cmd": "find", "args": ["reexport"], "bytes": 30}
+{"cmd": "find", "args": ["re-export", "--in tests"], "bytes": 2136}
+{"cmd": "find", "args": ["base.jinja2", "--in tests"], "bytes": 2023}
+{"cmd": "find", "args": ["jinja2", "--in tests/unit"], "bytes": 42}
+{"cmd": "find", "args": ["mature", "--in praxist/plugins/workflow_stages/research_loop"], "bytes": 2585}
+{"cmd": "find", "args": ["pushes"], "bytes": 559}
+{"cmd": "get", "args": [9099, 9100], "bytes": 3533}
+{"cmd": "find", "args": ["defends"], "bytes": 1138}
+{"cmd": "find", "args": ["equal", "re-exports", "config"], "bytes": 1725}
+{"cmd": "find", "args": ["re-exports", "--in tests/unit"], "bytes": 518}
+{"cmd": "find", "args": ["override", "bundled", "--in tests/unit/test_panel_topology_prompts_override.py"], "bytes": 1278}
+{"cmd": "find", "args": ["distinct", "peers"], "bytes": 1169}
+{"cmd": "find", "args": ["sufficient"], "bytes": 683}
+{"cmd": "find", "args": ["re-exports", "--in tests/conformance"], "bytes": 389}
+{"cmd": "find", "args": ["re-exports"], "bytes": 1809}
+{"cmd": "find", "args": ["evidence", "mature", "peers", "distinct", "--in praxist/plugins/workflow_stages/research_loop/backend/research_memory"], "bytes": 2012}
+{"cmd": "get", "args": [9024], "bytes": 2873}
+{"cmd": "find", "args": ["mature-enough"], "bytes": 2363}
+{"cmd": "find", "args": ["enough", "--in praxist"], "bytes": 2041}
+{"cmd": "find", "args": ["result-evidence"], "bytes": 843}
+{"cmd": "find", "args": ["peers", "evidence", "mature", "distinct"], "bytes": 2671}
+{"cmd": "find", "args": ["peer_ids"], "bytes": 1917}
+{"cmd": "find", "args": ["distinct", "--in praxist/plugins/workflow_stages/research_loop/backend/synthesis_trigger.py"], "bytes": 339}
+{"cmd": "find", "args": ["distinct", "--in praxist/plugins/workflow_stages/research_loop"], "bytes": 2567}
+{"cmd": "find", "args": ["peers", "--in praxist/plugins/workflow_stages/research_loop/backend/synthesis_trigger.py"], "bytes": 2276}
+{"cmd": "find", "args": ["peers", "--in praxist/plugins/workflow_stages/research_loop/backend/evidence_maturity.py"], "bytes": 105}
+{"cmd": "find", "args": ["peers", "--in praxist/plugins/workflow_stages/research_loop/backend/findings_collection.py"], "bytes": 170}
+{"cmd": "find", "args": ["mature-enough", "--in praxist"], "bytes": 2363}
+{"cmd": "find", "args": ["quorum", "--in praxist"], "bytes": 2012}
+{"cmd": "find", "args": ["peers", "--in praxist"], "bytes": 1583}
+{"cmd": "find", "args": ["mature-enough", "--in tests"], "bytes": 1872}
+{"cmd": "find", "args": ["mature-enough", "--in examples"], "bytes": 396}
+{"cmd": "find", "args": ["peers", "mature", "evidence", "result", "distinct", "--in praxist/plugins/workflow_stages/research_loop/backend/cohort_runner.py"], "bytes": 2256}
+{"cmd": "find", "args": ["mature", "--in praxist"], "bytes": 1544}
+{"cmd": "find", "args": ["mature", "--in praxist/plugins/workflow_stages/research_loop/backend/experiment_scheduler.py"], "bytes": 2300}
+{"cmd": "find", "args": ["mature", "--in praxist/plugins/workflow_stages/research_loop/backend/synthesis_trigger.py"], "bytes": 2293}
+{"cmd": "find", "args": ["mature", "--in praxist/plugins/workflow_stages/research_loop/backend/generation_boundary.py"], "bytes": 1149}
+{"cmd": "find", "args": ["mature", "--in praxist/plugins/workflow_stages/research_loop/backend/findings_collection.py"], "bytes": 280}
+{"cmd": "get", "args": [4766, 4767, 4768], "bytes": 8447}
+{"cmd": "find", "args": ["DEFAULT_PEERS", "--in praxist/core"], "bytes": 1720}
+{"cmd": "find", "args": ["TOP_K", "DEFAULT", "--in praxist/core/run_config.py"], "bytes": 701}
+{"cmd": "find", "args": ["billing", "--in praxist"], "bytes": 1084}
+{"cmd": "find", "args": ["MAX_JOBS_PER_GPU"], "bytes": 1866}
+{"cmd": "find", "args": ["STALE", "baseline", "--in praxist"], "bytes": 1145}
+{"cmd": "find", "args": ["CHUNK", "--in praxist/plugins/tools"], "bytes": 907}
+{"cmd": "find", "args": ["FULL_AUTO", "max", "--in praxist/core/run_config.py"], "bytes": 503}
+{"cmd": "get", "args": [1271], "bytes": 425}
+{"cmd": "get", "args": [1683, 1684, 1685], "bytes": 1418}
+{"cmd": "find", "args": ["DEFAULT_CHUNK_CHARS", "--in praxist/plugins/tools/result_envelope.py"], "bytes": 364}
+{"cmd": "find", "args": ["days", "--in praxist/plugins/workflow_stages/research_loop/backend/baseline_cache.py"], "bytes": 562}
+{"cmd": "find", "args": ["per_gpu", "--in praxist"], "bytes": 1703}
+{"cmd": "find", "args": ["oom", "warn", "--in praxist/plugins/workflow_stages/research_loop/backend/gpu_governor.py"], "bytes": 531}
+{"cmd": "find", "args": ["memory_limit", "--in praxist"], "bytes": 1521}
+{"cmd": "get", "args": [4172], "bytes": 781}
+{"cmd": "find", "args": ["MEMORY", "WARN", "--in praxist/plugins/workflow_stages/research_loop"], "bytes": 1118}
+{"cmd": "find", "args": ["kill_fraction", "warn_fraction"], "bytes": 1113}
+{"cmd": "find", "args": ["WARN_FRACTION"], "bytes": 2389}
+{"cmd": "find", "args": ["DEFAULT_MAX_PER_GPU", "--in praxist"], "bytes": 398}
+{"cmd": "find", "args": ["rss", "ratio", "--in praxist/plugins/workflow_stages/research_loop/backend"], "bytes": 733}
+{"cmd": "find", "args": ["mem_warn"], "bytes": 2314}
+{"cmd": "find", "args": ["memory", "warning", "terminate", "--in praxist/plugins/workflow_stages/research_loop/backend/experiment_scheduler.py"], "bytes": 1934}
+{"cmd": "find", "args": ["0.8", "0.95", "--in praxist"], "bytes": 74}
+{"cmd": "find", "args": ["warn", "kill", "memory", "--in praxist/core"], "bytes": 1096}
+{"cmd": "find", "args": ["MEMORY_WARN"], "bytes": 2317}
+{"cmd": "find", "args": ["WARN_PCT", "KILL_PCT"], "bytes": 1505}
+{"cmd": "find", "args": ["hard_kill", "soft_warn"], "bytes": 1358}
+{"cmd": "find", "args": ["DEFAULT", "--in praxist/core/run_config.py"], "bytes": 1457}
+{"cmd": "find", "args": ["RSS", "--in praxist"], "bytes": 36}
+{"cmd": "find", "args": ["cgroup", "--in praxist"], "bytes": 439}
+{"cmd": "find", "args": ["memory_limit_mb", "--in praxist/plugins"], "bytes": 2254}
+{"cmd": "find", "args": ["ram", "limit", "--in praxist/plugins/workflow_stages/research_loop/backend/experiment_scheduler.py"], "bytes": 724}
+{"cmd": "find", "args": ["MEM_WARN_FRACTION", "memory_warning_fraction"], "bytes": 1239}
+{"cmd": "find", "args": ["CGROUP", "--in praxist/plugins/workflow_stages/research_loop/backend/orchestrator_status.py"], "bytes": 439}
+{"cmd": "find", "args": ["user_agreement", "--in praxist"], "bytes": 1612}
+{"cmd": "find", "args": ["terms", "--in praxist/user_agreement.py"], "bytes": 265}
+{"cmd": "find", "args": ["load", "task", "spec", "--in praxist/task_spec.py"], "bytes": 1121}
+{"cmd": "find", "args": ["usage", "--in praxist/product_usage"], "bytes": 1388}
+{"cmd": "find", "args": ["families", "plugins", "--in praxist/plugins"], "bytes": 1289}
+{"cmd": "files", "args": ["praxist", 1], "bytes": 1464}
+{"cmd": "files", "args": ["praxist/plugins", 1], "bytes": 1135}
+{"cmd": "get", "args": [4212], "bytes": 247}
+{"cmd": "find", "args": ["SHUTDOWN", "HARD", "CRITICAL", "--in praxist/plugins/workflow_stages/research_loop/backend/orchestrator_status.py"], "bytes": 662}
+{"cmd": "get", "args": [2387], "bytes": 2562}
+{"cmd": "get", "args": [2387], "bytes": 2562}

@@ -1,0 +1,48 @@
+1. Praxist is a platform (control plane) for autonomous research: it runs teams of AI research agents in generations on a task, with plugins, budgets, storage and deployment, and packages the results — praxist/__init__.py:1
+2. praxist/infrastructure/ (S3 storage, RunPod deployment, Docker execution) — praxist/infrastructure (pieces 1828-1879)
+3. praxist/product_usage/ (built-in product-usage protocol and client) — praxist/product_usage (pieces 5639-5814)
+4. agent_runtimes (praxist/plugins/agent_runtimes/) — praxist/plugins/agent_runtimes/__init__.py
+5. tools (praxist/plugins/tools/, the tool server plugin family) — praxist/plugins/tools/__init__.py
+6. workflow_stages (praxist/plugins/workflow_stages/, about 2,750 KB of 3,658 KB of plugins) — praxist/plugins/workflow_stages
+7. About 53% (tests/ is 6,292 KB of 11,905 KB) — tests/
+8. The Rocket Booster Recovery controller task (examples/rocket_booster_recovery) — examples/rocket_booster_recovery/src/__init__.py:1
+9. praxist/task_spec.py (Task specification loader) — praxist/task_spec.py:1
+10. praxist/user_agreement.py — praxist/user_agreement.py:1
+11. praxist/plugins/ — praxist/plugins/__init__.py:1
+12. 5 peers (agents) per generation and top 2 promoted per generation — praxist/core/run_config.py:148 and praxist/core/run_config.py:154
+13. 5 days (5 * 24 * 3600 seconds) — praxist/core/run_config.py:83
+14. 1200 seconds (20 minutes) — praxist/plugins/workflow_stages/research_loop/backend/agent.py:233
+15. 4 — praxist/plugins/workflow_stages/research_loop/backend/gpu_governor.py:57
+16. Warning at 0.80 (80%), shutdown at 0.92 (92%) — praxist/plugins/workflow_stages/research_loop/backend/orchestrator_status.py:38
+17. 30 days — praxist/plugins/workflow_stages/research_loop/backend/baseline_cache.py:86
+18. 4000 characters — praxist/plugins/tools/result_envelope.py:22
+19. STANDARD_TILT_KNEE_RAD = 0.10 (followed by STANDARD_SPEED_GATE_MPS = 4.0) — examples/rocket_booster_recovery/vendor/frozen_c05_plant/terminal_reward.py:47
+20. write_metadata — templates/tasks/sam_optimizer/assets/dataset_metadata/resolve_dataset.py:72
+21. _gc_stale_entry — praxist/cli/stop.py:1051
+22. resolve_resume_target — praxist/cli/resume.py:394
+23. finding_filename — praxist/plugins/workflow_stages/research_loop/backend/tools/findings_sync.py:91
+24. result_artifact_key — praxist/plugins/workflow_stages/research_loop/backend/evidence_maturity.py:165
+25. agenda_metadata_sources_for_target — praxist/plugins/workflow_stages/research_loop/backend/multi_pi/agenda_metadata.py:144
+26. policy_for_ref — praxist/core/budget.py:30
+27. main — praxist/deliver.py:519
+28. dumps_manifest — praxist/core/registry.py:867
+29. provider_for_ref — praxist/core/modeling.py:162
+30. test_no_findings_records_warning — tests/unit/test_system_tools.py:198
+31. _gem_sidecar_source_generation_id — praxist/plugins/workflow_stages/research_loop/backend/gems.py:1311
+32. result_effective_config_metadata — praxist/plugins/workflow_stages/research_loop/backend/effective_config.py:65
+33. _unlink_run_state_if_unowned — praxist/infrastructure/product_usage.py:604
+34. test_recent_findings_empty_findings_dir_falls_back_to_shared — tests/unit/test_system_tools.py:394
+35. scheduler_active_process_groups — praxist/plugins/workflow_stages/research_loop/backend/experiment_scheduler_client.py:1038
+36. _relay_binary — praxist/plugins/agent_runtimes/codex_sdk/_relay.py:181
+37. fin_lift_effective — examples/rocket_booster_recovery/vendor/frozen_c05_plant/ppo_rocket_6dof_finned_jax.py:1020
+38. create_provider — praxist/plugins/model_providers/openrouter/adapter.py:9
+39. _prune_dead — praxist/plugins/workflow_stages/research_loop/backend/gpu_governor.py:219
+40. system_active_runs — praxist/plugins/tools/system/adapter.py:69
+41. copy_skill_tree — praxist/cli/_setup_common.py:350
+42. canonical_labels_for_candidate — praxist/plugins/workflow_stages/research_loop/backend/dig/labels.py:155
+43. _main — praxist/plugins/tools/evaluation_tools/__main__.py:26
+44. gpu_hours_since — praxist/core/execution_guards.py:357
+45. _action_description — scripts/build_docs_site.py:70
+46. normalize_maturity_policy — praxist/plugins/workflow_stages/research_loop/backend/evidence_maturity.py:349
+47. cmd_uninstall_skills — praxist/cli/install_skills.py:146
+48. _build_four_pi_spec — tests/unit/test_task_panel_topology_threading.py:42

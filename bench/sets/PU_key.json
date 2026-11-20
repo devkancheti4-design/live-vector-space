@@ -1,0 +1,64 @@
+[
+ {
+  "kind": "fixed",
+  "all": [
+   "research",
+   "autonomous|agent"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "infrastructure"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "product[_ ]usage"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "agent[_ ]runtimes"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\btools\\b"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "workflow[_ ]stages"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "pct": [
+   45,
+   60
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "rocket[_ ]booster"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "task_spec"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "user_agreement"
+  ]
+ }
+]

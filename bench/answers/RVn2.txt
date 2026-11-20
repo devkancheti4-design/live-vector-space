@@ -1,0 +1,10 @@
+1. A platform for continually training and improving AI agents from recorded runs: it collects agent traces, turns them into training data, trains candidate models, evaluates them, and deploys the winners.
+2. ingest, then curate (unsure)
+3. runner
+4. serving
+5. storage
+6. trainers
+7. About 40%
+8. eval
+9. core
+10. unsure

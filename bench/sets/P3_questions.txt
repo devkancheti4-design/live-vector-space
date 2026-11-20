@@ -1,0 +1,50 @@
+48 questions about one codebase. Answer every one.
+
+1. In one sentence, what is this codebase for?
+2. Which folder deals with cloud file storage, deploying to rented GPU machines, and running containers?
+3. Which folder reports how the product is being used?
+4. Which family of add-ons runs the AI agents themselves?
+5. Which family of add-ons provides the tools that agents call?
+6. Which family of add-ons is by far the biggest, by size?
+7. About what share of the whole repository, by size, is tests?
+8. What example task ships with the repository?
+9. Which file loads task specifications?
+10. Which file holds the legal terms that a user must accept?
+11. Which folder holds the swappable add-on families, such as the ones for model providers and budget rules?
+12. By default, how many research agents work side by side in one generation, and how many of the best results move on each generation?
+13. In fully automatic mode, what is the default longest time a run may last?
+14. When the research agent's model calls fail because of a billing problem, how long does it wait before trying again?
+15. By default, at most how many jobs may share one GPU?
+16. At what share of its memory limit does a run get a warning, and at what share is it shut down?
+17. After how many days is a cached baseline result considered stale?
+18. When a tool's reply is too long and gets split into pieces, how many characters is each piece by default?
+19. A constant is documented in the code as: "Seconds between SIGTERM and SIGKILL." What is its value?
+20. Which function has this docstring: "Return a bounded wait for a closing trigger to flush current work."? Give its name and file.
+21. Which function has this docstring: "Choose the default run_dir for a resolved task project."? Give its name and file.
+22. Which function has this docstring: "Live PID + matching command prefix → entry stays, no warning."? Give its name and file.
+23. Which function has this docstring: "Return the first non-empty field from canonical candidate containers."? Give its name and file.
+24. Which function has this docstring: "Await one SDK phase while enforcing the request-wide controls."? Give its name and file.
+25. Which function has this docstring: "The seen-check at pop time defends against duplicate pushes."? Give its name and file.
+26. Which function has this docstring: "Return the most recent recorded gen ROI summary, plus deltas."? Give its name and file.
+27. Which function has this docstring: "``praxist.config.X`` re-exports must equal the canonical"? Give its name and file.
+28. Which function has this docstring: "The praxist binary's own pid (and its parent shell) must not appear."? Give its name and file.
+29. Which function has this docstring: "Tiny CLI so bash scripts can acquire/release/list slots."? Give its name and file.
+30. Which function has this docstring: "Helper: load + structurally validate the agenda intended for `gen_id`."? Give its name and file.
+31. Which function has this docstring: "Index raw finding files by both authored and canonical ingest ids."? Give its name and file.
+32. Which function has this docstring: "Return the current UTC timestamp in compact ISO-8601 form."? Give its name and file.
+33. Which function has this docstring: "Register the compatibility ``praxist monitor`` subcommand."? Give its name and file.
+34. Which function has this docstring: "Select explicit or manifest-backed skill hosts without another state file."? Give its name and file.
+35. Which function has this docstring: "No prompts_dir override → bundled ``base.jinja2`` is rendered."? Give its name and file.
+36. Which function has this docstring: "Steady-state LQR terminal nuller (C01 ablation: replace TV-LQR gains"? Give its name and file.
+37. Which function has this docstring: "Write a self-contained HTML graph visualization to ``out_path``."? Give its name and file.
+38. Which function has this docstring: "Get durable frontier entries plus separate non-frontier validation signals."? Give its name and file.
+39. Which function has this docstring: "Compute generic maturity telemetry for one finding/result candidate."? Give its name and file.
+40. Which function has this docstring: "Return the ratio of negative evidence in an evidence-card collection."? Give its name and file.
+41. Which function has this docstring: "Return compact, JSON/YAML-safe artifact role metadata."? Give its name and file.
+42. Which function has this docstring: "Return negative evidence ledger digest entries visible in a pack."? Give its name and file.
+43. Which function has this docstring: "Assign cohort-level DIG intent slots before peers plan independently."? Give its name and file.
+44. Which function has this docstring: "An approval value outside the vocabulary is rejected."? Give its name and file.
+45. Which function has this docstring: "Return distinct peers with mature-enough result evidence."? Give its name and file.
+46. Which function has this docstring: "Run the standalone ``praxist-uninstall`` console entrypoint."? Give its name and file.
+47. Which function has this docstring: "Return the last static ``env --chdir`` operand before the program."? Give its name and file.
+48. Which function has this docstring: "Make an async HTTP POST request with httpx fallback to requests."? Give its name and file.

@@ -1,0 +1,48 @@
+1. Reef is a service that turns recorded agent runs into training data and trains/evolves model weights or agent harnesses from them, then serves, evaluates and activates the new versions — reef/__init__.py:1
+2. record2sample, then sample2job — reef/record2sample/__init__.py:1
+3. reef/harness — reef/harness/__init__.py:1
+4. reef/inference — reef/inference/__init__.py:1
+5. reef/storage — reef/storage/__init__.py:1
+6. recipes/ (top-level; one package per method, e.g. ace, gepa, opd, sdft) — recipes/__init__.py:1
+7. About 47% (tests ~7.9 MB of ~16.9 MB on disk) — tests/__init__.py:1
+8. reef/evaluation — reef/evaluation/__init__.py:1
+9. reef/core — reef/core/__init__.py:1
+10. The scenario (Scenario) — reef/scenario/__init__.py:1
+11. reef/dispatcher — reef/dispatcher/__init__.py:1
+12. reef/artifact — reef/artifact/__init__.py:1
+13. reef/service — reef/service/__init__.py:1
+14. First retry after 60 s (FIRST_RETRY_DELAY_SECONDS); longest wait 3600 s (1 hour) — reef/dispatcher/served.py:27
+15. 3600 s (1 hour) — reef/dispatcher/work_retention.py:18
+16. 256 — reef/storage/record_items.py:49
+17. 3 attempts (DEFAULT_GENERATION_ATTEMPTS), 1800 s total (DEFAULT_GENERATION_DEADLINE_SECONDS) — reef/recipe/generated_tasks/processor.py:79
+18. 2 MiB (2*1024*1024 bytes) — reef/harness/gateway.py:44
+19. 23 — reef/storage/postgres.py:45
+20. 7 days (7*24*3600 s) — reef/storage/data.py:523
+21. UNBOUND_WARN_INTERVAL_S = 300.0 seconds, UNBOUND_WARN_FLOOR = 8 — recipes/openclawrl/judging.py:44
+22. FINISH_SECONDS = 420 — recipes/beta/autoenvscaling/author.py:59
+23. DEFAULT_SEED = 42, DEFAULT_DAYS = 500, DEFAULT_TOOL_USER = "agent" — recipes/sao/examples/ceobench/harness/harbor_agent.py:118
+24. CANDIDATE_REASON_LIMIT = 300 — reef/service/lifecycle.py:60
+25. TRAIN_DRAIN_TIMEOUT_S = 7200.0 — recipes/sao/examples/ceobench/run.py:44
+26. BATCH_SIZE = 1 — tests/reef_recipe/test_generated_tasks.py:122
+27. REALIGN_THRESHOLD = 32768 — reef/train/task_rollouts.py:39
+28. INSTALL_TIMEOUT_S = 900.0 — reef/harness/tasks/vendor_install.py:42
+29. MAX_STEPS = 12 and MAX_RESULT_CHARS = 20_000 — reef/harness/runners/native/__init__.py:49
+30. MAX_JOBS_IN_FLIGHT = 256 — reef/record2sample/generator/service.py:123
+31. MAX_CALL_LABEL_CHARACTERS = 200 — reef/core/evaluation.py:804
+32. RESPONSE_ENVELOPE_BYTES = 1024*1024 (1 MiB) — reef/service/routing_preview.py:55
+33. MAX_BACKGROUND_POLL_SECONDS = 300.0 — reef/record2sample/service/worker.py:55
+34. MAX_CLIENT_COMMANDS = 64 — reef/core/training_request.py:30
+35. default_start (method of the slime backend facts class) — reef/train/slime_backend/facts.py:181
+36. artifact_chain — reef/core/requirements.py:102
+37. write_manifests — tutorials/semantic-router/qwen2.5/check.py:27
+38. reopen — reef/storage/evaluations.py:158
+39. test_install_renders_the_source_tree_for_pi_with_a_binding_at_this_reef — tests/recipes/reefine/test_reefine_tutorial.py:250
+40. receipt_sse_events — reef/service/streaming.py:146
+41. scenario_committed (Dispatcher method) — reef/dispatcher/dispatcher.py:498
+42. health (remote inference server handler) — reef/inference/remote/server.py:325
+43. json_object — reef/train/harness_backend/workspace.py:124
+44. queue_requests (TrainingPipeline method) — reef/train/pipeline.py:338
+45. stats (sessions index method) — recipes/openclawrl/sessions.py:142
+46. scenario_committed (ScenarioRegistry method) — reef/scenario/registry.py:69
+47. job_running (Trainer method) — reef/train/trainer.py:376
+48. clip_ratio — tests/support/reference_algorithms/sao.py:49

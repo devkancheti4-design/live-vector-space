@@ -1,0 +1,10 @@
+1. A platform ("reef") for training and evolving AI agents/models: it records agent runs, turns them into training samples and jobs, trains and serves models, evaluates candidates, and ships training-method recipes.
+2. record2sample/ then sample2job/
+3. harness/
+4. inference/
+5. storage/ is not shown in the view; unsure (possibly the dispatcher/ or record2sample/, but the view does not say)
+6. recipes/
+7. unsure, roughly half (tests/ has 496 files vs reef/ 493 files, but sizes are not given)
+8. evaluation/
+9. core/
+10. unsure (likely a "scenario" - the scenario/ folder has snapshots, committer and history - but the view does not state it)

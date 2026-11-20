@@ -1,0 +1,326 @@
+[
+ {
+  "kind": "fixed",
+  "all": [
+   "research",
+   "autonomous|agent"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "infrastructure"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "product[_ ]usage"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "agent[_ ]runtimes"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\btools\\b"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "workflow[_ ]stages"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "pct": [
+   45,
+   60
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "rocket[_ ]booster"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "task_spec"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "user_agreement"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\bplugins\\b"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\b5\\b|five",
+   "\\b2\\b|two"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "5 ?days|five days|432000|432,000|5 ?\\* ?24 ?\\* ?3600|120 hours"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "20 ?min|twenty min|1200|1,200"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\b4\\b|four"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\b80\\b|0\\.8\\b|0\\.80",
+   "\\b92\\b|0\\.92"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\b30\\b|thirty"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "4000|4,000|4 000"
+  ]
+ },
+ {
+  "kind": "const",
+  "file": "examples/rocket_booster_recovery/vendor/frozen_c05_plant/terminal_reward.py",
+  "line": 41,
+  "name": "JIANG_TILT_GATE_RAD",
+  "value": 0.05,
+  "expr": "0.05",
+  "desc": "Strict-Jiang evaluator gate constants (source of truth: evaluations/swordfish_eval/run.py)."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/agent_runtimes/claude_sdk/adapter.py",
+  "line": 201,
+  "name": "_looks_like_evaluator_path",
+  "doc": "Recognize a task's public evaluator or a conventional evaluator script."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/workflow_stages/research_loop/backend/agent.py",
+  "line": 935,
+  "name": "create_agent_request_id",
+  "doc": "Return a fresh filesystem-safe identity for one agent invocation."
+ },
+ {
+  "kind": "func",
+  "file": "tests/unit/test_runtime_sandbox_intent.py",
+  "line": 46,
+  "name": "test_invalid_network_value_raises",
+  "doc": "A network value outside the vocabulary is rejected."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/workflow_stages/research_loop/backend/tools/schedule.py",
+  "line": 70,
+  "name": "linear_schedule",
+  "doc": "Linear interpolation from `start` at progress=0 to `end` at progress=1."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/cli/stop.py",
+  "line": 878,
+  "name": "_drain_late_run_processes",
+  "doc": "Bound late-fork races until verified run-owned work is stably absent."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/workflow_stages/research_loop/backend/gems.py",
+  "line": 3566,
+  "name": "recover_pending_reset",
+  "doc": "Roll forward a previously-started Gems reset transaction."
+ },
+ {
+  "kind": "func",
+  "file": "tests/unit/test_run_config.py",
+  "line": 247,
+  "name": "test_dead_constants_removed_from_config_module",
+  "doc": "``TASK_SPEC_PATH`` and ``SERVER_URL`` had zero readers; #75"
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/workflow_stages/research_loop/backend/resume_state.py",
+  "line": 846,
+  "name": "lock_pid",
+  "doc": "Parse the PID from an ``orchestrator.lock`` payload."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/cli/resolve.py",
+  "line": 31,
+  "name": "register",
+  "doc": "Register the ``praxist resolve`` subcommand on the parent parser."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/agent_runtimes/codex_sdk/_auth.py",
+  "line": 120,
+  "name": "operator_codex_home",
+  "doc": "Return the operator-owned Codex home containing saved authentication."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/workflow_stages/research_loop/backend/research_memory/evidence_pack_builder.py",
+  "line": 2132,
+  "name": "build_role_private_pack",
+  "doc": "Build the evidence pack visible to one PI role under the retrieval policy."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/workflow_stages/research_loop/backend/frontier.py",
+  "line": 1143,
+  "name": "_lane_capacity_identity",
+  "doc": "Return the identity that consumes one durable lane slot."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/workflow_stages/research_loop/backend/tools/schedule.py",
+  "line": 134,
+  "name": "warmup_then_schedule",
+  "doc": "Linear warmup in [0, warmup_fraction], then cosine/linear to end."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/agent_runtimes/codex_sdk/_relay.py",
+  "line": 103,
+  "name": "provider_key_var",
+  "doc": "Return the credential environment variable for a provider."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/cli/registry.py",
+  "line": 99,
+  "name": "to_dict",
+  "doc": "Return a JSON-serializable view (tuples \u2192 lists)."
+ },
+ {
+  "kind": "func",
+  "file": "templates/tasks/sam_optimizer/assets/harness/benchmark/run_benchmark.py",
+  "line": 899,
+  "name": "_apply_scheduler_assignment",
+  "doc": "Preserve Praxist physical UUID/MIG assignment across child launches."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/workflow_stages/research_loop/backend/agent.py",
+  "line": 851,
+  "name": "_legacy_model_call_payload",
+  "doc": "Trajectory bookend payload describing the model the agent ran with."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/workflow_stages/research_loop/backend/multi_pi/legacy_two_round_executor.py",
+  "line": 151,
+  "name": "_role_coverage_retry_issues",
+  "doc": "Return the one validator failure class a Chair retry can safely repair."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/cli/stop.py",
+  "line": 342,
+  "name": "_stop_run_locked",
+  "doc": "Stop one run while its lifecycle lock is held."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/product_usage/consent.py",
+  "line": 53,
+  "name": "parse_agent_reply",
+  "doc": "Parse only the four explicitly approved Agent interaction keywords."
+ },
+ {
+  "kind": "func",
+  "file": "tests/unit/test_agent_loop_contracts.py",
+  "line": 1380,
+  "name": "test_legacy_credential_ref_returns_none_when_run_config_has_no_key",
+  "doc": "A ``RunConfig`` with an empty ``model_credential_key_id`` represents"
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/workflow_stages/research_loop/backend/sidecars.py",
+  "line": 124,
+  "name": "stop_sidecars",
+  "doc": "Flush and stop sidecars without masking the workflow exit condition."
+ },
+ {
+  "kind": "func",
+  "file": "tests/unit/test_system_tools.py",
+  "line": 475,
+  "name": "test_active_runs_default_workspace_uses_cwd_runs",
+  "doc": "Default workspace falls back to ``<cwd>/runs`` when no arg given."
+ },
+ {
+  "kind": "func",
+  "file": "tests/unit/test_run_config.py",
+  "line": 92,
+  "name": "test_legacy_agent_model_used_when_praxist_model_absent",
+  "doc": "``AGENT_MODEL`` is honored for backward compatibility."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/workflow_stages/research_loop/backend/evidence_maturity.py",
+  "line": 827,
+  "name": "_with_current_aggregate_sources",
+  "doc": "Expand canonical aggregate facts without traversing arbitrary metrics."
+ },
+ {
+  "kind": "func",
+  "file": "examples/rocket_booster_recovery/vendor/frozen_c05_plant/contact_law.py",
+  "line": 47,
+  "name": "smoothstep",
+  "doc": "C1-smooth Hermite step with zero slope at t=0 and t=1."
+ },
+ {
+  "kind": "func",
+  "file": "tests/unit/test_runtime_guard_and_memory_contracts.py",
+  "line": 401,
+  "name": "test_protected_pid_telemetry_tolerates_missing_manifest_and_permissions",
+  "doc": "Status collection remains available without a manifest or killpg permission."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/workflow_stages/research_loop/backend/run_report.py",
+  "line": 840,
+  "name": "_baseline_metric_values",
+  "doc": "Read compact baseline ledgers and return best known value per metric."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/workflow_stages/research_loop/backend/tools/findings_ingest.py",
+  "line": 913,
+  "name": "infer_finding_type",
+  "doc": "Infer finding_type when not explicit. Heuristic:"
+ }
+]

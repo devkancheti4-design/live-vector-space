@@ -1,0 +1,48 @@
+1. Reef: continual learning infrastructure for self-improving agents (serves a model, records agent runs, trains on them, and publishes improved versions) — reef/__init__.py:1
+2. record2sample (records to samples), then sample2job (samples to the next training job) — reef/pipeline_context.py:1
+3. reef/harness (a harness as a file tree, rendered for an agent, run, and its results collected) — reef/harness/__init__.py:1
+4. reef/inference — reef/inference/__init__.py:1
+5. reef/storage — reef/storage/__init__.py:1
+6. recipes/ (cookbook methods, one package each) — recipes/__init__.py:1
+7. About 48% (tests/ is 7,004 KB of 14,544 KB) — tests/
+8. reef/evaluation — reef/evaluation/__init__.py:1
+9. reef/core — reef/core/__init__.py:1
+10. Scenario — reef/scenario/__init__.py:1
+11. reef/dispatcher — reef/dispatcher/__init__.py:1
+12. reef/artifact — reef/artifact/__init__.py:1
+13. reef/service — reef/service/__init__.py:1
+14. First retry after 60 s (FIRST_RETRY_DELAY_SECONDS = 60.0), doubling each time, capped at 3600 s (1 hour, MAX_RETRY_DELAY_SECONDS) — reef/dispatcher/served.py:27
+15. 3600 s (1 hour) (SWEEP_INTERVAL_SECONDS = 3600.0) — reef/dispatcher/work_retention.py:18
+16. 256 (RECORD_PAGE_SIZE) — reef/storage/record_items.py:49
+17. 3 attempts (DEFAULT_GENERATION_ATTEMPTS) within 1800 s (30 min) in total (DEFAULT_GENERATION_DEADLINE_SECONDS) — reef/recipe/generated_tasks/processor.py:79
+18. 2 MiB = 2 * 1024 * 1024 bytes (MAX_RECORDED_BYTES) — reef/harness/gateway.py:44
+19. Version 23 (POSTGRES_SCHEMA_VERSION) — reef/storage/postgres.py:45
+20. 7 days (7 * 24 * 3600.0 s) — reef/storage/data.py:523
+21. 5 (REFRESH_SECONDS = 5) — reef/service/request_page.py:44
+22. 200 (GROUP_COMMIT_ITEMS) — reef/storage/sql_data.py:138
+23. NATIVE_MATCH_WINDOW = 4096 (input bound), together with NATIVE_PATTERN_TIMEOUT_S = 1.0 (wall-time bound, seconds) — reef/harness/runners/native/graph.py:46
+24. 2.0 seconds (REACTION_POLL_S) — recipes/openclawrl/examples/openclawrl/harness/agent.py:67
+25. MAX_TOKENS = 2048 and TIMEOUT_S = 120.0 — tutorials/evolve-your-harness/harness/plugins.py:32
+26. 12 (CYCLE = 12) — docs/assets/render_architecture.py:22
+27. 8 (PROMPT_TAIL_TOKEN_COUNT) — reef/core/reasoning.py:17
+28. 4000 (DESIGN_CHARS) — recipes/beta/reefine/answer.py:53
+29. 1024 * 1024 = 1,048,576 bytes (CHUNK_BYTES) — reef/service/routes/data.py:58
+30. 6 (RESPONSE_EXPANSION) — reef/service/routing_preview.py:52
+31. 3600.0 seconds (SAMPLER_WARM_TIMEOUT_S) — reef/train/tinker_backend/component.py:55
+32. 4096 (MAX_COMPLETION_TOKENS) — reef/harness/runners/native/__init__.py:56
+33. 8080 (ROUTER_HTTP_PORT) — reef/service/deploy/routing/renderer.py:45
+34. 1.0 second (PROGRESS_INTERVAL_SECONDS) — reef/record2sample/service/worker.py:61
+35. ModelGpuReservation.release — reef/execution/executor/placement.py:93
+36. close_service — reef/tinker/service.py:35
+37. RolloutScores.rollouts — reef/core/evaluation.py:119
+38. RequestService.import_records — reef/service/request_service.py:169
+39. ServedModelsWriter.is_referenced — reef/storage/served_models.py:126
+40. _apply_attention_freeze — recipes/sao/slime/__init__.py:404
+41. built_image_id (method) — reef/service/deploy/routing/containers.py:474
+42. assembled_fields — reef/train/slime_backend/harbor_rollouts.py:265
+43. cancel_request_jobs — reef/train/job_queue.py:471
+44. wait_ready (method) — reef/service/deploy/routing/deployment_controller.py:396
+45. task_directories (method; the recipe-level one) — reef/recipe/harness.py:255
+46. _recipe_owned_settings — reef/service/assembly.py:92
+47. JobRecord.write — reef/train/harness_backend/records.py:62
+48. attach_reef_adapter_to_agent_manager — recipes/beta/coral/gateway_launcher.py:81

@@ -1,0 +1,266 @@
+{
+ "P1_grep": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 70211
+ },
+ "P1_map": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 100537
+ },
+ "P1_mem": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 52870
+ },
+ "P2_grep": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 70341
+ },
+ "P2_map": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 116875
+ },
+ "P3_grep": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 70165
+ },
+ "P3_map": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 112579
+ },
+ "P4_grep": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 71171
+ },
+ "P4_map": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 89109
+ },
+ "P5_grep": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 70136
+ },
+ "P5_map": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 96114
+ },
+ "PVa1": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 53444
+ },
+ "PVa2": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 53439
+ },
+ "PVa3": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 53412
+ },
+ "PVa4": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 53575
+ },
+ "PVa5": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 53456
+ },
+ "PVb1": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 53030
+ },
+ "PVb2": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 53016
+ },
+ "PVb3": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 53037
+ },
+ "PVb4": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 53026
+ },
+ "PVb5": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 53033
+ },
+ "PVc1": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 53100
+ },
+ "PVc2": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 53123
+ },
+ "PVc3": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 53125
+ },
+ "PVc4": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 53077
+ },
+ "PVc5": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 53121
+ },
+ "PVd1": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 53187
+ },
+ "PVd2": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 53200
+ },
+ "PVd3": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 53229
+ },
+ "PVd4": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 53215
+ },
+ "PVd5": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 53132
+ },
+ "PVn1": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 50771
+ },
+ "PVn2": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 50752
+ },
+ "R1_grep": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 76017
+ },
+ "R1_map": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 176302
+ },
+ "R1_mem": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 53105
+ },
+ "R2_grep": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 79640
+ },
+ "R2_map": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 152481
+ },
+ "R3_grep": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 76092
+ },
+ "R3_map": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 107631
+ },
+ "R4_grep": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 71684
+ },
+ "R4_map": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 184975
+ },
+ "R5_grep": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 72099
+ },
+ "R5_map": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 231514
+ },
+ "RVa1": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 53451
+ },
+ "RVa2": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 53427
+ },
+ "RVa3": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 53395
+ },
+ "RVa4": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 53366
+ },
+ "RVa5": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 53370
+ },
+ "RVb1": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 53000
+ },
+ "RVb2": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 52973
+ },
+ "RVb3": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 52971
+ },
+ "RVb4": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 52995
+ },
+ "RVb5": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 52972
+ },
+ "RVc1": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 53149
+ },
+ "RVc2": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 53372
+ },
+ "RVc3": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 53360
+ },
+ "RVc4": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 53468
+ },
+ "RVc5": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 53143
+ },
+ "RVd1": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 53621
+ },
+ "RVd2": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 53635
+ },
+ "RVd3": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 53646
+ },
+ "RVd4": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 53646
+ },
+ "RVd5": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 53668
+ },
+ "RVn1": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 50841
+ },
+ "RVn2": {
+  "model": "claude-sonnet-5-5",
+  "tokens": 50833
+ }
+}

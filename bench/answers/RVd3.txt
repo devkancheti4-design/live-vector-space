@@ -1,0 +1,10 @@
+1. Reef is continual-learning infrastructure for self-improving agents (records, service, runtime, training loop, candidate evaluation, recipe contract).
+2. unsure
+3. unsure (the docstring mentions runtime and scenario, but the view does not say which folder does this)
+4. reef/inference (InferenceRuntime)
+5. reef/storage (RecordStore, commits)
+6. unsure (the view only says methods are separate packages selected via dotted class references; the sibling recipes tree is a cookbook)
+7. unsure
+8. reef/evaluation (CandidateEvaluator, CandidateSelector, SelectionDecision)
+9. reef/core (ReefError, RequestType, AgentRecord, ReportBase)
+10. unsure

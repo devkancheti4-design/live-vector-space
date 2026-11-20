@@ -1,0 +1,350 @@
+[
+ {
+  "kind": "fixed",
+  "all": [
+   "continual|self.?improving"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "order": [
+   "record2sample",
+   "sample2job"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "harness"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "inference"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "storage"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\brecipes\\b"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "pct": [
+   40,
+   55
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "evaluation"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\bcore\\b"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "scenario"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "dispatcher"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "artifact"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\bservice\\b"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\b60\\b|one minute|1 minute",
+   "3600|\\bhour\\b|60 min"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "3600|\\bhour\\b|60 min"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\b256\\b"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\b3\\b|three",
+   "1800|30 min|half an hour"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "2 ?MiB|2 ?MB|2097152|2,097,152|2 ?\\* ?1024 ?\\* ?1024"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\b23\\b"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "7 ?days|seven days|604800|604,800|7 ?\\* ?24 ?\\* ?3600|one week|1 week"
+  ]
+ },
+ {
+  "kind": "const",
+  "file": "reef/evaluation/rollout_worker.py",
+  "line": 77,
+  "name": "TREE_AGENT_TIMEOUT_S",
+  "value": 86400.0,
+  "expr": "24 * 3600.0",
+  "desc": "The limit of a tree agent's command, in seconds. Harbor's agent timeout of each task ends the run first."
+ },
+ {
+  "kind": "const",
+  "file": "tests/train/test_training_data_samples.py",
+  "line": 70,
+  "name": "STEP_SIZE",
+  "value": 2,
+  "expr": "2",
+  "desc": "The rollouts in one optimizer step: each batch here trains as one step."
+ },
+ {
+  "kind": "const",
+  "file": "recipes/beta/autoenvscaling/sources.py",
+  "line": 26,
+  "name": "READ_RESULT_CHARS",
+  "value": 12000,
+  "expr": "12_000",
+  "desc": "A file the session read is the repository's content the change starts from: kept longer than other results."
+ },
+ {
+  "kind": "const",
+  "file": "reef/service/inference_service.py",
+  "line": 93,
+  "name": "BUCKET_COUNT",
+  "value": 100,
+  "expr": "100",
+  "desc": "The number of buckets for conversations. A weight is a number of buckets."
+ },
+ {
+  "kind": "const",
+  "file": "recipes/openclawrl/sessions.py",
+  "line": 28,
+  "name": "DEFAULT_MAX_SESSIONS",
+  "value": 4096,
+  "expr": "4096",
+  "desc": "Ceiling on live sessions. The fallback opens one session per unmatched request, so without a ceiling a client it never matches grows the table with the request rate for a whole TTL, and every scan pays for it."
+ },
+ {
+  "kind": "const",
+  "file": "reef/service/deploy/routing/reef_lifecycle_client.py",
+  "line": 26,
+  "name": "CONTROL_REPLY_LIMIT_BYTES",
+  "value": 1048576,
+  "expr": "1024 * 1024",
+  "desc": "The most of a control reply that the client reads."
+ },
+ {
+  "kind": "const",
+  "file": "reef/train/slime_backend/distill/teacher_engine.py",
+  "line": 32,
+  "name": "SCORING_CONCURRENCY",
+  "value": 16,
+  "expr": "16",
+  "desc": "Scoring requests in flight at once; the engine batches them, and the columns are installed only once every row is in."
+ },
+ {
+  "kind": "const",
+  "file": "tests/support/component_trainers.py",
+  "line": 223,
+  "name": "MAX_ARTIFACT_LAG",
+  "value": 100,
+  "expr": "100",
+  "desc": "How many artifacts behind the served one a row may be and still train. A test appends rows before the jobs that it waits for move the served artifact, so its rows stay trainable until it ends."
+ },
+ {
+  "kind": "const",
+  "file": "reef/storage/tasks.py",
+  "line": 67,
+  "name": "MAX_TASK_DIRECTORY_ENTRIES",
+  "value": 10000,
+  "expr": "10_000",
+  "desc": "The most entries, files and directories, directly in one directory of a task: the Hugging Face Hub's limit."
+ },
+ {
+  "kind": "const",
+  "file": "recipes/opd/examples/math/prepare.py",
+  "line": 15,
+  "name": "PROMPT_TOKEN_LIMIT",
+  "value": 1024,
+  "expr": "1024",
+  "desc": "The cookbook's prompt-only cap, in tokens of the model pair's tokenizer."
+ },
+ {
+  "kind": "const",
+  "file": "reef/execution/executor/ray.py",
+  "line": 23,
+  "name": "FAILURE_POLL_S",
+  "value": 0.1,
+  "expr": "0.1",
+  "desc": "How often a waiting future re-checks the executor for a terminal failure."
+ },
+ {
+  "kind": "const",
+  "file": "tests/smoke/native_inference.py",
+  "line": 215,
+  "name": "METRIC_DELAY_S",
+  "value": 10.0,
+  "expr": "10.0",
+  "desc": "How long the counters of a finished request may take to reach the engine's metrics."
+ },
+ {
+  "kind": "const",
+  "file": "recipes/beta/reefine/method.py",
+  "line": 26,
+  "name": "DEFAULT_TRIAL_TIMEOUT_S",
+  "value": 300.0,
+  "expr": "300.0",
+  "desc": "How long one trial of the agent may take when the method's ``trial_timeout_s`` says nothing."
+ },
+ {
+  "kind": "const",
+  "file": "reef/harness/runners/native/graph.py",
+  "line": 97,
+  "name": "LOOP_LOG_CHARS",
+  "value": 4096,
+  "expr": "4096",
+  "desc": "Serialized characters one ``ctx.log`` event may carry; a loop cannot fill the session with one call."
+ },
+ {
+  "kind": "func",
+  "file": "reef/service/request_service.py",
+  "line": 161,
+  "name": "import_record",
+  "doc": "Persist an existing inference or report through ordinary admission."
+ },
+ {
+  "kind": "func",
+  "file": "tests/reef_service/routing/routing_fakes.py",
+  "line": 273,
+  "name": "selections",
+  "doc": "Previews of client requests, without the readiness previews Reef sends when it starts."
+ },
+ {
+  "kind": "func",
+  "file": "reef/artifact/git_lfs.py",
+  "line": 506,
+  "name": "fetch_version",
+  "doc": "Fetch ``version`` from the remote and return its commit id."
+ },
+ {
+  "kind": "func",
+  "file": "tests/reef_recipe/test_composite_recipe.py",
+  "line": 161,
+  "name": "_trained_composite",
+  "doc": "A composite of a harness recipe and the config recipe, and the live objects that run the harness jobs"
+ },
+ {
+  "kind": "func",
+  "file": "reef/artifact/base_root.py",
+  "line": 79,
+  "name": "from_bytes",
+  "doc": "Read the bytes of ``BASE_FILE``; ``ValueError`` when they are no ``to_dict`` value."
+ },
+ {
+  "kind": "func",
+  "file": "reef/service/deploy/routing/deployment_controller.py",
+  "line": 315,
+  "name": "validate_candidate",
+  "doc": "Check the candidate privately, without Docker or any ownership change, and return its snapshot version."
+ },
+ {
+  "kind": "func",
+  "file": "reef/service/deploy/inference.py",
+  "line": 170,
+  "name": "local_inference_component",
+  "doc": "Start an inference component on this host, and record its address as the ``inference.remote`` section."
+ },
+ {
+  "kind": "func",
+  "file": "reef/storage/records.py",
+  "line": 103,
+  "name": "replay_page",
+  "doc": "Read at most a positive ``limit`` after a nonnegative append sequence."
+ },
+ {
+  "kind": "func",
+  "file": "tests/support/runtime_stubs.py",
+  "line": 332,
+  "name": "live_objects",
+  "doc": "The live objects of a test deployment that trains weights: the training component ``component``, its facts"
+ },
+ {
+  "kind": "func",
+  "file": "recipes/sdpo/examples/sciknoweval/harness/agent.py",
+  "line": 51,
+  "name": "setup",
+  "doc": "Nothing to install: the image carries the runner and the reference's split."
+ },
+ {
+  "kind": "func",
+  "file": "reef/record2sample/service/worker.py",
+  "line": 210,
+  "name": "produce",
+  "doc": "Make samples of the records that the trainer of ``component`` in ``scenario`` has not used yet, and store"
+ },
+ {
+  "kind": "func",
+  "file": "reef/service/deploy/execution.py",
+  "line": 114,
+  "name": "validate_services",
+  "doc": "Services with valid commands and unique names, checked before any process starts."
+ },
+ {
+  "kind": "func",
+  "file": "reef/execution/executor/multiproc.py",
+  "line": 50,
+  "name": "_serve",
+  "doc": "Answer RPCs until the owner sends the ``None`` stop request."
+ },
+ {
+  "kind": "func",
+  "file": "tests/scenario/test_scenario_unload.py",
+  "line": 54,
+  "name": "step_recipe",
+  "doc": "A harness recipe whose trainer makes one job of each scored report. A scenario of it can be idle; a scenario"
+ }
+]

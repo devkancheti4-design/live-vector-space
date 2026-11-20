@@ -1,0 +1,66 @@
+{"cmd": "find", "args": ["Original", "harness", "terminal", "reward"], "bytes": 2865}
+{"cmd": "find", "args": ["leaderboard", "filtered", "generation"], "bytes": 1692}
+{"cmd": "find", "args": ["Greedily", "oldest", "rows"], "bytes": 1202}
+{"cmd": "find", "args": ["sentinel", "fsync", "parent"], "bytes": 2180}
+{"cmd": "find", "args": ["Archive", "V1", "closed", "V2"], "bytes": 1448}
+{"cmd": "find", "args": ["backport", "cherry"], "bytes": 1216}
+{"cmd": "find", "args": ["bounded", "character", "window"], "bytes": 1943}
+{"cmd": "find", "args": ["YAML", "bodies", "Chair"], "bytes": 1292}
+{"cmd": "find", "args": ["must", "not", "sleep", "second", "call"], "bytes": 2795}
+{"cmd": "find", "args": ["background", "control", "file-descriptor"], "bytes": 1820}
+{"cmd": "find", "args": ["resource", "lifecycle", "trajectory"], "bytes": 1537}
+{"cmd": "find", "args": ["Materialize", "canonical", "ledgers"], "bytes": 1997}
+{"cmd": "find", "args": ["usable", "independent", "memo"], "bytes": 1900}
+{"cmd": "find", "args": ["Praxist", "provider", "env", "file"], "bytes": 1801}
+{"cmd": "find", "args": ["graph_health.json"], "bytes": 1961}
+{"cmd": "find", "args": ["iLQR", "rk4"], "bytes": 650}
+{"cmd": "find", "args": ["legacy", "Claude", "Code", "tool", "usage", "diagnostics"], "bytes": 3710}
+{"cmd": "find", "args": ["first", "generation", "completion", "marker"], "bytes": 2791}
+{"cmd": "find", "args": ["task", "pressure", "permits", "requesting"], "bytes": 1905}
+{"cmd": "find", "args": ["bundled", "skills", "lifecycle", "lock"], "bytes": 2069}
+{"cmd": "find", "args": ["dataset", "aliases", "finding", "payload"], "bytes": 2584}
+{"cmd": "find", "args": ["permission", "errors", "warnings", "pid"], "bytes": 2028}
+{"cmd": "find", "args": ["mirrored", "digest", "identity"], "bytes": 1619}
+{"cmd": "find", "args": ["duplicate", "edge", "edge_id"], "bytes": 1978}
+{"cmd": "find", "args": ["exclusive", "flock"], "bytes": 1295}
+{"cmd": "find", "args": ["entrypoint", "factory", "executable", "plugin"], "bytes": 2217}
+{"cmd": "find", "args": ["Deny", "shell-launched", "drain"], "bytes": 1780}
+{"cmd": "find", "args": ["duplicates", "known", "cells", "mechanism"], "bytes": 2786}
+{"cmd": "find", "args": ["directed", "supply", "lease", "idempotent"], "bytes": 2387}
+{"cmd": "find", "args": ["unparseable", "started_at"], "bytes": 1142}
+{"cmd": "find", "args": ["3", "s", "after", "first", "sleep"], "bytes": 2210}
+{"cmd": "find", "args": ["previous", "commit", "backport", "--in examples/rocket_booster_recovery_rust/vendor/libc-0.2.189/etc/libc-util.py"], "bytes": 1751}
+{"cmd": "find", "args": ["second", "call", "sleep", "--in tests/unit/test_arxiv.py"], "bytes": 1500}
+{"cmd": "find", "args": ["user", "env", "provider", "config", "--in praxist/cli"], "bytes": 1680}
+{"cmd": "find", "args": ["graph_health", "atomic"], "bytes": 1251}
+{"cmd": "get", "args": [596], "bytes": 1191}
+{"cmd": "files", "args": ["praxist", 1], "bytes": 1464}
+{"cmd": "get", "args": [596], "bytes": 1191}
+{"cmd": "files", "args": ["praxist/plugins", 1], "bytes": 1135}
+{"cmd": "find", "args": ["12", "parallel", "top_k", "agents", "--in praxist/task_spec.py"], "bytes": 645}
+{"cmd": "find", "args": ["num_agents_per_generation"], "bytes": 1878}
+{"cmd": "find", "args": ["top_k_survivors"], "bytes": 1647}
+{"cmd": "find", "args": ["max_wall_clock_hours"], "bytes": 1169}
+{"cmd": "find", "args": ["billing", "backoff"], "bytes": 1236}
+{"cmd": "find", "args": ["max_jobs_per_gpu"], "bytes": 1866}
+{"cmd": "find", "args": ["stale_days", "baseline"], "bytes": 1275}
+{"cmd": "find", "args": ["memory_warn_fraction"], "bytes": 2187}
+{"cmd": "find", "args": ["max_chars", "chunk"], "bytes": 1116}
+{"cmd": "find", "args": ["default", "agents", "per", "generation"], "bytes": 1896}
+{"cmd": "get", "args": [654, 655, 656, 657, 658], "bytes": 4341}
+{"cmd": "files", "args": ["praxist/core", 1], "bytes": 2545}
+{"cmd": "get", "args": [3399], "bytes": 442}
+{"cmd": "find", "args": ["DEFAULT_COHORT_SIZE", "DEFAULT_FULL_AUTO_MAX_RUNTIME_SECONDS", "DEFAULT_PROMOTE_TOP_K", "--in praxist/core/run_config.py"], "bytes": 559}
+{"cmd": "find", "args": ["DEFAULT_CHUNK_CHARS", "--in praxist/plugins/tools/result_envelope.py"], "bytes": 364}
+{"cmd": "find", "args": ["is_billing_error", "billing", "--in praxist/plugins/workflow_stages/research_loop/backend"], "bytes": 968}
+{"cmd": "find", "args": ["jobs_per_gpu", "per_gpu", "warn", "--in praxist/plugins/workflow_stages/research_loop/backend/gpu_governor.py"], "bytes": 1721}
+{"cmd": "get", "args": [4172], "bytes": 781}
+{"cmd": "find", "args": ["memory_limit", "MEMORY_WARN", "mem_warn", "rss", "--in praxist/plugins/workflow_stages/research_loop/backend"], "bytes": 2099}
+{"cmd": "find", "args": ["DEFAULT_MAX_PER_GPU", "--in praxist/plugins/workflow_stages/research_loop/backend/gpu_governor.py"], "bytes": 398}
+{"cmd": "find", "args": ["WARN_FRACTION", "KILL_FRACTION", "warn_fraction", "kill_fraction", "warn_pct"], "bytes": 2980}
+{"cmd": "find", "args": ["SIGTERM", "memory", "warning", "shut", "--in praxist/plugins/workflow_stages/research_loop/backend/resource_scheduler.py"], "bytes": 975}
+{"cmd": "find", "args": ["cgroup"], "bytes": 739}
+{"cmd": "find", "args": ["watchdog"], "bytes": 2343}
+{"cmd": "get", "args": [4212], "bytes": 247}
+{"cmd": "find", "args": ["RATIO", "--in praxist/plugins/workflow_stages/research_loop/backend/orchestrator_status.py"], "bytes": 431}
+{"cmd": "get", "args": [6834], "bytes": 2441}

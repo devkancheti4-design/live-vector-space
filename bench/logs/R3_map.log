@@ -1,0 +1,191 @@
+{"cmd": "files", "args": ["reef", 1], "bytes": 2508}
+{"cmd": "find", "args": ["backoff", "--in reef"], "bytes": 1074}
+{"cmd": "find", "args": ["retry", "serving", "seconds", "--in reef/dispatcher"], "bytes": 1728}
+{"cmd": "find", "args": ["sweep", "interval", "--in reef"], "bytes": 899}
+{"cmd": "get", "args": [2879, 2881], "bytes": 1108}
+{"cmd": "get", "args": [2920], "bytes": 174}
+{"cmd": "find", "args": ["Seconds between the page's own reloads", "most items that one transaction", "Bound regex input", "How often to ask the judge", "one lap of serve", "tokens at the end of a rendered prompt", "How much of a design", "bytes read from the body", "echoes the evaluated prompt", "sampler may take", "Tokens one model call", "inside its container", "shortest time, in seconds"], "bytes": 7898}
+{"cmd": "find", "args": ["REFRESH"], "bytes": 1709}
+{"cmd": "find", "args": ["GROUP_COMMIT"], "bytes": 239}
+{"cmd": "find", "args": ["REGEX"], "bytes": 992}
+{"cmd": "find", "args": ["JUDGE_POLL"], "bytes": 1970}
+{"cmd": "find", "args": ["THINK_TAIL"], "bytes": 2209}
+{"cmd": "find", "args": ["DESIGN_CHARS"], "bytes": 495}
+{"cmd": "find", "args": ["CHUNK"], "bytes": 1938}
+{"cmd": "find", "args": ["original_text"], "bytes": 1212}
+{"cmd": "find", "args": ["SAMPLER_WAIT"], "bytes": 2166}
+{"cmd": "find", "args": ["MAX_TOKENS"], "bytes": 1988}
+{"cmd": "find", "args": ["ROUTER_API"], "bytes": 2045}
+{"cmd": "find", "args": ["PROGRESS_INTERVAL"], "bytes": 291}
+{"cmd": "get", "args": [6507], "bytes": 1073}
+{"cmd": "get", "args": [3817], "bytes": 211}
+{"cmd": "get", "args": [460], "bytes": 841}
+{"cmd": "get", "args": [5683], "bytes": 2235}
+{"cmd": "get", "args": [5057], "bytes": 1112}
+{"cmd": "find", "args": ["reloads", "reaction", "landed", "settled"], "bytes": 2276}
+{"cmd": "find", "args": ["think", "reasoning", "thinking"], "bytes": 2020}
+{"cmd": "find", "args": ["stalls", "single", "slot"], "bytes": 1835}
+{"cmd": "find", "args": ["start-router.sh"], "bytes": 2090}
+{"cmd": "get", "args": [5587], "bytes": 4858}
+{"cmd": "get", "args": [992], "bytes": 423}
+{"cmd": "get", "args": [3736], "bytes": 1535}
+{"cmd": "find", "args": ["ROUTER_URL", "router_api", "ROUTER_PORT", "ROUTER_BASE"], "bytes": 2109}
+{"cmd": "find", "args": ["<think>", "think_suffix", "THINK"], "bytes": 1932}
+{"cmd": "find", "args": ["start-router", "--in reef"], "bytes": 1695}
+{"cmd": "find", "args": ["open", "think", "--in reef/train/slime_backend/engine_chat.py"], "bytes": 745}
+{"cmd": "find", "args": ["stalled", "endpoint", "skips"], "bytes": 1942}
+{"cmd": "find", "args": ["body", "chunk", "--in reef/service"], "bytes": 948}
+{"cmd": "get", "args": [17552], "bytes": 677}
+{"cmd": "get", "args": [5683], "bytes": 2235}
+{"cmd": "find", "args": ["router", "container", "9000"], "bytes": 1144}
+{"cmd": "find", "args": ["newline", "think"], "bytes": 1330}
+{"cmd": "get", "args": [17552], "bytes": 677}
+{"cmd": "get", "args": [5683], "bytes": 2235}
+{"cmd": "get", "args": [2611], "bytes": 479}
+{"cmd": "find", "args": ["start-router.sh", "--in recipes"], "bytes": 1958}
+{"cmd": "find", "args": ["start-router.sh", "--in reef/service"], "bytes": 2167}
+{"cmd": "find", "args": ["at a time"], "bytes": 2038}
+{"cmd": "find", "args": ["HTTP API"], "bytes": 344}
+{"cmd": "find", "args": ["first sample", "sampler"], "bytes": 746}
+{"cmd": "find", "args": ["READ_CALLS", "PAGE", "--in reef/service/artifact_evaluations.py"], "bytes": 309}
+{"cmd": "find", "args": ["READ_CALLS"], "bytes": 433}
+{"cmd": "get", "args": [5683], "bytes": 2235}
+{"cmd": "find", "args": ["first", "sample", "rollouts"], "bytes": 1590}
+{"cmd": "find", "args": ["enables", "container"], "bytes": 1270}
+{"cmd": "find", "args": ["enables"], "bytes": 988}
+{"cmd": "get", "args": [6053], "bytes": 1574}
+{"cmd": "find", "args": ["sampler"], "bytes": 1837}
+{"cmd": "find", "args": ["body"], "bytes": 1974}
+{"cmd": "find", "args": ["answer", "sampler", "rollouts", "--in reef/train"], "bytes": 1996}
+{"cmd": "find", "args": ["sampler", "--in reef/train"], "bytes": 2081}
+{"cmd": "get", "args": [7681], "bytes": 299}
+{"cmd": "find", "args": ["body", "bytes"], "bytes": 1018}
+{"cmd": "find", "args": ["reads", "records", "page"], "bytes": 1746}
+{"cmd": "find", "args": ["CHUNK_BYTES", "CHUNK_SIZE", "BODY_CHUNK", "READ_SIZE", "BLOCK_SIZE"], "bytes": 2483}
+{"cmd": "find", "args": ["READ_ITEMS", "READ_LIMIT", "MAX_ITEMS", "READ_BATCH", "PAGE_SIZE"], "bytes": 2935}
+{"cmd": "get", "args": [6083], "bytes": 712}
+{"cmd": "find", "args": ["read_records", "records", "--in reef/storage"], "bytes": 1061}
+{"cmd": "find", "args": ["used", "records", "items", "call", "--in reef/storage"], "bytes": 1841}
+{"cmd": "find", "args": ["ITEMS", "PAGE_SIZE", "--in reef/storage"], "bytes": 1113}
+{"cmd": "get", "args": [6368], "bytes": 150}
+{"cmd": "find", "args": ["attempts", "generation", "budget", "--in reef/record2sample/generator"], "bytes": 645}
+{"cmd": "find", "args": ["gateway", "keeps", "reply", "--in reef/harness"], "bytes": 1359}
+{"cmd": "get", "args": [3429], "bytes": 294}
+{"cmd": "find", "args": ["attempts", "--in reef/record2sample"], "bytes": 339}
+{"cmd": "find", "args": ["schema_version", "SCHEMA_VERSION", "--in reef/storage"], "bytes": 369}
+{"cmd": "find", "args": ["orphan", "unused", "--in reef/storage"], "bytes": 715}
+{"cmd": "find", "args": ["job_directory_ttl_seconds"], "bytes": 1592}
+{"cmd": "find", "args": ["version", "--in reef/storage/postgres.py"], "bytes": 315}
+{"cmd": "find", "args": ["attempts", "max_attempts", "ATTEMPTS"], "bytes": 1736}
+{"cmd": "get", "args": [6353], "bytes": 272}
+{"cmd": "get", "args": [6245], "bytes": 180}
+{"cmd": "find", "args": ["generation", "generate", "--in reef/record2sample"], "bytes": 837}
+{"cmd": "find", "args": ["ATTEMPTS", "TIMEOUT", "--in reef/record2sample"], "bytes": 831}
+{"cmd": "get", "args": [4949], "bytes": 545}
+{"cmd": "find", "args": ["attempt", "--in reef/record2sample/generator"], "bytes": 188}
+{"cmd": "get", "args": [4949], "bytes": 545}
+{"cmd": "files", "args": ["reef/record2sample", 1], "bytes": 2969}
+{"cmd": "find", "args": ["generation", "together", "default", "--in reef/record2sample/generator/service.py"], "bytes": 993}
+{"cmd": "find", "args": ["GENERATION", "ATTEMPT", "DEADLINE", "--in reef/record2sample/generator"], "bytes": 778}
+{"cmd": "get", "args": [4929], "bytes": 1156}
+{"cmd": "get", "args": [4936], "bytes": 278}
+{"cmd": "find", "args": ["attempts", "--in reef/service"], "bytes": 1770}
+{"cmd": "find", "args": ["attempts", "--in reef/train"], "bytes": 44}
+{"cmd": "find", "args": ["task_attempts", "generation_attempts", "attempt_limit", "generate_attempts", "attempts_per"], "bytes": 3296}
+{"cmd": "find", "args": ["ATTEMPTS", "--in reef"], "bytes": 1940}
+{"cmd": "get", "args": [4744], "bytes": 359}
+{"cmd": "find", "args": ["placement group to the cluster"], "bytes": 1595}
+{"cmd": "find", "args": ["ServiceClient"], "bytes": 1951}
+{"cmd": "find", "args": ["task by task"], "bytes": 2048}
+{"cmd": "find", "args": ["bounded, atomic batch"], "bytes": 2171}
+{"cmd": "find", "args": ["engine URL and model name"], "bytes": 2060}
+{"cmd": "find", "args": ["MoE value model"], "bytes": 2381}
+{"cmd": "find", "args": ["digests"], "bytes": 2359}
+{"cmd": "find", "args": ["Slime fields"], "bytes": 2100}
+{"cmd": "find", "args": ["cancel_scenario_job"], "bytes": 1263}
+{"cmd": "find", "args": ["pre-PUT"], "bytes": 2223}
+{"cmd": "find", "args": ["Harbor task directories"], "bytes": 2059}
+{"cmd": "find", "args": ["recipe, not the service"], "bytes": 1600}
+{"cmd": "find", "args": ["created exclusively"], "bytes": 1961}
+{"cmd": "find", "args": ["AgentManager"], "bytes": 955}
+{"cmd": "find", "args": ["placement"], "bytes": 2050}
+{"cmd": "find", "args": ["run order"], "bytes": 2351}
+{"cmd": "find", "args": ["atomic"], "bytes": 2178}
+{"cmd": "find", "args": ["served", "route"], "bytes": 1016}
+{"cmd": "get", "args": [3207], "bytes": 581}
+{"cmd": "find", "args": ["release", "placement", "--in reef/execution/executor/placement.py"], "bytes": 793}
+{"cmd": "find", "args": ["idempotent", "cluster", "--in reef/execution"], "bytes": 1144}
+{"cmd": "get", "args": [3209], "bytes": 1040}
+{"cmd": "get", "args": [3209], "bytes": 1040}
+{"cmd": "find", "args": ["score", "scores"], "bytes": 1269}
+{"cmd": "find", "args": ["rollout", "scores", "--in reef"], "bytes": 800}
+{"cmd": "get", "args": [2544], "bytes": 348}
+{"cmd": "find", "args": ["def", "--in reef/core/evaluation.py"], "bytes": 667}
+{"cmd": "find", "args": ["rollout", "scores", "order"], "bytes": 1558}
+{"cmd": "find", "args": ["Every", "rollout's", "--in reef/evaluation"], "bytes": 1279}
+{"cmd": "find", "args": ["Every", "rollout's", "--in reef/core"], "bytes": 959}
+{"cmd": "find", "args": ["Every", "rollout's", "--in reef/service"], "bytes": 1415}
+{"cmd": "get", "args": [2542, 2543], "bytes": 3713}
+{"cmd": "find", "args": ["import_records", "import_batch", "import_"], "bytes": 1572}
+{"cmd": "find", "args": ["route", "routes", "served", "--in reef/dispatcher"], "bytes": 1898}
+{"cmd": "find", "args": ["engine_url"], "bytes": 1708}
+{"cmd": "get", "args": [5618], "bytes": 4704}
+{"cmd": "get", "args": [6114], "bytes": 3737}
+{"cmd": "find", "args": ["published", "route", "uses", "--in reef/service/deploy"], "bytes": 2093}
+{"cmd": "find", "args": ["served", "--in reef/inference"], "bytes": 1759}
+{"cmd": "find", "args": ["route", "routes", "engine", "--in reef/service"], "bytes": 1423}
+{"cmd": "find", "args": ["def routed", "routed", "published"], "bytes": 1865}
+{"cmd": "find", "args": ["routed", "--in reef"], "bytes": 1640}
+{"cmd": "find", "args": ["engine_url", "--in reef"], "bytes": 2110}
+{"cmd": "find", "args": ["served", "route", "--in reef/service"], "bytes": 934}
+{"cmd": "find", "args": ["served", "route", "--in reef/inference"], "bytes": 1188}
+{"cmd": "find", "args": ["served", "route", "--in reef/dispatcher"], "bytes": 1310}
+{"cmd": "find", "args": ["Whether", "--in reef/inference/checkpoint_slots.py"], "bytes": 210}
+{"cmd": "find", "args": ["Whether", "--in reef/inference"], "bytes": 2378}
+{"cmd": "find", "args": ["Whether", "--in reef/inference"], "bytes": 2378}
+{"cmd": "find", "args": ["Whether", "--in reef/dispatcher"], "bytes": 2162}
+{"cmd": "find", "args": ["Whether", "--in reef/service"], "bytes": 2515}
+{"cmd": "find", "args": ["Whether", "--in reef/storage"], "bytes": 2256}
+{"cmd": "find", "args": ["Whether", "--in reef/core"], "bytes": 2237}
+{"cmd": "get", "args": [6452], "bytes": 3729}
+{"cmd": "get", "args": [6452], "bytes": 3729}
+{"cmd": "find", "args": ["attention", "critic", "--in reef/train"], "bytes": 1261}
+{"cmd": "find", "args": ["freeze", "frozen", "MoE"], "bytes": 1286}
+{"cmd": "find", "args": ["digests"], "bytes": 2359}
+{"cmd": "find", "args": ["Slime", "assembled", "trained", "token", "head"], "bytes": 3313}
+{"cmd": "get", "args": [5987], "bytes": 3762}
+{"cmd": "get", "args": [5987], "bytes": 3762}
+{"cmd": "get", "args": [1391], "bytes": 1649}
+{"cmd": "find", "args": ["trained", "lacks", "assembled", "--in reef/train/slime_backend"], "bytes": 1893}
+{"cmd": "find", "args": ["Slime", "--in reef/train/slime_backend"], "bytes": 1710}
+{"cmd": "find", "args": ["PUT", "reopen", "committed", "pair"], "bytes": 2893}
+{"cmd": "find", "args": ["reopen", "unchanged"], "bytes": 1469}
+{"cmd": "find", "args": ["Harbor", "directories", "prompts"], "bytes": 1664}
+{"cmd": "find", "args": ["flat", "keys"], "bytes": 681}
+{"cmd": "find", "args": ["exclusively", "never", "replaced"], "bytes": 1656}
+{"cmd": "find", "args": ["AgentManager", "gateway"], "bytes": 1073}
+{"cmd": "get", "args": [4690], "bytes": 3329}
+{"cmd": "get", "args": [7031], "bytes": 1676}
+{"cmd": "get", "args": [7014], "bytes": 1714}
+{"cmd": "find", "args": ["recipe,", "service"], "bytes": 1377}
+{"cmd": "find", "args": ["reef.*"], "bytes": 2183}
+{"cmd": "find", "args": ["flat", "--in reef"], "bytes": 2112}
+{"cmd": "find", "args": ["flat", "--in recipes"], "bytes": 1953}
+{"cmd": "find", "args": ["flat", "--in reef"], "bytes": 2112}
+{"cmd": "find", "args": ["belong", "--in reef/recipe"], "bytes": 815}
+{"cmd": "find", "args": ["recipe", "keys", "--in reef"], "bytes": 351}
+{"cmd": "find", "args": ["Slime", "flat"], "bytes": 1173}
+{"cmd": "find", "args": ["flat", "--in reef/train"], "bytes": 415}
+{"cmd": "find", "args": ["flat", "--in reef/service"], "bytes": 1164}
+{"cmd": "find", "args": ["flat", "--in reef/recipe"], "bytes": 1848}
+{"cmd": "find", "args": ["flat", "--in reef/core"], "bytes": 572}
+{"cmd": "find", "args": ["flat", "--in reef/scenario"], "bytes": 1158}
+{"cmd": "find", "args": ["flat", "--in recipes"], "bytes": 1953}
+{"cmd": "find", "args": ["flat", "--in tutorials"], "bytes": 176}
+{"cmd": "get", "args": [6002], "bytes": 4518}
+{"cmd": "get", "args": [6002], "bytes": 4518}
+{"cmd": "get", "args": [5342], "bytes": 867}
+{"cmd": "get", "args": [305], "bytes": 1502}
+{"cmd": "get", "args": [6802], "bytes": 672}
+{"cmd": "get", "args": [6709], "bytes": 584}
+{"cmd": "get", "args": [6002], "bytes": 4518}

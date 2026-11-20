@@ -1,0 +1,10 @@
+1. A framework (praxist) for running autonomous, LLM-agent-driven research/optimization tasks on user-defined task projects, with pluggable agent runtimes, tools, budgets, evaluations and workflow stages, plus CLI, product-usage telemetry, and examples.
+2. praxist/infrastructure/ (s3_utils.py, runpod.py, execute_autonomous.py)
+3. praxist/product_usage/ (with services/product_usage/ for the export schema)
+4. agent_runtimes
+5. tools
+6. unsure (the view gives only file counts, not sizes; agent_runtimes/ or model_providers/ are guesses)
+7. unsure
+8. rocket_booster_recovery (with a Rust variant, rocket_booster_recovery_rust)
+9. praxist/task_spec.py (task_spec_compat.py is the compatibility layer)
+10. praxist/user_agreement.py

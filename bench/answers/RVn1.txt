@@ -1,0 +1,10 @@
+1. A platform for continual improvement of AI agents: it runs agents, records their runs, turns them into training data, trains models, evaluates candidates and deploys the winners.
+2. unsure (guess: traces then datasets)
+3. runtime
+4. serving
+5. storage
+6. trainers
+7. about 40%
+8. evaluation
+9. core
+10. unsure (guess: workspace)

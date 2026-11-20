@@ -1,0 +1,10 @@
+1. Praxist is a platform and CLI (control plane) for running autonomous, multi-generation research loops with autonomous peers and an orchestrator dashboard.
+2. unsure
+3. unsure
+4. unsure
+5. unsure
+6. unsure
+7. unsure
+8. unsure
+9. unsure
+10. unsure

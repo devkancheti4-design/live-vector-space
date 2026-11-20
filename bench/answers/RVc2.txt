@@ -1,0 +1,10 @@
+1. A framework (reef) for training and improving LLMs/agents from recorded agent runs: harness runs agents, records become samples and training jobs, trained models are evaluated, served and deployed, with pluggable training recipes.
+2. record2sample, then sample2job
+3. harness (reef/harness)
+4. inference (reef/inference)
+5. storage (reef/storage)
+6. recipes/ (one package per method, e.g. gepa, opd, sdft, sdpo, sao, tttd)
+7. About 40% (tests has 496 of roughly 1230 files; size not shown, so approximate)
+8. evaluation (reef/evaluation)
+9. core (reef/core)
+10. scenario (reef/scenario)

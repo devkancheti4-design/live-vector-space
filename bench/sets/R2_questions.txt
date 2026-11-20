@@ -1,0 +1,50 @@
+48 questions about one codebase. Answer every one.
+
+1. In one sentence, what is this codebase for?
+2. A recorded agent run turns into data for a training job in two steps. Name the two folders that do these steps, in order.
+3. Which folder takes an agent's setup, runs the agent with it, and collects what happened?
+4. Which folder puts trained model weights to work answering requests?
+5. Which folder is responsible for saving the system's records, training samples and generated tasks?
+6. Where do the individual training methods live, one package per method?
+7. About what share of the whole repository, by size, is tests?
+8. Which folder judges a newly trained candidate and decides whether it goes live?
+9. Which folder holds the basic shared types and errors that every other part depends on?
+10. What is the name of the unit the system trains and keeps state for, which can be committed and recovered?
+11. Which folder holds the one component, per running process, that is in charge of all scenarios and of the threads that train them?
+12. Which folder keeps every published version as a snapshot that is never changed afterwards?
+13. Which folder starts the system's processes and accepts requests from other programs over HTTP?
+14. When starting up a trained model for serving fails, how long does the system wait before it retries on its own, and what is the longest it will ever wait between such retries?
+15. Finished work items are cleared out on a schedule. How much time passes between two clear-outs?
+16. When the system reads back the records it has used, at most how many record items does it read in one call?
+17. When the system makes up new practice tasks for itself, how many attempts does one generation get by default, and how much time do all those attempts get together?
+18. An agent reaches its model through a small local gateway. At most how much of one model reply does the gateway keep for its records?
+19. The system can keep its records in a relational database. Which version of the record layout does that database adapter read and write?
+20. How long does a data store keep a job's data folder that no job used?
+21. A constant is documented in the code as: "Paper default: K critic updates per actor update." What is its value?
+22. A constant is documented in the code as: "Training is quiescent once the step count holds for this long: longer than one step, or the drain would return while the rollout's last batch is still training." What is its value?
+23. A constant is documented in the code as: "The seconds a run waits for inference to start the scenario's model before it stops." What is its value?
+24. A constant is documented in the code as: "The seconds between two checks of a running trial's lease." What is its value?
+25. A constant is documented in the code as: "The most parameters that one PostgreSQL statement takes." What is its value?
+26. A constant is documented in the code as: "The prompt Designer reads the session from its prompt: the eval's session budget." What is its value?
+27. A constant is documented in the code as: "How long ``close()`` lets in-flight jobs finish before cancelling." What is its value?
+28. A constant is documented in the code as: "The longest life Modal grants a sandbox." What is its value?
+29. A constant is documented in the code as: "The calibration's result keeps the errors of this many rollouts." What is its value?
+30. A constant is documented in the code as: "A value a runtime kind reference can name that is not a factory class." What is its value?
+31. A constant is documented in the code as: "The seconds that ``setup`` waits for inference to serve the scenario's model." What is its value?
+32. A constant is documented in the code as: "Characters kept per text in a record; a longer text ends in a clip marker." What is its value?
+33. A constant is documented in the code as: "The tree box is narrower than a column, so the render arrow has room for its label." What is its value?
+34. A constant is documented in the code as: "serve.yaml's lr-warmup-iters; Megatron requires the decay span to be longer." What is its value?
+35. Which function has this docstring: "One trial as the ``reef_terminus.trajectory.TrialReader`` reader expects it, its steps read from ``trial_dir`` alone."? Give its name and file.
+36. Which function has this docstring: "The tools a pi session called and the ones that failed, in order, each cut to what a reader needs."? Give its name and file.
+37. Which function has this docstring: "Raise ``ValueError`` for a job this component cannot train. The default accepts every job."? Give its name and file.
+38. Which function has this docstring: "Read a finite reward for a training method that needs one."? Give its name and file.
+39. Which function has this docstring: "Refuse dataset drift before running any paid run."? Give its name and file.
+40. Which function has this docstring: "The set of the stops that the store holds, without their order: each route that left the published"? Give its name and file.
+41. Which function has this docstring: "Write ``files`` under ``root``; the native root inside."? Give its name and file.
+42. Which function has this docstring: "Refuse unisolated Python and local Docker nested in Reef's jail."? Give its name and file.
+43. Which function has this docstring: "A Codex plugin carries no config key, so config.toml holds the run's defaults and the binding alone."? Give its name and file.
+44. Which function has this docstring: "No route for any artifact: this runtime serves no requests."? Give its name and file.
+45. Which function has this docstring: "The ``rollout`` parameter of a task job. ``ValueError``: it is missing, malformed or has an unknown key."? Give its name and file.
+46. Which function has this docstring: "The routes of control's app. It serves the data routes too when its process runs the data service."? Give its name and file.
+47. Which function has this docstring: "Move the teacher toward the policy (seeding it on the first step), then score every teacher sequence."? Give its name and file.
+48. Which function has this docstring: "Create the scenario, with its root snapshot, if it does not exist yet; its harness manifest."? Give its name and file.

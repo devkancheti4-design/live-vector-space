@@ -1,0 +1,48 @@
+1. Reef is continual-learning infrastructure for self-improving agents: it records agent runs, turns them into training data, trains new weights or harnesses, evaluates candidates and serves the result — reef/__init__.py:2
+2. reef/record2sample first, then reef/sample2job — reef/record2sample/__init__.py:1
+3. reef/harness — reef/harness/__init__.py:1
+4. reef/inference — reef/inference/__init__.py:1
+5. reef/storage — reef/storage/__init__.py:1
+6. recipes/ (one package per method: ace, basic, beta, gepa, meta_harness, opd, openclawrl, reasoning_bank, sao, sdft, sdpo, tttd) — reef/__init__.py:6
+7. About 48% (tests ≈ 7.0 MB of ≈ 14.5 MB of Python; ≈ 47% by directory size) — tests/
+8. reef/evaluation — reef/evaluation/__init__.py:1
+9. reef/core — reef/core/__init__.py:1
+10. Scenario (reef.scenario.Scenario) — reef/scenario/__init__.py:1
+11. reef/dispatcher — reef/dispatcher/__init__.py:1
+12. reef/artifact — reef/artifact/__init__.py:1
+13. reef/service — reef/service/__init__.py:1
+14. It first waits 60 seconds and doubles each retry, up to at most 3600 seconds (1 hour) — reef/dispatcher/served.py:27
+15. 3600 seconds (one hour) — reef/dispatcher/work_retention.py:18
+16. 256 record items — reef/storage/record_items.py:49
+17. 3 attempts, 1800 seconds (30 minutes) in total — reef/recipe/generated_tasks/processor.py:79
+18. 2 * 1024 * 1024 bytes (2 MiB) — reef/harness/gateway.py:44
+19. Version 23 — reef/storage/postgres.py:45
+20. 7 days (7 * 24 * 3600 seconds) — reef/storage/data.py:523
+21. 2 (DEFAULT_CRITIC_STEPS_PER_ACTOR) — recipes/sao/slime/__init__.py:32
+22. 900.0 seconds (TRAIN_QUIET_S) — recipes/sao/examples/ceobench/run.py:42
+23. 300.0 seconds (INFERENCE_TIMEOUT_S) — tutorials/evolve-your-harness/run.py:59
+24. 1.0 second (LEASE_CHECK_S) — reef/evaluation/rollout_worker.py:75
+25. 65535 (MAX_PARAMETERS) — reef/storage/postgres.py:42
+26. 240_000 (PROMPT_SESSION_CHARS) — recipes/beta/autoenvscaling/author.py:63
+27. 5.0 seconds (CLOSE_GRACE_S) — reef/execution/jobs.py:27
+28. 86400 seconds (SANDBOX_MAX_TIMEOUT_S) — reef/execution/sandbox/modal.py:48
+29. 3 (CALIBRATION_ERRORS) — recipes/beta/autoenvscaling/checks.py:67
+30. 7 (NOT_A_FACTORY) — tests/inference/test_runtime_kinds.py:14
+31. 300.0 seconds (INFERENCE_TIMEOUT_S) — recipes/basic/harness/agent.py:36
+32. 20_000 (RECORD_TEXT_CAP) — reef/harness/tree/checks.py:165
+33. 300 (TREE_W) — docs/assets/render_harness_guides.py:154
+34. 10 (LR_WARMUP_STEPS) — recipes/sdft/examples/skill_stream/run.py:56
+35. trial_record — recipes/meta_harness/examples/terminal_bench/reef_terminus/runner.py:156
+36. tool_calls — recipes/beta/reefine/agent.py:207
+37. check_job (TrainingComponent.check_job) — reef/train/component.py:578
+38. require_score — reef/record2sample/reports.py:71
+39. task_paths — recipes/meta_harness/examples/terminal_bench/harness/benchmark.py:16
+40. pending_stops — tests/smoke/native_inference.py:2004
+41. write_tree — tests/harness/test_native_harness.py:204
+42. TerminusExecutionValidator.__call__ — recipes/meta_harness/examples/terminal_bench/reef_terminus/execution.py:22
+43. test_codex_takes_no_config_key_from_a_tree — tests/harness/test_harness_render.py:212
+44. served_artifact (null runtime) — reef/inference/null.py:69
+45. rollout_settings — reef/train/tinker_backend/parameters.py:18
+46. register_routes — reef/service/routes/__init__.py:22
+47. sdft_actor_pre_train — recipes/sdft/slime/objective.py:29
+48. ensure_scenario — recipes/beta/reefine/examples/run.py:165

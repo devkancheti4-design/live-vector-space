@@ -1,0 +1,10 @@
+1. Praxist is a platform of autonomous research control-plane code (CLI, core, plugin catalog of workflow stages, tools, agent runtimes) for running and managing research tasks.
+2. praxist/infrastructure/
+3. praxist/product_usage/
+4. agent_runtimes (praxist/plugins/agent_runtimes/)
+5. tools (praxist/plugins/tools/)
+6. workflow_stages (praxist/plugins/workflow_stages/)
+7. About 53% (tests are 6,292 KB of roughly 11,905 KB)
+8. A Rocket Booster Recovery controller task (the examples/ folder, a pure traditional controller task package)
+9. praxist/task_spec.py
+10. praxist/user_agreement.py

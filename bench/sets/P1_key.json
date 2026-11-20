@@ -1,0 +1,326 @@
+[
+ {
+  "kind": "fixed",
+  "all": [
+   "research",
+   "autonomous|agent"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "infrastructure"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "product[_ ]usage"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "agent[_ ]runtimes"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\btools\\b"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "workflow[_ ]stages"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "pct": [
+   45,
+   60
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "rocket[_ ]booster"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "task_spec"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "user_agreement"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\bplugins\\b"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\b5\\b|five",
+   "\\b2\\b|two"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "5 ?days|five days|432000|432,000|5 ?\\* ?24 ?\\* ?3600|120 hours"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "20 ?min|twenty min|1200|1,200"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\b4\\b|four"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\b80\\b|0\\.8\\b|0\\.80",
+   "\\b92\\b|0\\.92"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\b30\\b|thirty"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "4000|4,000|4 000"
+  ]
+ },
+ {
+  "kind": "const",
+  "file": "examples/rocket_booster_recovery/vendor/frozen_c05_plant/terminal_reward.py",
+  "line": 47,
+  "name": "STANDARD_TILT_KNEE_RAD",
+  "value": 0.1,
+  "expr": "0.10",
+  "desc": "Standard landing gates (evaluator phase_corrected_safe_rate; do not change)."
+ },
+ {
+  "kind": "func",
+  "file": "templates/tasks/sam_optimizer/assets/dataset_metadata/resolve_dataset.py",
+  "line": 71,
+  "name": "write_metadata",
+  "doc": "Write resolved dataset metadata for this task template."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/cli/stop.py",
+  "line": 1044,
+  "name": "_gc_stale_entry",
+  "doc": "Classify and optionally remove one registry entry under its run lock."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/cli/resume.py",
+  "line": 393,
+  "name": "resolve_resume_target",
+  "doc": "Resolve ``target`` as a registry run_id or run directory."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/workflow_stages/research_loop/backend/tools/findings_sync.py",
+  "line": 90,
+  "name": "finding_filename",
+  "doc": "Build the canonical filename for a finding."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/workflow_stages/research_loop/backend/evidence_maturity.py",
+  "line": 164,
+  "name": "result_artifact_key",
+  "doc": "Return non-conflicting source coordinates for one result artifact."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/workflow_stages/research_loop/backend/multi_pi/agenda_metadata.py",
+  "line": 139,
+  "name": "agenda_metadata_sources_for_target",
+  "doc": "Resolve an agenda target token to metadata-bearing surfaces."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/core/budget.py",
+  "line": 29,
+  "name": "policy_for_ref",
+  "doc": "Return the bundled or registry-backed BudgetPolicy implementation for a plugin reference."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/deliver.py",
+  "line": 518,
+  "name": "main",
+  "doc": "CLI entrypoint for packaging a run deliverable bundle."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/core/registry.py",
+  "line": 866,
+  "name": "dumps_manifest",
+  "doc": "Serialize a manifest with stable ordering for human inspection and tests."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/core/modeling.py",
+  "line": 159,
+  "name": "provider_for_ref",
+  "doc": "Return the model provider adapter for a registry plugin reference."
+ },
+ {
+  "kind": "func",
+  "file": "tests/unit/test_system_tools.py",
+  "line": 197,
+  "name": "test_no_findings_records_warning",
+  "doc": "Run with no findings directory produces a warning."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/workflow_stages/research_loop/backend/gems.py",
+  "line": 1306,
+  "name": "_gem_sidecar_source_generation_id",
+  "doc": "Resolve the source generation from a persisted Gem sidecar."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/workflow_stages/research_loop/backend/effective_config.py",
+  "line": 64,
+  "name": "result_effective_config_metadata",
+  "doc": "Return compact provenance without changing legacy result semantics."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/infrastructure/product_usage.py",
+  "line": 603,
+  "name": "_unlink_run_state_if_unowned",
+  "doc": "Delete a state only while holding the same slot used by its observer."
+ },
+ {
+  "kind": "func",
+  "file": "tests/unit/test_system_tools.py",
+  "line": 393,
+  "name": "test_recent_findings_empty_findings_dir_falls_back_to_shared",
+  "doc": "An empty ``findings/`` dir does not block ``shared_findings/`` fallback."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/workflow_stages/research_loop/backend/experiment_scheduler_client.py",
+  "line": 1037,
+  "name": "scheduler_active_process_groups",
+  "doc": "Return scheduler-owned groups bound to a live launcher identity."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/agent_runtimes/codex_sdk/_relay.py",
+  "line": 180,
+  "name": "_relay_binary",
+  "doc": "Locate the relay installed beside Praxist before consulting ``PATH``."
+ },
+ {
+  "kind": "func",
+  "file": "examples/rocket_booster_recovery/vendor/frozen_c05_plant/ppo_rocket_6dof_finned_jax.py",
+  "line": 1019,
+  "name": "fin_lift_effective",
+  "doc": "Regime-gated passive fin LIFT scale (C08 deployability filter)."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/model_providers/openrouter/adapter.py",
+  "line": 8,
+  "name": "create_provider",
+  "doc": "Manifest entrypoint for the OpenRouter model-provider adapter."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/workflow_stages/research_loop/backend/gpu_governor.py",
+  "line": 218,
+  "name": "_prune_dead",
+  "doc": "Drop entries whose pid is no longer alive OR whose started_at is older"
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/tools/system/adapter.py",
+  "line": 68,
+  "name": "system_active_runs",
+  "doc": "Return runs whose status file changed within the active-run window."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/cli/_setup_common.py",
+  "line": 349,
+  "name": "copy_skill_tree",
+  "doc": "Copy one skill directory, replacing an existing Praxist-managed directory."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/workflow_stages/research_loop/backend/dig/labels.py",
+  "line": 154,
+  "name": "canonical_labels_for_candidate",
+  "doc": "Infer canonical QD labels while retaining raw labels and reasons."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/tools/evaluation_tools/__main__.py",
+  "line": 25,
+  "name": "_main",
+  "doc": "Bind the evaluation tool server to stdin/stdout and run until EOF."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/core/execution_guards.py",
+  "line": 356,
+  "name": "gpu_hours_since",
+  "doc": "Convert elapsed wall-clock time and GPU count into gpu_hours accounting units."
+ },
+ {
+  "kind": "func",
+  "file": "scripts/build_docs_site.py",
+  "line": 69,
+  "name": "_action_description",
+  "doc": "Render choices and defaults next to the parser-owned help text."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/workflow_stages/research_loop/backend/evidence_maturity.py",
+  "line": 348,
+  "name": "normalize_maturity_policy",
+  "doc": "Return a compact maturity policy with defaults."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/cli/install_skills.py",
+  "line": 145,
+  "name": "cmd_uninstall_skills",
+  "doc": "Remove only skill entries that can be proven Praxist-managed."
+ },
+ {
+  "kind": "func",
+  "file": "tests/unit/test_task_panel_topology_threading.py",
+  "line": 41,
+  "name": "_build_four_pi_spec",
+  "doc": "A fake four-PI topology spec mirroring the rocket_8e_panel shape."
+ }
+]

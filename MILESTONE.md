@@ -126,7 +126,8 @@ model's 1M window can hold it raw. One fresh model session, using only the map a
 
 ## Scaled up: 66 blind runs (20 Nov 2026)
 
-The claims were then retested at scale on reef and PRAXIST:
+The claims were then retested at scale on reef and PRAXIST (method, prompts, grading and the grep
+baseline are in [Method of the 66 runs](#method-of-the-66-runs)):
 - 5 runs per condition, each on fresh question sets that never repeat;
 - every answer graded by script against keys taken from the code;
 - every token count read from the run's own transcript.
@@ -157,3 +158,81 @@ each repo):
 
 The map was perfect in all 10 runs. Through it, models answered 97.5% of exact questions about codebases 25 to
 60 times bigger than their context, for about 2–4% of the tokens a full read would take.
+
+## Method of the 66 runs
+
+How the scaled test above was run, so it can be checked and rerun. Everything except the two codebases is
+in [`bench/`](bench/): the scripts, every prompt, the question sets with their keys, every answer, the
+lookup logs and each run's token count. `python3 bench/tools/summarize.py` regrades every answer and
+prints the numbers on this page.
+
+**Codebases.** Two public Python repositories, at the commits tested; hidden folders were dropped:
+- reef: [Human-Agent-Society/reef](https://github.com/Human-Agent-Society/reef) at `6668ea1` (17 Nov 2026), 1,231 Python files, 14.5 MB;
+- PRAXIST: [sapientinc/PRAXIST](https://github.com/sapientinc/PRAXIST) at `5b50658` (23 Sep 2026), 546 Python files, 11.9 MB.
+
+Given only the questions, a model scored 1/48 on each, so it didn't know either codebase.
+
+**Model.** Every run was a fresh Claude Sonnet 5.5 agent (`claude-sonnet-5-5`), started as a subagent in
+Claude Code, with no memory of other runs, no web and no other agents. Each got one prompt
+(`bench/prompts.json`), read its questions from a file and wrote its answers to a file. At most 20 ran at
+once.
+
+**What each run could use.**
+
+| Condition | Allowed | Runs |
+|---|---|---|
+| Map + lookups | only `map`, `files`, `find` and `get` on the store (the research `code_map.py`, whose output is the same as `lvs`'s) | 5 per repo |
+| Grep (baseline) | read-only `rg`, `grep`, `find`, `ls`, `head`, `tail`, `sed -n`, `cat`, `wc` and `du`, and Read, on the raw files | 5 per repo |
+| Memory only (control) | the questions, nothing else | 1 per repo |
+| One same-size view | one file, read once: the map view (`map` plus a `files` zoom into the main package), plain docstrings, the file tree or raw code, each about 4.6 KB | 5 per view per repo |
+| Nothing (control) | the 10 architecture questions, nothing else | 2 per repo |
+
+That is 10 + 10 + 2 + 40 + 4 = 66 runs.
+
+**Questions.** Each 48-question set holds two kinds of question:
+- The repo's hand-written questions on architecture and details (20 for reef, 18 for PRAXIST), each keyed
+  by regular expressions (`bench/tools/fixed_*.json`).
+- Random questions drawn from the parsed code by `bench/tools/make_battery2.py` (seed 2026). Constants:
+  "A constant is documented in the code as: '…' What is its value?" Functions: "Which function has this
+  docstring: '…'? Give its name and file."
+  - A constant qualifies if its comment is unique, has no digits and is at least 25 characters long.
+  - A function qualifies if the first line of its docstring is unique and at least 40 characters long.
+  - Constants the hand-written questions already ask about are left out, and no item repeats across the
+    five sets.
+  - The keys come straight from the code.
+
+The views test asked each repo's first 10 hand-written questions (sets `RU` and `PU`).
+
+**Grading.** By script, with no human or model judging (`bench/tools/grade.py`). Only the answer before
+" — file:line" counts:
+- A constant is right if a number in the answer equals the key, allowing for units (×1024ⁿ, ×1000ⁿ,
+  minutes, hours, days, weeks, percent), or if the key's expression appears as written.
+- A function is right if its name appears as a word.
+- A hand-written question is right if all its patterns match (some must appear in order, some are a
+  number range).
+- An answer that starts with "unsure" is wrong, whatever follows.
+
+**Tokens.** Each run's total comes from its own transcript: the last assistant message's input,
+cache-creation, cache-read and output tokens, which add up to the total Claude Code reports
+(`bench/runs.json`). "Of reading the whole code" compares that total with the code's size in tokens,
+estimated at 2.33 bytes per token: 6.2M for reef, 5.1M for PRAXIST.
+
+**Statistics.** Accuracy has 95% Wilson intervals. Map minus grep uses paired 95% t intervals over the 10
+question sets (`bench/tools/summarize.py`).
+
+**The baseline: grep on the same questions.**
+
+| 48-question sets (10 per method) | Right | 95% range | Hand-written | Constants | Functions | Tokens per session |
+|---|---|---|---|---|---|---|
+| Map + lookups | 468/480 (97.5%) | 95.7–98.6% | 190/190 | 73/75 | 205/215 | 89k–232k |
+| Grep on the raw files | 477/480 (99.4%) | 98.2–99.8% | 188/190 | 75/75 | 214/215 | 70k–80k |
+
+Paired over the 10 sets, map minus grep:
+- accuracy: −1.9 points (95% CI −4.7 to +1.0), no clear difference;
+- tokens: +64k per session (95% CI +31k to +97k).
+
+Grep reads the raw files on disk. Map + lookups reads only the compressed store, unpacking just the pieces
+it asks for. What the map adds is the whole codebase at once: from 4.6 KB of map view, 100/100 on
+architecture questions, against 34/100 for the same bytes of raw code (table above).
+
+**Limits.** Two codebases, one model, Python only, five sets per condition.

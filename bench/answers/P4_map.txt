@@ -1,0 +1,48 @@
+1. Praxist is a platform of autonomous research control-plane code: it runs multi-agent research loops on tasks (plugins, CLI, scheduling, product usage) — praxist/__init__.py:1
+2. praxist/infrastructure (S3 storage, RunPod deployment, Docker execution) — praxist/infrastructure/
+3. praxist/product_usage — praxist/product_usage/
+4. agent_runtimes (praxist/plugins/agent_runtimes) — praxist/plugins/agent_runtimes/
+5. tools (praxist/plugins/tools, the tool server plugin family) — praxist/plugins/tools/
+6. workflow_stages (about 2,750 KB) — praxist/plugins/workflow_stages/
+7. About 53% (tests 6,292 KB of 11,905 KB) — tests/
+8. Rocket Booster Recovery (examples/rocket_booster_recovery) — examples/rocket_booster_recovery/
+9. praxist/task_spec.py (Task specification loader) — praxist/task_spec.py:1
+10. praxist/user_agreement.py — praxist/user_agreement.py:1
+11. praxist/plugins/ — praxist/plugins/
+12. 5 agents per generation (DEFAULT_COHORT_SIZE = 5); top 2 promoted (DEFAULT_PROMOTE_TOP_K = 2) — praxist/core/run_config.py:148 and :154
+13. 5 days (5 * 24 * 3600 seconds) — praxist/core/run_config.py:83
+14. 1200 seconds (20 minutes) — praxist/plugins/workflow_stages/research_loop/backend/agent.py:233
+15. 4 — praxist/plugins/workflow_stages/research_loop/backend/gpu_governor.py:57
+16. Warning at 80% (0.80), shutdown at 92% (0.92) — praxist/plugins/workflow_stages/research_loop/backend/orchestrator_status.py:38-39
+17. 30 days — praxist/plugins/workflow_stages/research_loop/backend/baseline_cache.py:86
+18. 4000 characters — praxist/plugins/tools/result_envelope.py:22
+19. SAFE_BONUS = 250.0 — examples/rocket_booster_recovery/vendor/frozen_c05_plant/terminal_reward.py:51
+20. _handle_get_leaderboard — praxist/plugins/tools/evaluation_tools/adapter.py:1168
+21. encode_next_batch — praxist/product_usage/batching.py:35
+22. _write_signal_atomic — praxist/plugins/workflow_stages/research_loop/backend/synthesis_trigger.py:1707
+23. upgrade — praxist/product_usage/migrations/versions/0002_create_v2_environment_events.py:18
+24. (function in libc-util.py near line 867, docstring starts the Backporter step; name not confirmed) — examples/rocket_booster_recovery_rust/vendor/libc-0.2.189/etc/libc-util.py:867
+25. read_tool_result_ref — praxist/plugins/tools/result_envelope.py:114
+26. _iter_chair_yaml_candidates — praxist/plugins/workflow_stages/research_loop/backend/multi_pi/chair_arbiter.py:202
+27. test_call_outside_window_does_not_sleep (ArxivRateLimitTests) — tests/unit/test_arxiv.py:402
+28. _has_shell_background_operator — praxist/plugins/agent_runtimes/claude_sdk/adapter.py:164
+29. emit_resource_event_from_env — praxist/core/execution_guards.py:303
+30. _install_research_loop_signal_finalizer — praxist/run.py:66
+31. _has_round1_schema — praxist/plugins/workflow_stages/research_loop/backend/multi_pi/pi_roles/_base_pi.py:193
+32. cmd_configure_llm — praxist/cli/configure_llm.py:104
+33. write_graph_health — praxist/plugins/graph_maintainers/finding_graph_mvp/engine.py:947
+34. _load_tvlqr_frozen — examples/rocket_booster_recovery/vendor/frozen_c05_plant/ppo_rocket_6dof_finned_jax.py:626
+35. main — praxist/plugins/workflow_stages/research_loop/backend/hooks/log_tool_usage.py:33
+36. _boundary_marker_contract_start — praxist/plugins/workflow_stages/research_loop/backend/resume_state.py:930
+37. (function at resource_scheduler.py:966; name not confirmed) — praxist/plugins/workflow_stages/research_loop/backend/resource_scheduler.py:966
+38. install_codex_skills — praxist/cli/install_skills.py:263
+39. _dataset_alias_records — praxist/plugins/workflow_stages/research_loop/backend/tools/findings_ingest.py:550
+40. _signal_set — praxist/cli/stop.py:1216
+41. _negative_digest_identity — praxist/plugins/workflow_stages/research_loop/backend/research_memory/context_auditor.py:152
+42. insert_edge — praxist/plugins/workflow_stages/research_loop/backend/tools/local_store.py:909
+43. (flock function in gpu_governor.py at line 130; name not confirmed) — praxist/plugins/workflow_stages/research_loop/backend/gpu_governor.py:130
+44. instantiate_plugin_entrypoint — praxist/core/registry.py:692
+45. _closing_signal_bash_reason — praxist/plugins/agent_runtimes/claude_sdk/adapter.py:118
+46. is_near_duplicate_candidate — praxist/plugins/workflow_stages/research_loop/backend/dig/selection.py:180
+47. release_supply_lease — praxist/plugins/workflow_stages/research_loop/backend/experiment_scheduler_client.py:1214
+48. _entry_age_seconds — praxist/plugins/workflow_stages/research_loop/backend/gpu_governor.py:184

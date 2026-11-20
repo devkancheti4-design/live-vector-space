@@ -1,0 +1,10 @@
+1. A Python framework (praxist) that runs automated AI research loops on user-defined tasks, using pluggable agent runtimes, tools, model providers, budgets and evaluations, with CLI, product usage telemetry and deployment to cloud/GPU machines.
+2. praxist/infrastructure/ (s3_utils.py, runpod.py, execute_autonomous.py)
+3. praxist/product_usage/ (also services/product_usage/)
+4. agent_runtimes (praxist/plugins/agent_runtimes/)
+5. tools (praxist/plugins/tools/)
+6. unsure
+7. unsure
+8. rocket_booster_recovery (examples/rocket_booster_recovery, with a Rust variant)
+9. praxist/task_spec.py (with task_spec_compat.py for compatibility)
+10. praxist/user_agreement.py (CLI side: praxist/cli/user_agreement.py)

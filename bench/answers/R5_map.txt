@@ -1,0 +1,48 @@
+1. Reef is continual-learning infrastructure for self-improving agents (it records agent runs, trains on them, evaluates candidates and serves the result) — reef/__init__.py:1
+2. reef/record2sample (records to training samples), then reef/sample2job (samples to a training job) — reef/pipeline_context.py:1
+3. reef/harness — reef/harness/__init__.py:1
+4. reef/inference — reef/inference/__init__.py:1
+5. reef/storage — reef/storage/__init__.py:1
+6. recipes/ (cookbook methods, one package each) — recipes/
+7. About 48% (tests are 7,004 KB of about 14,544 KB) — tests/
+8. reef/evaluation — reef/evaluation/__init__.py:1
+9. reef/core — reef/core/__init__.py:1
+10. The scenario — reef/scenario/__init__.py:1
+11. reef/dispatcher — reef/dispatcher/__init__.py:1
+12. reef/artifact — reef/artifact/__init__.py:1
+13. reef/service — reef/service/__init__.py:1
+14. First retry after 60 s, doubling each time (60 * 2**retries), capped at 3600 s (1 hour) — reef/dispatcher/served.py:38 and :41
+15. 3600.0 seconds (1 hour) between sweeps — reef/dispatcher/work_retention.py:18
+16. 256 (RECORD_PAGE_SIZE) — reef/storage/record_items.py:49
+17. 3 attempts and 1800.0 seconds in all — reef/recipe/generated_tasks/processor.py:79
+18. 2 MiB (MAX_RECORDED_BYTES = 2 * 1024 * 1024) — reef/harness/gateway.py:44
+19. Schema version 23 (POSTGRES_SCHEMA_VERSION) — reef/storage/postgres.py:45
+20. 7 days (JOB_DIRECTORY_TTL_SECONDS = 7 * 24 * 3600.0) — reef/storage/data.py:523
+21. 3 checks (QUIET_CHECKS = 3), within 90.0 s (QUIET_TIMEOUT_S) — tests/smoke/native_inference.py:222
+22. 512 * 1024 * 1024 = 536,870,912 bytes (512 MiB) — reef/service/tasks.py:24
+23. 10.0 seconds (MAX_READINESS_TIMEOUT_SECONDS) — reef/service/routing.py:63
+24. 3 (inferred from comments saying a job commits three times: submission, checkpoint decision, end; the constant itself was not located) — tests/support/artifact_versions.py:123
+25. 10 (FAILURE_CHECK_ROLLOUTS) — reef/service/artifact_evaluations.py:96
+26. 600 s for the build (HARBOR_BUILD_TIMEOUT_S) and 600 s for the verifier (HARBOR_VERIFIER_TIMEOUT_S) — reef/execution/sandbox/task_environment.py:56
+27. 64 (MAX_VERIFIER_REWARDS) — reef/evaluation/rollout_worker.py:86
+28. 256 (MAX_PARENTS) — recipes/beta/autoenvscaling/generator.py:118
+29. 30.0 seconds (HEALTH_INTERVAL_S) — reef/inference/serving.py:59
+30. 4 (DEFAULT_STEPS) — recipes/meta_harness/examples/terminal_bench/run.py:42
+31. 64 * 1024 * 1024 = 67,108,864 bytes (64 MiB, MAX_REQUEST_BYTES) — reef/inference/remote/server.py:32
+32. 100_000 (MAX_TASK_FILES) — reef/storage/tasks.py:69
+33. not found — tests/
+34. 200 (NATIVE_PATTERN_MAX_LENGTH) — reef/harness/tree/checks.py:53
+35. not found — tests/
+36. parse_plugin_reference — reef/harness/adapters/descriptor.py:703
+37. post_stream — tests/reef_service/test_reef_contracts.py:834
+38. test_a_binary_item_names_the_program_and_its_check_stays_optional — tests/reef_service/harness/test_harness_requests.py:680
+39. slime_argv — tests/reef_service/deploy/test_training_startup.py:51
+40. Selection.requested_by (the base class method of Selection) — reef/record2sample/service/worker.py:85
+41. _render — tests/recipes/meta_harness/test_terminus_tree.py:32
+42. not found — tests/
+43. not found — tests/
+44. task_instruction — reef/core/tasks/harbor.py:207
+45. parse_full_weight_name — reef/inference/interfaces.py:113
+46. not found — reef/artifact/
+47. merge_patch — reef/storage/data.py:289
+48. not found — reef/scenario/

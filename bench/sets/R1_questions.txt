@@ -1,0 +1,50 @@
+48 questions about one codebase. Answer every one.
+
+1. In one sentence, what is this codebase for?
+2. A recorded agent run turns into data for a training job in two steps. Name the two folders that do these steps, in order.
+3. Which folder takes an agent's setup, runs the agent with it, and collects what happened?
+4. Which folder puts trained model weights to work answering requests?
+5. Which folder is responsible for saving the system's records, training samples and generated tasks?
+6. Where do the individual training methods live, one package per method?
+7. About what share of the whole repository, by size, is tests?
+8. Which folder judges a newly trained candidate and decides whether it goes live?
+9. Which folder holds the basic shared types and errors that every other part depends on?
+10. What is the name of the unit the system trains and keeps state for, which can be committed and recovered?
+11. Which folder holds the one component, per running process, that is in charge of all scenarios and of the threads that train them?
+12. Which folder keeps every published version as a snapshot that is never changed afterwards?
+13. Which folder starts the system's processes and accepts requests from other programs over HTTP?
+14. When starting up a trained model for serving fails, how long does the system wait before it retries on its own, and what is the longest it will ever wait between such retries?
+15. Finished work items are cleared out on a schedule. How much time passes between two clear-outs?
+16. When the system reads back the records it has used, at most how many record items does it read in one call?
+17. When the system makes up new practice tasks for itself, how many attempts does one generation get by default, and how much time do all those attempts get together?
+18. An agent reaches its model through a small local gateway. At most how much of one model reply does the gateway keep for its records?
+19. The system can keep its records in a relational database. Which version of the record layout does that database adapter read and write?
+20. How long does a data store keep a job's data folder that no job used?
+21. A constant is documented in the code as: "The limit of a tree agent's command, in seconds. Harbor's agent timeout of each task ends the run first." What is its value?
+22. A constant is documented in the code as: "The rollouts in one optimizer step: each batch here trains as one step." What is its value?
+23. A constant is documented in the code as: "A file the session read is the repository's content the change starts from: kept longer than other results." What is its value?
+24. A constant is documented in the code as: "The number of buckets for conversations. A weight is a number of buckets." What is its value?
+25. A constant is documented in the code as: "Ceiling on live sessions. The fallback opens one session per unmatched request, so without a ceiling a client it never matches grows the table with the request rate for a whole TTL, and every scan pays for it." What is its value?
+26. A constant is documented in the code as: "The most of a control reply that the client reads." What is its value?
+27. A constant is documented in the code as: "Scoring requests in flight at once; the engine batches them, and the columns are installed only once every row is in." What is its value?
+28. A constant is documented in the code as: "How many artifacts behind the served one a row may be and still train. A test appends rows before the jobs that it waits for move the served artifact, so its rows stay trainable until it ends." What is its value?
+29. A constant is documented in the code as: "The most entries, files and directories, directly in one directory of a task: the Hugging Face Hub's limit." What is its value?
+30. A constant is documented in the code as: "The cookbook's prompt-only cap, in tokens of the model pair's tokenizer." What is its value?
+31. A constant is documented in the code as: "How often a waiting future re-checks the executor for a terminal failure." What is its value?
+32. A constant is documented in the code as: "How long the counters of a finished request may take to reach the engine's metrics." What is its value?
+33. A constant is documented in the code as: "How long one trial of the agent may take when the method's ``trial_timeout_s`` says nothing." What is its value?
+34. A constant is documented in the code as: "Serialized characters one ``ctx.log`` event may carry; a loop cannot fill the session with one call." What is its value?
+35. Which function has this docstring: "Persist an existing inference or report through ordinary admission."? Give its name and file.
+36. Which function has this docstring: "Previews of client requests, without the readiness previews Reef sends when it starts."? Give its name and file.
+37. Which function has this docstring: "Fetch ``version`` from the remote and return its commit id."? Give its name and file.
+38. Which function has this docstring: "A composite of a harness recipe and the config recipe, and the live objects that run the harness jobs"? Give its name and file.
+39. Which function has this docstring: "Read the bytes of ``BASE_FILE``; ``ValueError`` when they are no ``to_dict`` value."? Give its name and file.
+40. Which function has this docstring: "Check the candidate privately, without Docker or any ownership change, and return its snapshot version."? Give its name and file.
+41. Which function has this docstring: "Start an inference component on this host, and record its address as the ``inference.remote`` section."? Give its name and file.
+42. Which function has this docstring: "Read at most a positive ``limit`` after a nonnegative append sequence."? Give its name and file.
+43. Which function has this docstring: "The live objects of a test deployment that trains weights: the training component ``component``, its facts"? Give its name and file.
+44. Which function has this docstring: "Nothing to install: the image carries the runner and the reference's split."? Give its name and file.
+45. Which function has this docstring: "Make samples of the records that the trainer of ``component`` in ``scenario`` has not used yet, and store"? Give its name and file.
+46. Which function has this docstring: "Services with valid commands and unique names, checked before any process starts."? Give its name and file.
+47. Which function has this docstring: "Answer RPCs until the owner sends the ``None`` stop request."? Give its name and file.
+48. Which function has this docstring: "A harness recipe whose trainer makes one job of each scored report. A scenario of it can be idle; a scenario"? Give its name and file.

@@ -29,6 +29,7 @@ them can be read without unpacking the rest.
 import argparse
 import ast
 import hashlib
+import io
 import json
 import math
 import os
@@ -39,7 +40,10 @@ import sys
 import textwrap
 from collections import Counter, OrderedDict, defaultdict
 
-from compression import zstd
+try:
+    from compression import zstd             # Python 3.14+
+except ImportError:                          # Python 3.10-3.13: the same module, backported
+    from backports import zstd
 
 from . import __version__
 
@@ -96,10 +100,16 @@ def collect(paths, exclude=()):
     return os.path.commonpath(parents), files
 
 
+def lines_of(text):
+    """A file's lines with their endings, split only at \\n, \\r\\n and \\r, as Python and editors count
+    them (str.splitlines also splits at form feeds and \\u2028, which would throw line numbers off)."""
+    return io.StringIO(text, newline="").readlines()
+
+
 def split_pieces(text):
     """Cut a file into pieces at natural starts (def, class, function, sections,
     blank-line breaks). The pieces cover every byte, in order."""
-    lines = text.splitlines(keepends=True)
+    lines = lines_of(text)
     cuts = [0]
     for i in range(1, len(lines)):
         line, prev, size = lines[i], lines[i - 1], i - cuts[-1]
@@ -432,7 +442,7 @@ def inside(rel, want):
 def matching_line(text, forms):
     """The first line of a piece that holds a search form, the way the index sees words
     (line offset, stripped text); the piece's first line if none does."""
-    lines = text.splitlines()
+    lines = lines_of(text)
     for i, line in enumerate(lines):
         words = words_of(line, ())
         if any(w.startswith(f) for f in forms for w in words):

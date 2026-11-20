@@ -1,0 +1,10 @@
+1. A framework ("reef") that turns recorded agent runs into training data and jobs, trains models (via pluggable recipes, with tinker/slime backends), serves and evaluates the candidates, and manages the whole loop through a service/dispatcher.
+2. reef/record2sample/ first, then reef/sample2job/.
+3. reef/harness/
+4. reef/inference/
+5. reef/storage/ (listed at top level of reef, contents not shown; best guess)
+6. recipes/ (one package per method: gepa, opd, sdft, sdpo, sao, tttd, etc.)
+7. About 40% (tests has 496 files vs 493 in reef and 218 in recipes; unsure of size exactly)
+8. reef/evaluation/ (with activation.py)
+9. reef/core/
+10. The scenario (reef/scenario/, with snapshots, committer, history); unsure

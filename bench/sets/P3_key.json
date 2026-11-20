@@ -1,0 +1,326 @@
+[
+ {
+  "kind": "fixed",
+  "all": [
+   "research",
+   "autonomous|agent"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "infrastructure"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "product[_ ]usage"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "agent[_ ]runtimes"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\btools\\b"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "workflow[_ ]stages"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "pct": [
+   45,
+   60
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "rocket[_ ]booster"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "task_spec"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "user_agreement"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\bplugins\\b"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\b5\\b|five",
+   "\\b2\\b|two"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "5 ?days|five days|432000|432,000|5 ?\\* ?24 ?\\* ?3600|120 hours"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "20 ?min|twenty min|1200|1,200"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\b4\\b|four"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\b80\\b|0\\.8\\b|0\\.80",
+   "\\b92\\b|0\\.92"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\b30\\b|thirty"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "4000|4,000|4 000"
+  ]
+ },
+ {
+  "kind": "const",
+  "file": "praxist/cli/stop.py",
+  "line": 73,
+  "name": "DEFAULT_GRACE_SECONDS",
+  "value": 5.0,
+  "expr": "5.0",
+  "desc": "Seconds between SIGTERM and SIGKILL."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/workflow_stages/research_loop/backend/cohort_runner.py",
+  "line": 150,
+  "name": "_closing_trigger_wait_seconds",
+  "doc": "Return a bounded wait for a closing trigger to flush current work."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/run.py",
+  "line": 21,
+  "name": "_default_run_dir_for_task_project",
+  "doc": "Choose the default run_dir for a resolved task project."
+ },
+ {
+  "kind": "func",
+  "file": "tests/unit/test_cli_stop.py",
+  "line": 2276,
+  "name": "test_alive_entry_with_matching_prefix_is_kept",
+  "doc": "Live PID + matching command prefix \u2192 entry stays, no warning."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/workflow_stages/research_loop/backend/frontier.py",
+  "line": 590,
+  "name": "_raw_candidate_field",
+  "doc": "Return the first non-empty field from canonical candidate containers."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/agent_runtimes/codex_sdk/adapter.py",
+  "line": 695,
+  "name": "_await_controlled",
+  "doc": "Await one SDK phase while enforcing the request-wide controls."
+ },
+ {
+  "kind": "func",
+  "file": "tests/unit/test_cli_stop.py",
+  "line": 2153,
+  "name": "test_gather_targets_dedupes_duplicate_stack_pushes",
+  "doc": "The seen-check at pop time defends against duplicate pushes."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/workflow_stages/research_loop/backend/research_memory/evidence_pack_builder.py",
+  "line": 1910,
+  "name": "_digest_role_roi",
+  "doc": "Return the most recent recorded gen ROI summary, plus deltas."
+ },
+ {
+  "kind": "func",
+  "file": "tests/unit/test_run_config.py",
+  "line": 165,
+  "name": "test_config_shim_re_exports_match_run_config_defaults",
+  "doc": "``praxist.config.X`` re-exports must equal the canonical"
+ },
+ {
+  "kind": "func",
+  "file": "tests/unit/test_cli_status.py",
+  "line": 91,
+  "name": "test_self_and_ancestor_pids_are_excluded",
+  "doc": "The praxist binary's own pid (and its parent shell) must not appear."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/workflow_stages/research_loop/backend/gpu_governor.py",
+  "line": 615,
+  "name": "_cli",
+  "doc": "Tiny CLI so bash scripts can acquire/release/list slots."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/workflow_stages/research_loop/backend/pi_agent.py",
+  "line": 2025,
+  "name": "load_agenda_for_gen",
+  "doc": "Helper: load + structurally validate the agenda intended for `gen_id`."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/workflow_stages/research_loop/backend/findings_collection.py",
+  "line": 2664,
+  "name": "_finding_source_index",
+  "doc": "Index raw finding files by both authored and canonical ingest ids."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/workflow_stages/research_loop/backend/artifact_semantics.py",
+  "line": 28,
+  "name": "utc_now_iso",
+  "doc": "Return the current UTC timestamp in compact ISO-8601 form."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/cli/monitor.py",
+  "line": 841,
+  "name": "register",
+  "doc": "Register the compatibility ``praxist monitor`` subcommand."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/cli/uninstall.py",
+  "line": 191,
+  "name": "_skill_targets",
+  "doc": "Select explicit or manifest-backed skill hosts without another state file."
+ },
+ {
+  "kind": "func",
+  "file": "tests/unit/test_panel_topology_prompts_override.py",
+  "line": 136,
+  "name": "test_base_pi_without_prompts_dir_uses_bundled_template",
+  "doc": "No prompts_dir override \u2192 bundled ``base.jinja2`` is rendered."
+ },
+ {
+  "kind": "func",
+  "file": "examples/rocket_booster_recovery/vendor/frozen_c05_plant/ppo_rocket_6dof_finned_jax.py",
+  "line": 637,
+  "name": "_guidance_ss_lqr",
+  "doc": "Steady-state LQR terminal nuller (C01 ablation: replace TV-LQR gains"
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/graph_maintainers/finding_graph_mvp/viz.py",
+  "line": 1545,
+  "name": "render_graph_html",
+  "doc": "Write a self-contained HTML graph visualization to ``out_path``."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/tools/frontier_tools/adapter.py",
+  "line": 200,
+  "name": "_handle_get_frontier",
+  "doc": "Get durable frontier entries plus separate non-frontier validation signals."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/workflow_stages/research_loop/backend/evidence_maturity.py",
+  "line": 372,
+  "name": "evidence_maturity_snapshot",
+  "doc": "Compute generic maturity telemetry for one finding/result candidate."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/workflow_stages/research_loop/backend/research_memory/retrieval_policy.py",
+  "line": 150,
+  "name": "negative_evidence_ratio",
+  "doc": "Return the ratio of negative evidence in an evidence-card collection."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/workflow_stages/research_loop/backend/artifact_semantics.py",
+  "line": 34,
+  "name": "artifact_semantics",
+  "doc": "Return compact, JSON/YAML-safe artifact role metadata."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/workflow_stages/research_loop/backend/research_memory/context_auditor.py",
+  "line": 106,
+  "name": "_negative_digest_entries",
+  "doc": "Return negative evidence ledger digest entries visible in a pack."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/workflow_stages/research_loop/backend/cohort_runner.py",
+  "line": 226,
+  "name": "_assign_dig_selection_policies",
+  "doc": "Assign cohort-level DIG intent slots before peers plan independently."
+ },
+ {
+  "kind": "func",
+  "file": "tests/unit/test_runtime_sandbox_intent.py",
+  "line": 51,
+  "name": "test_invalid_approval_value_raises",
+  "doc": "An approval value outside the vocabulary is rejected."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/workflow_stages/research_loop/backend/synthesis_trigger.py",
+  "line": 886,
+  "name": "_query_mature_state",
+  "doc": "Return distinct peers with mature-enough result evidence."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/cli/uninstall.py",
+  "line": 420,
+  "name": "main",
+  "doc": "Run the standalone ``praxist-uninstall`` console entrypoint."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/workflow_stages/research_loop/backend/experiment_scheduler_client.py",
+  "line": 372,
+  "name": "_static_env_chdir",
+  "doc": "Return the last static ``env --chdir`` operand before the program."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/workflow_stages/research_loop/backend/tools/http_utils.py",
+  "line": 45,
+  "name": "async_http_post",
+  "doc": "Make an async HTTP POST request with httpx fallback to requests."
+ }
+]

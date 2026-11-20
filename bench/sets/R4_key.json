@@ -1,0 +1,350 @@
+[
+ {
+  "kind": "fixed",
+  "all": [
+   "continual|self.?improving"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "order": [
+   "record2sample",
+   "sample2job"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "harness"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "inference"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "storage"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\brecipes\\b"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "pct": [
+   40,
+   55
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "evaluation"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\bcore\\b"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "scenario"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "dispatcher"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "artifact"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\bservice\\b"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\b60\\b|one minute|1 minute",
+   "3600|\\bhour\\b|60 min"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "3600|\\bhour\\b|60 min"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\b256\\b"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\b3\\b|three",
+   "1800|30 min|half an hour"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "2 ?MiB|2 ?MB|2097152|2,097,152|2 ?\\* ?1024 ?\\* ?1024"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\b23\\b"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "7 ?days|seven days|604800|604,800|7 ?\\* ?24 ?\\* ?3600|one week|1 week"
+  ]
+ },
+ {
+  "kind": "const",
+  "file": "recipes/openclawrl/judging.py",
+  "line": 44,
+  "name": "UNBOUND_WARN_INTERVAL_S",
+  "value": 300.0,
+  "expr": "300.0",
+  "desc": "How often a run may repeat the \"nothing is binding\" warning, and how many dead-on-arrival sessions it takes to raise it at all. A conversation whose last turn never got a next state is ordinary; a run where those outnumber the turns that did bind is a correlation failure."
+ },
+ {
+  "kind": "const",
+  "file": "recipes/beta/autoenvscaling/author.py",
+  "line": 59,
+  "name": "FINISH_SECONDS",
+  "value": 420,
+  "expr": "420",
+  "desc": "The agent is told to finish, with the best task it has, this long before its time runs out."
+ },
+ {
+  "kind": "const",
+  "file": "recipes/sao/examples/ceobench/harness/harbor_agent.py",
+  "line": 118,
+  "name": "DEFAULT_SEED",
+  "value": 42,
+  "expr": "42",
+  "desc": "Rollout defaults; ``kwargs`` on the Harbor agent config override them."
+ },
+ {
+  "kind": "const",
+  "file": "reef/service/lifecycle.py",
+  "line": 60,
+  "name": "CANDIDATE_REASON_LIMIT",
+  "value": 300,
+  "expr": "300",
+  "desc": "The most characters of a refused candidate's reason that the child logs."
+ },
+ {
+  "kind": "const",
+  "file": "recipes/sao/examples/ceobench/run.py",
+  "line": 44,
+  "name": "TRAIN_DRAIN_TIMEOUT_S",
+  "value": 7200.0,
+  "expr": "7200.0",
+  "desc": "Ceiling on waiting for one rollout's training steps before moving on with a warning."
+ },
+ {
+  "kind": "const",
+  "file": "tests/reef_recipe/test_generated_tasks.py",
+  "line": 122,
+  "name": "BATCH_SIZE",
+  "value": 1,
+  "expr": "1",
+  "desc": "The trainer's sample count: the job_samples of ``GeneratedTaskJobData``, one task."
+ },
+ {
+  "kind": "const",
+  "file": "reef/train/task_rollouts.py",
+  "line": 39,
+  "name": "REALIGN_THRESHOLD",
+  "value": 32768,
+  "expr": "32768",
+  "desc": "Tokens a multi-turn sample may realign where a later prompt rewrote an earlier response."
+ },
+ {
+  "kind": "const",
+  "file": "reef/harness/tasks/vendor_install.py",
+  "line": 42,
+  "name": "INSTALL_TIMEOUT_S",
+  "value": 900.0,
+  "expr": "900.0",
+  "desc": "A vendor install clones, builds and downloads; a version probe only execs."
+ },
+ {
+  "kind": "const",
+  "file": "reef/harness/runners/native/__init__.py",
+  "line": 49,
+  "name": "MAX_STEPS",
+  "value": 12,
+  "expr": "12",
+  "desc": "Step and tool result budgets; a run also runs under the executor's wall clock."
+ },
+ {
+  "kind": "const",
+  "file": "reef/record2sample/generator/service.py",
+  "line": 123,
+  "name": "MAX_JOBS_IN_FLIGHT",
+  "value": 256,
+  "expr": "256",
+  "desc": "The most jobs that run or wait at the same time."
+ },
+ {
+  "kind": "const",
+  "file": "reef/core/evaluation.py",
+  "line": 804,
+  "name": "MAX_CALL_LABEL_CHARACTERS",
+  "value": 200,
+  "expr": "200",
+  "desc": "The longest ``label`` of a call."
+ },
+ {
+  "kind": "const",
+  "file": "reef/service/routing_preview.py",
+  "line": 55,
+  "name": "RESPONSE_ENVELOPE_BYTES",
+  "value": 1048576,
+  "expr": "1024 * 1024",
+  "desc": "Room for every reply field besides the echoed prompt."
+ },
+ {
+  "kind": "const",
+  "file": "reef/record2sample/service/worker.py",
+  "line": 55,
+  "name": "MAX_BACKGROUND_POLL_SECONDS",
+  "value": 300.0,
+  "expr": "300.0",
+  "desc": "The longest wait, in seconds, between two fallback looks at background work that changed nothing."
+ },
+ {
+  "kind": "const",
+  "file": "reef/core/training_request.py",
+  "line": 30,
+  "name": "MAX_CLIENT_COMMANDS",
+  "value": 64,
+  "expr": "64",
+  "desc": "At most this many commands in one report."
+ },
+ {
+  "kind": "func",
+  "file": "reef/train/slime_backend/facts.py",
+  "line": 181,
+  "name": "default_start",
+  "doc": "A base root of ``default_start_inputs``: the startup weights are the model's, with no adapter."
+ },
+ {
+  "kind": "func",
+  "file": "reef/core/requirements.py",
+  "line": 102,
+  "name": "artifact_chain",
+  "doc": "The content chain of ``artifact_id`` through the catalog ``rows``, newest first."
+ },
+ {
+  "kind": "func",
+  "file": "tutorials/semantic-router/qwen2.5/check.py",
+  "line": 27,
+  "name": "write_manifests",
+  "doc": "Write policies A and B. Only the default target changes."
+ },
+ {
+  "kind": "func",
+  "file": "reef/storage/evaluations.py",
+  "line": 158,
+  "name": "reopen",
+  "doc": "Make a finished or failed evaluation ``running`` again and return it, without its result, its error and"
+ },
+ {
+  "kind": "func",
+  "file": "tests/recipes/reefine/test_reefine_tutorial.py",
+  "line": 250,
+  "name": "test_install_renders_the_source_tree_for_pi_with_a_binding_at_this_reef",
+  "doc": "The demo is the client: it pulls the source tree, checks what the snapshot requires on this machine, and"
+ },
+ {
+  "kind": "func",
+  "file": "reef/service/streaming.py",
+  "line": 146,
+  "name": "receipt_sse_events",
+  "doc": "Return terminal event(s) carrying a receipt for a persisted record."
+ },
+ {
+  "kind": "func",
+  "file": "reef/dispatcher/dispatcher.py",
+  "line": 498,
+  "name": "scenario_committed",
+  "doc": "Write what ``instance`` serves now to ``served_models``, in the step of the commit that changed it, ask"
+ },
+ {
+  "kind": "func",
+  "file": "reef/inference/remote/server.py",
+  "line": 325,
+  "name": "health",
+  "doc": "Report this process and whether engines run; raise for failed engines, not for busy ones."
+ },
+ {
+  "kind": "func",
+  "file": "reef/train/harness_backend/workspace.py",
+  "line": 124,
+  "name": "json_object",
+  "doc": "``value`` as a JSON object: text keys, and no value that ``json.dumps`` refuses, NaN and infinity included."
+ },
+ {
+  "kind": "func",
+  "file": "reef/train/pipeline.py",
+  "line": 338,
+  "name": "queue_requests",
+  "doc": "Hold the scenario's queued requests, oldest first: each one that this pipeline did not consume yet."
+ },
+ {
+  "kind": "func",
+  "file": "recipes/openclawrl/sessions.py",
+  "line": 142,
+  "name": "stats",
+  "doc": "Correlation counters since this index was built."
+ },
+ {
+  "kind": "func",
+  "file": "reef/scenario/registry.py",
+  "line": 69,
+  "name": "scenario_committed",
+  "doc": "React to a commit of ``instance`` that can change what it serves: a training step, an activation, a"
+ },
+ {
+  "kind": "func",
+  "file": "reef/train/trainer.py",
+  "line": 376,
+  "name": "job_running",
+  "doc": "Whether this trainer's committed state names a running job, which its worker polls."
+ },
+ {
+  "kind": "func",
+  "file": "tests/support/reference_algorithms/sao.py",
+  "line": 49,
+  "name": "clip_ratio",
+  "doc": "Return the fraction of trained tokens rejected by calibration."
+ }
+]

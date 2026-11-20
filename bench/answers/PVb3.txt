@@ -1,0 +1,10 @@
+1. It is a platform for running autonomous research: a control plane that launches, monitors, resumes and packages research runs for task projects, with plugins, a CLI, and cloud/GPU infrastructure.
+2. praxist/infrastructure/
+3. praxist/product_usage/
+4. praxist/plugins/agent_runtimes/
+5. praxist/plugins/tools/
+6. unsure
+7. unsure
+8. Rocket Booster Recovery (examples/rocket_booster_recovery)
+9. praxist/task_spec.py
+10. praxist/user_agreement.py

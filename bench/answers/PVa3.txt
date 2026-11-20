@@ -1,0 +1,10 @@
+1. It is Praxist, a platform/control plane for autonomous research: running research workflows with pluggable agents, tools and stages, task specs, and deliverables packaging.
+2. praxist/infrastructure/
+3. praxist/product_usage/
+4. praxist/plugins/agent_runtimes/
+5. praxist/plugins/tools/
+6. praxist/plugins/workflow_stages/ (about 2,750 KB)
+7. About 53% (tests are 6,292 KB of 11,905 KB).
+8. A Rocket Booster Recovery controller task package (in examples/).
+9. praxist/task_spec.py
+10. praxist/user_agreement.py

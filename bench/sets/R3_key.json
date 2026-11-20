@@ -1,0 +1,350 @@
+[
+ {
+  "kind": "fixed",
+  "all": [
+   "continual|self.?improving"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "order": [
+   "record2sample",
+   "sample2job"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "harness"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "inference"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "storage"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\brecipes\\b"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "pct": [
+   40,
+   55
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "evaluation"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\bcore\\b"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "scenario"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "dispatcher"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "artifact"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\bservice\\b"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\b60\\b|one minute|1 minute",
+   "3600|\\bhour\\b|60 min"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "3600|\\bhour\\b|60 min"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\b256\\b"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\b3\\b|three",
+   "1800|30 min|half an hour"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "2 ?MiB|2 ?MB|2097152|2,097,152|2 ?\\* ?1024 ?\\* ?1024"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\b23\\b"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "7 ?days|seven days|604800|604,800|7 ?\\* ?24 ?\\* ?3600|one week|1 week"
+  ]
+ },
+ {
+  "kind": "const",
+  "file": "reef/service/request_page.py",
+  "line": 44,
+  "name": "REFRESH_SECONDS",
+  "value": 5,
+  "expr": "5",
+  "desc": "Seconds between the page's own reloads while the request is not settled."
+ },
+ {
+  "kind": "const",
+  "file": "reef/storage/sql_data.py",
+  "line": 138,
+  "name": "GROUP_COMMIT_ITEMS",
+  "value": 200,
+  "expr": "200",
+  "desc": "The most items that one transaction of a group commit writes."
+ },
+ {
+  "kind": "const",
+  "file": "reef/harness/runners/native/graph.py",
+  "line": 46,
+  "name": "NATIVE_MATCH_WINDOW",
+  "value": 4096,
+  "expr": "4096",
+  "desc": "Bound regex input and wall time; Python's matcher has no execution-step limit."
+ },
+ {
+  "kind": "const",
+  "file": "recipes/openclawrl/examples/openclawrl/harness/agent.py",
+  "line": 67,
+  "name": "REACTION_POLL_S",
+  "value": 2.0,
+  "expr": "2.0",
+  "desc": "How often to ask the judge whether its reaction has landed."
+ },
+ {
+  "kind": "const",
+  "file": "tutorials/evolve-your-harness/harness/plugins.py",
+  "line": 32,
+  "name": "MAX_TOKENS",
+  "value": 2048,
+  "expr": "2048",
+  "desc": "The limits of the one model call of a job. A stalled endpoint holds the training thread for the whole timeout before the job skips. Raise both for a local thinking model, which spends its reply budget on reasoning first."
+ },
+ {
+  "kind": "const",
+  "file": "docs/assets/render_architecture.py",
+  "line": 22,
+  "name": "CYCLE",
+  "value": 12,
+  "expr": "12",
+  "desc": "seconds for one lap of serve, observe, grow, commit"
+ },
+ {
+  "kind": "const",
+  "file": "reef/core/reasoning.py",
+  "line": 17,
+  "name": "PROMPT_TAIL_TOKEN_COUNT",
+  "value": 8,
+  "expr": "8",
+  "desc": "The tokens at the end of a rendered prompt that hold an open ``<think>``: the tag and the newline after it can be several tokens."
+ },
+ {
+  "kind": "const",
+  "file": "recipes/beta/reefine/answer.py",
+  "line": 53,
+  "name": "DESIGN_CHARS",
+  "value": 4000,
+  "expr": "4000",
+  "desc": "How much of a design the job records: a few paragraphs with its How to use section."
+ },
+ {
+  "kind": "const",
+  "file": "reef/service/routes/data.py",
+  "line": 58,
+  "name": "CHUNK_BYTES",
+  "value": 1048576,
+  "expr": "1024 * 1024",
+  "desc": "The bytes read from the body at a time."
+ },
+ {
+  "kind": "const",
+  "file": "reef/service/routing_preview.py",
+  "line": 53,
+  "name": "RESPONSE_EXPANSION",
+  "value": 6,
+  "expr": "6",
+  "desc": "A reply echoes the evaluated prompt as ``original_text``; Go's JSON encoder writes one byte as at most six."
+ },
+ {
+  "kind": "const",
+  "file": "reef/train/tinker_backend/component.py",
+  "line": 55,
+  "name": "SAMPLER_WARM_TIMEOUT_S",
+  "value": 3600.0,
+  "expr": "3600.0",
+  "desc": "Seconds that the start's sampler may take to answer its first sample before a task job's rollouts start."
+ },
+ {
+  "kind": "const",
+  "file": "reef/harness/runners/native/__init__.py",
+  "line": 56,
+  "name": "MAX_COMPLETION_TOKENS",
+  "value": 4096,
+  "expr": "4096",
+  "desc": "Tokens one model call may generate; a local single slot server stalls every other caller behind an unbounded one."
+ },
+ {
+  "kind": "const",
+  "file": "reef/service/deploy/routing/renderer.py",
+  "line": 45,
+  "name": "ROUTER_HTTP_PORT",
+  "value": 8080,
+  "expr": "8080",
+  "desc": "The router's HTTP API inside its container (start-router.sh enables it there)."
+ },
+ {
+  "kind": "const",
+  "file": "reef/record2sample/service/worker.py",
+  "line": 61,
+  "name": "PROGRESS_INTERVAL_SECONDS",
+  "value": 1.0,
+  "expr": "1.0",
+  "desc": "The shortest time, in seconds, between two progress writes of one selection."
+ },
+ {
+  "kind": "func",
+  "file": "reef/execution/executor/placement.py",
+  "line": 92,
+  "name": "release",
+  "doc": "Return the placement group to the cluster; safe to call more than once."
+ },
+ {
+  "kind": "func",
+  "file": "reef/tinker/service.py",
+  "line": 34,
+  "name": "close_service",
+  "doc": "Close the SDK ``ServiceClient`` ``service``, ending its session with ``status`` (``success`` or ``errored``)."
+ },
+ {
+  "kind": "func",
+  "file": "reef/core/evaluation.py",
+  "line": 118,
+  "name": "rollouts",
+  "doc": "Every rollout's score, task by task, in run order."
+ },
+ {
+  "kind": "func",
+  "file": "reef/service/request_service.py",
+  "line": 169,
+  "name": "import_records",
+  "doc": "Import a bounded, atomic batch using the existing record contract."
+ },
+ {
+  "kind": "func",
+  "file": "reef/storage/served_models.py",
+  "line": 125,
+  "name": "is_referenced",
+  "doc": "Whether any published route uses ``served``'s engine URL and model name."
+ },
+ {
+  "kind": "func",
+  "file": "recipes/sao/slime/__init__.py",
+  "line": 403,
+  "name": "_apply_attention_freeze",
+  "doc": "Freeze the critic's attention stack for an MoE value model (SAO Section 4)."
+ },
+ {
+  "kind": "func",
+  "file": "reef/service/deploy/routing/containers.py",
+  "line": 474,
+  "name": "built_image_id",
+  "doc": "The local ID of the image that a build loaded: the one of its ``digests`` that names a local image."
+ },
+ {
+  "kind": "func",
+  "file": "reef/train/slime_backend/harbor_rollouts.py",
+  "line": 264,
+  "name": "assembled_fields",
+  "doc": "The Slime fields of a rollout's assembled ``sample``, or None when it has no trained token or lacks a head."
+ },
+ {
+  "kind": "func",
+  "file": "reef/train/job_queue.py",
+  "line": 470,
+  "name": "cancel_request_jobs",
+  "doc": "Cancel each training job of ``scenario`` that trains the request ``request_id``, as ``cancel_scenario_job``"
+ },
+ {
+  "kind": "func",
+  "file": "reef/service/deploy/routing/deployment_controller.py",
+  "line": 393,
+  "name": "wait_ready",
+  "doc": "Verify the committed pair before opening. A pre-PUT abort may only reopen the unchanged pair."
+ },
+ {
+  "kind": "func",
+  "file": "reef/recipe/harness.py",
+  "line": 254,
+  "name": "task_directories",
+  "doc": "Whether the runs play Harbor task directories rather than prompts"
+ },
+ {
+  "kind": "func",
+  "file": "reef/service/assembly.py",
+  "line": 91,
+  "name": "_recipe_owned_settings",
+  "doc": "The flat ``reef.*`` keys that belong to the recipe, not the service."
+ },
+ {
+  "kind": "func",
+  "file": "reef/train/harness_backend/records.py",
+  "line": 61,
+  "name": "write",
+  "doc": "One record file of a job as JSON, created exclusively: a record file is never replaced."
+ },
+ {
+  "kind": "func",
+  "file": "recipes/beta/coral/gateway_launcher.py",
+  "line": 74,
+  "name": "attach_reef_adapter_to_agent_manager",
+  "doc": "Arrange for the reef layer to sit under an ``AgentManager``-owned gateway."
+ }
+]

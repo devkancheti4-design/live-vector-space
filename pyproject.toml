@@ -5,17 +5,26 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "live-vector-space"
 dynamic = ["version"]
-description = "A whole codebase in a few KB, every byte one lookup away: a small map plus exact, numbered pieces for LLMs."
+description = "The shape of a whole codebase in a few KB, every byte one lookup away: a map, a word index and an exact compressed store for LLMs. No embeddings."
 readme = "README.md"
-requires-python = ">=3.14"
+requires-python = ">=3.10"
 license = "AGPL-3.0-or-later"
 license-files = ["LICENSE"]
-dependencies = ["numpy>=1.24"]
+dependencies = [
+    "numpy>=1.24",
+    "backports.zstd>=1.0; python_version < '3.14'",   # the stdlib compression.zstd, for 3.10-3.13
+]
 keywords = ["llm", "codebase map", "context window", "compression", "mcp", "code search"]
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
     "Programming Language :: Python :: 3.14",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: MacOS",
     "Environment :: Console",
     "Intended Audience :: Developers",
     "Topic :: Software Development",

@@ -1,0 +1,10 @@
+1. A framework for evaluating AI agents on benchmark tasks in containerized sandbox environments (task specs, agent runners, and reporting).
+2. environments
+3. telemetry
+4. agents
+5. mcp
+6. adapters
+7. about 25%
+8. hello-world
+9. src/models/task/task.py (a task loader/config file)
+10. unsure

@@ -1,0 +1,326 @@
+[
+ {
+  "kind": "fixed",
+  "all": [
+   "research",
+   "autonomous|agent"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "infrastructure"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "product[_ ]usage"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "agent[_ ]runtimes"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\btools\\b"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "workflow[_ ]stages"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "pct": [
+   45,
+   60
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "rocket[_ ]booster"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "task_spec"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "user_agreement"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\bplugins\\b"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\b5\\b|five",
+   "\\b2\\b|two"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "5 ?days|five days|432000|432,000|5 ?\\* ?24 ?\\* ?3600|120 hours"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "20 ?min|twenty min|1200|1,200"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\b4\\b|four"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\b80\\b|0\\.8\\b|0\\.80",
+   "\\b92\\b|0\\.92"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "\\b30\\b|thirty"
+  ]
+ },
+ {
+  "kind": "fixed",
+  "all": [
+   "4000|4,000|4 000"
+  ]
+ },
+ {
+  "kind": "const",
+  "file": "examples/rocket_booster_recovery/vendor/frozen_c05_plant/terminal_reward.py",
+  "line": 51,
+  "name": "SAFE_BONUS",
+  "value": 250.0,
+  "expr": "250.0",
+  "desc": "Original harness terminal reward constant."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/tools/evaluation_tools/adapter.py",
+  "line": 1167,
+  "name": "_handle_get_leaderboard",
+  "doc": "Get leaderboard of results, optionally filtered by generation."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/product_usage/batching.py",
+  "line": 34,
+  "name": "encode_next_batch",
+  "doc": "Greedily encode the oldest rows without crossing either hard limit."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/workflow_stages/research_loop/backend/synthesis_trigger.py",
+  "line": 1706,
+  "name": "_write_signal_atomic",
+  "doc": "Atomically write a sentinel and fsync the parent directory."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/product_usage/migrations/versions/0002_create_v2_environment_events.py",
+  "line": 17,
+  "name": "upgrade",
+  "doc": "Archive V1 storage and create the closed V2 event table."
+ },
+ {
+  "kind": "func",
+  "file": "examples/rocket_booster_recovery_rust/vendor/libc-0.2.189/etc/libc-util.py",
+  "line": 866,
+  "name": "add_backport_trailer",
+  "doc": "Add `(backport ...)` to the previous commit, using `(cherry picked from ...)`"
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/tools/result_envelope.py",
+  "line": 108,
+  "name": "read_tool_result_ref",
+  "doc": "Read a stored tool-result artifact by bounded character window."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/workflow_stages/research_loop/backend/multi_pi/chair_arbiter.py",
+  "line": 201,
+  "name": "_iter_chair_yaml_candidates",
+  "doc": "Return possible YAML bodies from a Chair response."
+ },
+ {
+  "kind": "func",
+  "file": "tests/unit/test_arxiv.py",
+  "line": 401,
+  "name": "test_call_outside_window_does_not_sleep",
+  "doc": "A second call > 3 s after the first must not sleep."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/agent_runtimes/claude_sdk/adapter.py",
+  "line": 163,
+  "name": "_has_shell_background_operator",
+  "doc": "Distinguish shell background control from file-descriptor redirection."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/core/execution_guards.py",
+  "line": 295,
+  "name": "emit_resource_event_from_env",
+  "doc": "Emit a resource lifecycle trajectory event from the current scoped execution environment."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/run.py",
+  "line": 65,
+  "name": "_install_research_loop_signal_finalizer",
+  "doc": "Materialize canonical ledgers before a foreground research-loop run exits on TERM/INT."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/workflow_stages/research_loop/backend/multi_pi/pi_roles/_base_pi.py",
+  "line": 192,
+  "name": "_has_round1_schema",
+  "doc": "Return True for a usable independent PI memo."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/cli/configure_llm.py",
+  "line": 103,
+  "name": "cmd_configure_llm",
+  "doc": "Write Praxist provider config to the user env file."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/graph_maintainers/finding_graph_mvp/engine.py",
+  "line": 946,
+  "name": "write_graph_health",
+  "doc": "Compute health + atomic-write to ``<out_dir>/graph_health.json``."
+ },
+ {
+  "kind": "func",
+  "file": "examples/rocket_booster_recovery/vendor/frozen_c05_plant/ppo_rocket_6dof_finned_jax.py",
+  "line": 625,
+  "name": "_load_tvlqr_frozen",
+  "doc": "Lazily load the archived iLQR reference + rk4-computed TV-LQR gains."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/workflow_stages/research_loop/backend/hooks/log_tool_usage.py",
+  "line": 32,
+  "name": "main",
+  "doc": "Record completed legacy Claude Code tool usage for run diagnostics."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/workflow_stages/research_loop/backend/resume_state.py",
+  "line": 929,
+  "name": "_boundary_marker_contract_start",
+  "doc": "Return the first generation whose completion requires a marker."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/workflow_stages/research_loop/backend/resource_scheduler.py",
+  "line": 960,
+  "name": "has_supply_headroom",
+  "doc": "Return whether observed task pressure permits requesting more work."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/cli/install_skills.py",
+  "line": 253,
+  "name": "install_codex_skills",
+  "doc": "Install bundled skills under one target-directory lifecycle lock."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/workflow_stages/research_loop/backend/tools/findings_ingest.py",
+  "line": 549,
+  "name": "_dataset_alias_records",
+  "doc": "Return task-declared dataset aliases from a finding payload."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/cli/stop.py",
+  "line": 1208,
+  "name": "_signal_set",
+  "doc": "Send ``sig`` to each pid; record permission errors as warnings."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/workflow_stages/research_loop/backend/research_memory/context_auditor.py",
+  "line": 151,
+  "name": "_negative_digest_identity",
+  "doc": "Stable-enough identity for mirrored digest entries."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/workflow_stages/research_loop/backend/tools/local_store.py",
+  "line": 908,
+  "name": "insert_edge",
+  "doc": "Insert a single edge. Returns edge_id if inserted, None if duplicate."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/workflow_stages/research_loop/backend/gpu_governor.py",
+  "line": 129,
+  "name": "_locked",
+  "doc": "Acquire an exclusive flock on `path`. Releases on context exit."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/core/registry.py",
+  "line": 691,
+  "name": "instantiate_plugin_entrypoint",
+  "doc": "Instantiate a selected executable plugin using its entrypoint factory."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/agent_runtimes/claude_sdk/adapter.py",
+  "line": 117,
+  "name": "_closing_signal_bash_reason",
+  "doc": "Deny new shell-launched work after close without blocking drain actions."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/workflow_stages/research_loop/backend/dig/selection.py",
+  "line": 175,
+  "name": "is_near_duplicate_candidate",
+  "doc": "Return True when a candidate duplicates known cells or mechanism text."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/workflow_stages/research_loop/backend/experiment_scheduler_client.py",
+  "line": 1207,
+  "name": "release_supply_lease",
+  "doc": "Release an unused directed supply lease; consumed leases are idempotent."
+ },
+ {
+  "kind": "func",
+  "file": "praxist/plugins/workflow_stages/research_loop/backend/gpu_governor.py",
+  "line": 183,
+  "name": "_entry_age_seconds",
+  "doc": "Best-effort age in seconds; None if started_at is unparseable."
+ }
+]

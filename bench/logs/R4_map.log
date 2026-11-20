@@ -1,0 +1,332 @@
+{"cmd": "files", "args": ["reef", 1], "bytes": 2508}
+{"cmd": "find", "args": ["nothing is binding"], "bytes": 2173}
+{"cmd": "find", "args": ["finish, with the best task"], "bytes": 1960}
+{"cmd": "find", "args": ["Rollout defaults"], "bytes": 2083}
+{"cmd": "find", "args": ["refused candidate's reason"], "bytes": 2014}
+{"cmd": "find", "args": ["Ceiling on waiting for one rollout"], "bytes": 2181}
+{"cmd": "find", "args": ["job_samples of"], "bytes": 2003}
+{"cmd": "find", "args": ["realign where a later prompt"], "bytes": 1917}
+{"cmd": "find", "args": ["clones, builds and downloads"], "bytes": 2387}
+{"cmd": "find", "args": ["Step and tool result budgets"], "bytes": 2013}
+{"cmd": "find", "args": ["most jobs that run or wait"], "bytes": 2253}
+{"cmd": "find", "args": ["longest label of a call"], "bytes": 2232}
+{"cmd": "find", "args": ["Room for every reply field"], "bytes": 2387}
+{"cmd": "find", "args": ["fallback looks at background"], "bytes": 1937}
+{"cmd": "find", "args": ["At most this many commands"], "bytes": 2210}
+{"cmd": "find", "args": ["dead-on-arrival"], "bytes": 1849}
+{"cmd": "find", "args": ["dead-on-arrival", "--in reef"], "bytes": 2076}
+{"cmd": "find", "args": ["realign"], "bytes": 1813}
+{"cmd": "find", "args": ["binding_warning"], "bytes": 1815}
+{"cmd": "find", "args": ["MAX_REASON"], "bytes": 2063}
+{"cmd": "find", "args": ["wall-clock"], "bytes": 2153}
+{"cmd": "find", "args": ["GeneratedTaskJobData", "--in reef"], "bytes": 837}
+{"cmd": "find", "args": ["fallback_poll"], "bytes": 1875}
+{"cmd": "find", "args": ["MAX_CONCURRENT_JOBS"], "bytes": 2188}
+{"cmd": "get", "args": [3736], "bytes": 1535}
+{"cmd": "find", "args": ["correlation_failure", "--in reef"], "bytes": 2147}
+{"cmd": "find", "args": ["DEADLINE_MARGIN", "--in reef"], "bytes": 1993}
+{"cmd": "find", "args": ["RAW_TEXT_LIMIT"], "bytes": 2061}
+{"cmd": "find", "args": ["_CHARS", "--in reef/execution"], "bytes": 46}
+{"cmd": "find", "args": ["HARBOR_DEFAULTS", "--in recipes/basic"], "bytes": 1160}
+{"cmd": "find", "args": ["MAX_TRAINING_WAIT", "--in reef"], "bytes": 1841}
+{"cmd": "find", "args": ["MAX_CONCURRENT", "--in reef/execution"], "bytes": 2165}
+{"cmd": "find", "args": ["LABEL_MAX", "--in reef"], "bytes": 1976}
+{"cmd": "find", "args": ["POLL_MAX_SECONDS", "--in reef/dispatcher"], "bytes": 1936}
+{"cmd": "find", "args": ["outnumber"], "bytes": 141}
+{"cmd": "find", "args": ["REALIGN_THRESHOLD"], "bytes": 1457}
+{"cmd": "find", "args": ["dead-on"], "bytes": 1894}
+{"cmd": "find", "args": ["echoed"], "bytes": 1039}
+{"cmd": "find", "args": ["GENERATED_TASK_SAMPLES"], "bytes": 2211}
+{"cmd": "find", "args": ["refuses"], "bytes": 2348}
+{"cmd": "find", "args": ["vendor"], "bytes": 1919}
+{"cmd": "get", "args": [920], "bytes": 438}
+{"cmd": "get", "args": [5683], "bytes": 2235}
+{"cmd": "get", "args": [6891], "bytes": 483}
+{"cmd": "get", "args": [122], "bytes": 3570}
+{"cmd": "find", "args": ["install_timeout", "--in reef/harness/tasks"], "bytes": 194}
+{"cmd": "find", "args": ["probe", "--in reef/harness/tasks"], "bytes": 497}
+{"cmd": "find", "args": ["sample_count", "--in reef/recipe/generated_tasks"], "bytes": 1882}
+{"cmd": "find", "args": ["kwargs", "--in recipes/basic"], "bytes": 45}
+{"cmd": "find", "args": ["kwargs", "--in reef/harness/harbor"], "bytes": 51}
+{"cmd": "find", "args": ["kwargs", "--in recipes"], "bytes": 39}
+{"cmd": "find", "args": ["unload", "--in reef/inference"], "bytes": 1979}
+{"cmd": "find", "args": ["label", "--in reef/observability"], "bytes": 49}
+{"cmd": "find", "args": ["ceiling"], "bytes": 2162}
+{"cmd": "find", "args": ["finish", "--in recipes/openclawrl"], "bytes": 1204}
+{"cmd": "get", "args": [1146], "bytes": 687}
+{"cmd": "get", "args": [4002], "bytes": 201}
+{"cmd": "find", "args": ["TIME_RUNS_OUT"], "bytes": 2228}
+{"cmd": "find", "args": ["grace"], "bytes": 1875}
+{"cmd": "find", "args": ["DEFAULTS", "--in recipes/basic"], "bytes": 47}
+{"cmd": "find", "args": ["remaining", "--in recipes/beta/reefine"], "bytes": 266}
+{"cmd": "find", "args": ["time_limit"], "bytes": 309}
+{"cmd": "find", "args": ["finish_seconds", "--in recipes"], "bytes": 793}
+{"cmd": "find", "args": ["TASK_SAMPLES", "--in reef/recipe"], "bytes": 1864}
+{"cmd": "find", "args": ["MAX_ACTIVE"], "bytes": 89}
+{"cmd": "find", "args": ["SUMMARY_FIELD"], "bytes": 2020}
+{"cmd": "find", "args": ["MAX_LABEL"], "bytes": 2146}
+{"cmd": "find", "args": ["REASON_LOG"], "bytes": 1870}
+{"cmd": "get", "args": [133], "bytes": 1276}
+{"cmd": "get", "args": [1146], "bytes": 687}
+{"cmd": "find", "args": ["SESSION_TIMEOUT_S"], "bytes": 2092}
+{"cmd": "find", "args": ["HARBOR_ROLLOUT"], "bytes": 2070}
+{"cmd": "find", "args": ["harbor", "--in reef/harness/harbor"], "bytes": 2283}
+{"cmd": "find", "args": ["job_samples", "--in reef/recipe/generated_tasks"], "bytes": 193}
+{"cmd": "get", "args": [7194], "bytes": 782}
+{"cmd": "find", "args": ["GeneratedTaskJobData", "--in recipes"], "bytes": 53}
+{"cmd": "find", "args": ["GeneratedTaskJobData", "--in tests"], "bytes": 1637}
+{"cmd": "get", "args": [11832], "bytes": 181}
+{"cmd": "find", "args": ["kwargs", "--in reef"], "bytes": 36}
+{"cmd": "find", "args": ["kwargs", "--in tests"], "bytes": 37}
+{"cmd": "find", "args": ["kwargs", "--in docker"], "bytes": 38}
+{"cmd": "find", "args": ["override", "--in recipes/sao"], "bytes": 1067}
+{"cmd": "find", "args": ["overrides", "--in recipes"], "bytes": 1921}
+{"cmd": "find", "args": ["overrides", "--in tests/recipes"], "bytes": 1355}
+{"cmd": "find", "args": ["Rollout", "--in recipes/sao/examples"], "bytes": 2177}
+{"cmd": "get", "args": [1211], "bytes": 984}
+{"cmd": "find", "args": ["refused", "--in reef/evaluation"], "bytes": 221}
+{"cmd": "find", "args": ["candidate", "--in reef/service"], "bytes": 2072}
+{"cmd": "find", "args": ["MAX_REASON_CHARS"], "bytes": 2054}
+{"cmd": "find", "args": ["child", "--in reef/evaluation"], "bytes": 46}
+{"cmd": "find", "args": ["child", "--in reef/service"], "bytes": 1987}
+{"cmd": "find", "args": ["wait", "run", "--in reef/execution/jobs.py"], "bytes": 1092}
+{"cmd": "find", "args": ["commands", "--in reef/observability"], "bytes": 52}
+{"cmd": "find", "args": ["label", "--in reef/harness"], "bytes": 1435}
+{"cmd": "find", "args": ["backoff", "--in reef/inference"], "bytes": 47}
+{"cmd": "find", "args": ["retry", "--in reef/inference"], "bytes": 832}
+{"cmd": "get", "args": [3697], "bytes": 836}
+{"cmd": "find", "args": ["seconds", "--in reef/inference/serving.py"], "bytes": 313}
+{"cmd": "find", "args": ["RETRY", "--in reef/inference/serving.py"], "bytes": 511}
+{"cmd": "get", "args": [4312], "bytes": 194}
+{"cmd": "find", "args": ["label", "--in reef/service"], "bytes": 1794}
+{"cmd": "find", "args": ["label", "--in reef/core"], "bytes": 819}
+{"cmd": "find", "args": ["label", "--in reef/storage"], "bytes": 1411}
+{"cmd": "get", "args": [2566], "bytes": 393}
+{"cmd": "find", "args": ["retry", "--in reef/dispatcher"], "bytes": 1919}
+{"cmd": "find", "args": ["retries", "--in reef"], "bytes": 2380}
+{"cmd": "find", "args": ["backoff", "--in reef"], "bytes": 1074}
+{"cmd": "get", "args": [2879, 2881], "bytes": 1108}
+{"cmd": "get", "args": [2844], "bytes": 426}
+{"cmd": "find", "args": ["fallback", "--in reef/dispatcher"], "bytes": 49}
+{"cmd": "find", "args": ["fallback", "--in reef/record2sample"], "bytes": 518}
+{"cmd": "get", "args": [5057], "bytes": 1112}
+{"cmd": "find", "args": ["cleanup_interval", "--in reef/dispatcher"], "bytes": 2022}
+{"cmd": "find", "args": ["retention", "--in reef/dispatcher"], "bytes": 1774}
+{"cmd": "find", "args": ["attempts", "--in reef/recipe/generated_tasks"], "bytes": 1042}
+{"cmd": "find", "args": ["unused", "--in reef/train"], "bytes": 42}
+{"cmd": "find", "args": ["orphan", "--in reef/storage"], "bytes": 120}
+{"cmd": "find", "args": ["SCHEMA_VERSION", "--in reef/storage"], "bytes": 184}
+{"cmd": "get", "args": [4744], "bytes": 359}
+{"cmd": "find", "args": ["sweep", "--in reef/dispatcher/work_retention.py"], "bytes": 522}
+{"cmd": "find", "args": ["INTERVAL", "--in reef/dispatcher/work_retention.py"], "bytes": 396}
+{"cmd": "find", "args": ["layout", "--in reef/storage/postgres.py"], "bytes": 56}
+{"cmd": "find", "args": ["version", "--in reef/storage/postgres.py"], "bytes": 315}
+{"cmd": "get", "args": [6353], "bytes": 272}
+{"cmd": "find", "args": ["gateway", "--in reef/harness"], "bytes": 795}
+{"cmd": "find", "args": ["unused", "--in reef/storage"], "bytes": 1156}
+{"cmd": "find", "args": ["MAX_RECORD", "--in reef/storage"], "bytes": 1860}
+{"cmd": "find", "args": ["limit", "--in reef/storage/data.py"], "bytes": 1233}
+{"cmd": "get", "args": [3429], "bytes": 294}
+{"cmd": "get", "args": [6219], "bytes": 885}
+{"cmd": "find", "args": ["job_directory_ttl_seconds", "--in reef/storage"], "bytes": 1291}
+{"cmd": "find", "args": ["used", "--in reef/storage/records.py"], "bytes": 53}
+{"cmd": "find", "args": ["MAX_", "--in reef/storage/records.py"], "bytes": 84}
+{"cmd": "find", "args": ["used", "--in reef/storage/data.py"], "bytes": 50}
+{"cmd": "find", "args": ["archive", "--in reef/storage"], "bytes": 1911}
+{"cmd": "find", "args": ["limit", "--in reef/storage/sql_data.py"], "bytes": 894}
+{"cmd": "find", "args": ["page", "--in reef/storage"], "bytes": 1628}
+{"cmd": "get", "args": [6368], "bytes": 150}
+{"cmd": "get", "args": [6378], "bytes": 959}
+{"cmd": "find", "args": ["refused", "--in reef/service"], "bytes": 2260}
+{"cmd": "find", "args": ["concurrency", "--in reef/execution"], "bytes": 272}
+{"cmd": "find", "args": ["commands", "--in reef/harness"], "bytes": 2201}
+{"cmd": "find", "args": ["commands", "--in reef/service"], "bytes": 1626}
+{"cmd": "find", "args": ["commands", "--in reef/train"], "bytes": 44}
+{"cmd": "find", "args": ["report", "--in reef/service/request_page.py"], "bytes": 259}
+{"cmd": "find", "args": ["At most", "--in reef/harness"], "bytes": 45}
+{"cmd": "find", "args": ["jobs", "--in reef/service/deploy"], "bytes": 355}
+{"cmd": "find", "args": ["most", "--in reef/train/slime_backend/component.py"], "bytes": 67}
+{"cmd": "get", "args": [5923], "bytes": 4222}
+{"cmd": "find", "args": ["queued", "--in reef/execution"], "bytes": 295}
+{"cmd": "find", "args": ["queued", "--in reef/record2sample"], "bytes": 460}
+{"cmd": "find", "args": ["most", "--in reef/record2sample/generator/service.py"], "bytes": 69}
+{"cmd": "find", "args": ["commands", "--in reef/record2sample"], "bytes": 189}
+{"cmd": "find", "args": ["commands", "--in reef/evaluation"], "bytes": 49}
+{"cmd": "find", "args": ["commands", "--in reef/execution"], "bytes": 656}
+{"cmd": "get", "args": [5006, 5007, 5008], "bytes": 850}
+{"cmd": "find", "args": ["files", "--in reef/record2sample/generator"], "bytes": 2252}
+{"cmd": "get", "args": [5008], "bytes": 619}
+{"cmd": "get", "args": [5006, 5007], "bytes": 231}
+{"cmd": "get", "args": [4995, 4996, 4997, 4998, 4999, 5000, 5001, 5002, 5003, 5004], "bytes": 5205}
+{"cmd": "get", "args": [3452], "bytes": 1112}
+{"cmd": "find", "args": ["reason", "--in reef/service/deploy"], "bytes": 1529}
+{"cmd": "find", "args": ["logs", "--in reef/service/deploy"], "bytes": 382}
+{"cmd": "find", "args": ["commands", "--in tests"], "bytes": 2049}
+{"cmd": "find", "args": ["characters", "--in reef/service"], "bytes": 1285}
+{"cmd": "find", "args": ["characters", "--in reef/evaluation"], "bytes": 51}
+{"cmd": "find", "args": ["characters", "--in reef/execution"], "bytes": 160}
+{"cmd": "find", "args": ["characters", "--in reef/dispatcher"], "bytes": 51}
+{"cmd": "get", "args": [5551], "bytes": 1088}
+{"cmd": "find", "args": ["report", "--in reef/harness/sync.py"], "bytes": 52}
+{"cmd": "find", "args": ["report", "--in reef/harness/gateway.py"], "bytes": 172}
+{"cmd": "find", "args": ["report", "--in reef/service/request_service.py"], "bytes": 623}
+{"cmd": "find", "args": ["MAX", "--in reef/service/request_page.py"], "bytes": 776}
+{"cmd": "find", "args": ["commands", "--in reef/core"], "bytes": 281}
+{"cmd": "find", "args": ["commands", "--in reef/storage"], "bytes": 46}
+{"cmd": "find", "args": ["commands", "--in reef/inference"], "bytes": 48}
+{"cmd": "find", "args": ["commands", "--in reef/recipe"], "bytes": 45}
+{"cmd": "find", "args": ["commands", "--in recipes"], "bytes": 2109}
+{"cmd": "get", "args": [2665], "bytes": 338}
+{"cmd": "find", "args": ["base", "root", "default_start_inputs"], "bytes": 1504}
+{"cmd": "find", "args": ["artifact_id", "--in reef/artifact"], "bytes": 1598}
+{"cmd": "find", "args": ["policies", "--in tests"], "bytes": 1882}
+{"cmd": "find", "args": ["default", "target", "--in tests/artifact"], "bytes": 1035}
+{"cmd": "find", "args": ["default_start_inputs"], "bytes": 2265}
+{"cmd": "find", "args": ["chain", "--in reef/service/artifact_page.py"], "bytes": 809}
+{"cmd": "find", "args": ["counters", "--in reef/core"], "bytes": 43}
+{"cmd": "find", "args": ["calibration", "--in reef"], "bytes": 41}
+{"cmd": "find", "args": ["oldest", "--in reef/dispatcher"], "bytes": 47}
+{"cmd": "find", "args": ["receipt", "--in reef/service"], "bytes": 1739}
+{"cmd": "find", "args": ["NaN", "--in reef/core"], "bytes": 419}
+{"cmd": "find", "args": ["served_models", "--in reef/dispatcher/served.py"], "bytes": 659}
+{"cmd": "find", "args": ["polls", "--in reef/dispatcher/local_workers.py"], "bytes": 296}
+{"cmd": "get", "args": [7008, 7009, 7186], "bytes": 8410}
+{"cmd": "get", "args": [5330, 5331, 5332, 5333], "bytes": 5483}
+{"cmd": "find", "args": ["default_start", "--in reef/train"], "bytes": 2251}
+{"cmd": "find", "args": ["default_start", "--in tests"], "bytes": 1680}
+{"cmd": "get", "args": [7984, 8795, 11768], "bytes": 1865}
+{"cmd": "find", "args": ["startup", "--in tests/train"], "bytes": 230}
+{"cmd": "find", "args": ["startup", "--in tests/artifact"], "bytes": 47}
+{"cmd": "find", "args": ["startup", "--in recipes"], "bytes": 1260}
+{"cmd": "find", "args": ["default_start_inputs", "--in tests"], "bytes": 1937}
+{"cmd": "find", "args": ["default_start_inputs", "--in reef/tinker"], "bytes": 738}
+{"cmd": "find", "args": ["default_start_inputs", "--in recipes"], "bytes": 2150}
+{"cmd": "get", "args": [16474, 16562, 16563], "bytes": 3247}
+{"cmd": "get", "args": [16474, 16562], "bytes": 2838}
+{"cmd": "find", "args": ["BaseRoot", "--in reef/train"], "bytes": 1315}
+{"cmd": "find", "args": ["BaseRoot", "--in tests/train"], "bytes": 238}
+{"cmd": "find", "args": ["BaseRoot", "--in tests/support"], "bytes": 47}
+{"cmd": "get", "args": [7187], "bytes": 2999}
+{"cmd": "get", "args": [7699, 7700, 7701, 7702], "bytes": 7123}
+{"cmd": "get", "args": [7187], "bytes": 2999}
+{"cmd": "get", "args": [7700, 7701], "bytes": 5656}
+{"cmd": "get", "args": [5329, 5330, 5331, 5332, 5333, 5334, 5335, 5336], "bytes": 10832}
+{"cmd": "find", "args": ["newest", "--in reef/service"], "bytes": 2347}
+{"cmd": "find", "args": ["newest", "--in reef/artifact"], "bytes": 45}
+{"cmd": "find", "args": ["catalog", "--in reef/service"], "bytes": 2283}
+{"cmd": "find", "args": ["chain", "--in reef/storage"], "bytes": 254}
+{"cmd": "find", "args": ["chain", "--in reef/core"], "bytes": 966}
+{"cmd": "find", "args": ["chain", "--in reef/artifact"], "bytes": 1522}
+{"cmd": "get", "args": [2632], "bytes": 977}
+{"cmd": "find", "args": ["policies", "--in reef/evaluation"], "bytes": 923}
+{"cmd": "find", "args": ["Write", "--in tests/evaluation"], "bytes": 1287}
+{"cmd": "find", "args": ["demo", "--in tests/contributing"], "bytes": 350}
+{"cmd": "find", "args": ["demo", "--in docs"], "bytes": 34}
+{"cmd": "find", "args": ["demo", "--in tutorials"], "bytes": 213}
+{"cmd": "find", "args": ["demo", "--in recipes/demo"], "bytes": 42}
+{"cmd": "find", "args": ["client", "--in recipes/demo"], "bytes": 44}
+{"cmd": "find", "args": ["pulls"], "bytes": 2016}
+{"cmd": "find", "args": ["target", "--in tests/evaluation"], "bytes": 165}
+{"cmd": "find", "args": ["target", "--in tests/service"], "bytes": 45}
+{"cmd": "find", "args": ["pulls", "--in recipes"], "bytes": 704}
+{"cmd": "find", "args": ["source", "tree", "--in recipes/beta/reefine/examples/run.py"], "bytes": 946}
+{"cmd": "find", "args": ["oldest", "--in tests"], "bytes": 2492}
+{"cmd": "find", "args": ["eviction"], "bytes": 1621}
+{"cmd": "get", "args": [10966], "bytes": 2156}
+{"cmd": "find", "args": ["oldest", "--in reef/service"], "bytes": 1662}
+{"cmd": "find", "args": ["oldest", "--in reef/record2sample"], "bytes": 704}
+{"cmd": "find", "args": ["oldest", "--in reef/storage"], "bytes": 1245}
+{"cmd": "find", "args": ["oldest", "--in reef/train"], "bytes": 1250}
+{"cmd": "find", "args": ["oldest", "--in tests/reef_recipe"], "bytes": 205}
+{"cmd": "get", "args": [6878], "bytes": 3814}
+{"cmd": "find", "args": ["retry", "--in reef/service/artifact_evaluations.py"], "bytes": 2119}
+{"cmd": "find", "args": ["terminal", "--in reef/service/inference_service.py"], "bytes": 715}
+{"cmd": "find", "args": ["engines", "--in reef/inference/serving.py"], "bytes": 1920}
+{"cmd": "find", "args": ["engines", "--in reef/service/lifecycle.py"], "bytes": 58}
+{"cmd": "find", "args": ["calibration", "--in recipes"], "bytes": 1777}
+{"cmd": "find", "args": ["counters", "--in reef"], "bytes": 1906}
+{"cmd": "find", "args": ["Correlation", "--in reef"], "bytes": 1569}
+{"cmd": "find", "args": ["Whether", "--in reef/dispatcher/local_workers.py"], "bytes": 515}
+{"cmd": "find", "args": ["React", "--in reef/dispatcher"], "bytes": 46}
+{"cmd": "find", "args": ["instance", "--in reef/dispatcher/dispatcher.py"], "bytes": 1575}
+{"cmd": "find", "args": ["Write", "--in reef/dispatcher"], "bytes": 2224}
+{"cmd": "get", "args": [2810, 2811, 2812], "bytes": 11699}
+{"cmd": "get", "args": [2845, 2846, 2847, 2848, 2849, 2850, 2851, 2852], "bytes": 15594}
+{"cmd": "find", "args": ["scenario_committed", "--in reef"], "bytes": 610}
+{"cmd": "find", "args": ["polls", "--in reef/train"], "bytes": 1055}
+{"cmd": "find", "args": ["polls", "--in reef/execution"], "bytes": 1184}
+{"cmd": "find", "args": ["poll", "--in reef/dispatcher/local_workers.py"], "bytes": 309}
+{"cmd": "get", "args": [6914], "bytes": 2904}
+{"cmd": "get", "args": [5181], "bytes": 1533}
+{"cmd": "get", "args": [5181], "bytes": 1533}
+{"cmd": "find", "args": ["fraction", "--in reef/train"], "bytes": 789}
+{"cmd": "find", "args": ["fraction", "--in recipes"], "bytes": 1716}
+{"cmd": "find", "args": ["fraction", "--in tests"], "bytes": 2359}
+{"cmd": "find", "args": ["built", "--in recipes/openclawrl"], "bytes": 824}
+{"cmd": "find", "args": ["index", "--in recipes/openclawrl"], "bytes": 2093}
+{"cmd": "get", "args": [970], "bytes": 4152}
+{"cmd": "find", "args": ["rejected", "--in reef/train"], "bytes": 478}
+{"cmd": "find", "args": ["calibration", "--in reef/train"], "bytes": 47}
+{"cmd": "find", "args": ["calibration", "--in tests"], "bytes": 2664}
+{"cmd": "find", "args": ["rejected", "--in recipes"], "bytes": 1856}
+{"cmd": "find", "args": ["rejected", "--in docker"], "bytes": 40}
+{"cmd": "find", "args": ["calibration", "--in recipes/sao"], "bytes": 1012}
+{"cmd": "find", "args": ["calibration", "--in recipes/opd"], "bytes": 48}
+{"cmd": "find", "args": ["rejected", "--in recipes/sao"], "bytes": 170}
+{"cmd": "find", "args": ["fraction", "--in recipes/sao"], "bytes": 333}
+{"cmd": "find", "args": ["clipped", "--in recipes/sao"], "bytes": 707}
+{"cmd": "find", "args": ["clip", "--in recipes/sao/slime"], "bytes": 555}
+{"cmd": "find", "args": ["trained", "--in recipes/sao/slime"], "bytes": 526}
+{"cmd": "get", "args": [11168], "bytes": 610}
+{"cmd": "get", "args": [11168, 11167, 11169], "bytes": 1127}
+{"cmd": "find", "args": ["fraction", "--in recipes/sao"], "bytes": 333}
+{"cmd": "find", "args": ["clip_ratio"], "bytes": 341}
+{"cmd": "find", "args": ["clip_ratio", "--in recipes/sao"], "bytes": 269}
+{"cmd": "get", "args": [16602], "bytes": 772}
+{"cmd": "get", "args": [16602], "bytes": 772}
+{"cmd": "find", "args": ["Make", "--in reef/service/artifact_evaluations.py"], "bytes": 354}
+{"cmd": "find", "args": ["again", "--in reef/storage"], "bytes": 800}
+{"cmd": "find", "args": ["evaluation", "--in reef/storage/evaluations.py"], "bytes": 554}
+{"cmd": "get", "args": [6296], "bytes": 2682}
+{"cmd": "find", "args": ["reopen"], "bytes": 2298}
+{"cmd": "find", "args": ["reopen", "--in reef"], "bytes": 1980}
+{"cmd": "find", "args": ["receipt_sse_events", "--in reef"], "bytes": 656}
+{"cmd": "find", "args": ["busy", "--in reef/inference"], "bytes": 475}
+{"cmd": "find", "args": ["busy", "--in reef/service"], "bytes": 364}
+{"cmd": "find", "args": ["policies", "--in tests/reef_service"], "bytes": 633}
+{"cmd": "find", "args": ["policies", "--in tests/inference"], "bytes": 49}
+{"cmd": "find", "args": ["infinity"], "bytes": 1659}
+{"cmd": "get", "args": [4400], "bytes": 3022}
+{"cmd": "get", "args": [4400], "bytes": 3022}
+{"cmd": "get", "args": [5729], "bytes": 1865}
+{"cmd": "get", "args": [5729], "bytes": 1865}
+{"cmd": "get", "args": [7043], "bytes": 635}
+{"cmd": "get", "args": [7043], "bytes": 635}
+{"cmd": "find", "args": ["Only", "--in tests/reef_service/routing"], "bytes": 56}
+{"cmd": "find", "args": ["target", "--in tests/reef_service/routing"], "bytes": 2553}
+{"cmd": "find", "args": ["target", "--in tests/reef_service"], "bytes": 2175}
+{"cmd": "find", "args": ["Write", "--in tests/reef_service/routing"], "bytes": 2406}
+{"cmd": "find", "args": ["Write", "--in reef/service/deploy/routing"], "bytes": 2285}
+{"cmd": "find", "args": ["default", "--in tests/reef_service/routing/test_policy.py"], "bytes": 378}
+{"cmd": "get", "args": [14046, 14047, 14048, 14072, 14073], "bytes": 5092}
+{"cmd": "find", "args": ["policy_b"], "bytes": 802}
+{"cmd": "find", "args": ["POLICY_B"], "bytes": 802}
+{"cmd": "find", "args": ["policy_a", "--in tests"], "bytes": 1940}
+{"cmd": "find", "args": ["source", "--in tests/reef_service/routing/test_policy_generation.py"], "bytes": 84}
+{"cmd": "find", "args": ["changes", "--in tests/reef_service/routing"], "bytes": 2607}
+{"cmd": "find", "args": ["default_target", "--in tests"], "bytes": 1685}
+{"cmd": "find", "args": ["default_target", "--in recipes"], "bytes": 2211}
+{"cmd": "get", "args": [14246, 14247, 14248, 14249, 15812], "bytes": 8415}
+{"cmd": "get", "args": [14247], "bytes": 2011}
+{"cmd": "get", "args": [15812], "bytes": 1525}
+{"cmd": "get", "args": [14185], "bytes": 306}
+{"cmd": "find", "args": ["policies", "--in tests/reef_service/routing/test_routing.py"], "bytes": 76}
+{"cmd": "find", "args": ["Write", "--in tests/reef_service/routing/test_routing.py"], "bytes": 614}
+{"cmd": "find", "args": ["Write", "--in tests/reef_service/routing/test_routing_deployment.py"], "bytes": 2424}
+{"cmd": "get", "args": [14230], "bytes": 1691}
+{"cmd": "get", "args": [14173, 14174], "bytes": 2539}
+{"cmd": "find", "args": ["policies", "--in tests/smoke"], "bytes": 45}
+{"cmd": "find", "args": ["policies", "--in tests/support"], "bytes": 47}
+{"cmd": "find", "args": ["policies", "--in tests/service"], "bytes": 47}
+{"cmd": "find", "args": ["policies", "--in tests/slime_backend"], "bytes": 164}
+{"cmd": "find", "args": ["policies", "--in tests/harness"], "bytes": 350}

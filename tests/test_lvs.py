@@ -2,6 +2,7 @@
 byte-exact, and talk to the MCP server over stdio. Run: python3 -m unittest discover -s tests"""
 
 import contextlib
+import hashlib
 import io
 import json
 import os
@@ -82,6 +83,17 @@ def make_project(where):
         os.makedirs(os.path.dirname(path), exist_ok=True)
         with open(path, "w", encoding="utf-8") as fh:
             fh.write(text)
+
+
+def snapshot(folder):
+    """Every file under a folder (hidden ones too), with a hash of its bytes."""
+    out = {}
+    for d, _, names in os.walk(folder):
+        for n in names:
+            path = os.path.join(d, n)
+            with open(path, "rb") as fh:
+                out[path] = hashlib.sha256(fh.read()).hexdigest()
+    return out
 
 
 def run(*argv):
@@ -173,11 +185,11 @@ class Command(unittest.TestCase):
 
 
 class Mcp(unittest.TestCase):
-    def session(self, root, messages):
+    def session(self, root, messages, extra=()):
         """Send messages to `lvs mcp --root root` over stdio; return its replies by id."""
         env = dict(os.environ, PYTHONPATH=os.path.dirname(os.path.dirname(lvs.__file__)))
         lines = [m if isinstance(m, str) else json.dumps(m) for m in messages]
-        done = subprocess.run([sys.executable, "-m", "lvs", "mcp", "--root", root], env=env,
+        done = subprocess.run([sys.executable, "-m", "lvs", "mcp", "--root", root, *extra], env=env,
                               input="\n".join(lines) + "\n", capture_output=True, text=True, timeout=300)
         self.assertEqual(done.returncode, 0, done.stderr)
         replies = [json.loads(line) for line in done.stdout.splitlines()]   # every stdout line is JSON-RPC
@@ -240,6 +252,42 @@ class Mcp(unittest.TestCase):
         self.assertFalse(r[3]["result"]["isError"])
         self.assertTrue(os.path.exists(os.path.join(fresh, ".lvs", "code_map.json")))
         self.assertIn("3 file(s)", r[4]["result"]["content"][0]["text"])
+
+
+    def test_the_agent_can_write_nothing_but_the_store(self):
+        world = tempfile.mkdtemp(dir=TMP, prefix="world-")
+        proj, outside = os.path.join(world, "proj"), os.path.join(world, "outside")
+        make_project(proj)
+        make_project(outside)
+        os.symlink(outside, os.path.join(proj, "link"))           # a way out of the project
+        with open(os.path.join(proj, "tripwire.py"), "w") as fh:   # leaves a file behind if it is ever run
+            fh.write('open(__file__ + ".ran", "w").write("this code ran")\n')
+        before = snapshot(world)
+        r = self.session(proj, [
+            self.call(1, "build", paths=["link"]),
+            self.call(2, "build", paths=[os.path.join(outside, "proj")]),
+            self.call(3, "build"),
+            self.call(4, "map"), self.call(5, "files", folder="proj"),
+            self.call(6, "find", words=["retry"]), self.call(7, "get", numbers=[1, 2]),
+        ])
+        self.assertTrue(r[1]["result"]["isError"])
+        self.assertIn("outside the project", r[1]["result"]["content"][0]["text"])
+        self.assertTrue(r[2]["result"]["isError"])
+        self.assertTrue(all(not r[i]["result"]["isError"] for i in range(3, 8)))
+        after = snapshot(world)
+        changed = sorted(p for p in after if after[p] != before.get(p))
+        store = os.path.join(os.path.realpath(proj), ".lvs", "code")
+        self.assertEqual([os.path.realpath(p) for p in changed], [store + s for s in ("_index.bin", "_map.json", "_store.bin")])
+        self.assertEqual(set(before) - set(after), set())         # nothing removed either
+
+    def test_build_is_off_when_the_store_is_outside_the_project(self):
+        world = tempfile.mkdtemp(dir=TMP, prefix="world-")
+        proj, elsewhere = os.path.join(world, "proj"), os.path.join(world, "elsewhere")
+        make_project(proj)
+        r = self.session(proj, [self.call(1, "build")], extra=["--store", os.path.join(elsewhere, "code")])
+        self.assertTrue(r[1]["result"]["isError"])
+        self.assertIn("build is off", r[1]["result"]["content"][0]["text"])
+        self.assertFalse(os.path.exists(elsewhere))
 
 
 if __name__ == "__main__":

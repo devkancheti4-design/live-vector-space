@@ -1,0 +1,50 @@
+48 questions about one codebase. Answer every one.
+
+1. In one sentence, what is this codebase for?
+2. A recorded agent run turns into data for a training job in two steps. Name the two folders that do these steps, in order.
+3. Which folder takes an agent's setup, runs the agent with it, and collects what happened?
+4. Which folder puts trained model weights to work answering requests?
+5. Which folder is responsible for saving the system's records, training samples and generated tasks?
+6. Where do the individual training methods live, one package per method?
+7. About what share of the whole repository, by size, is tests?
+8. Which folder judges a newly trained candidate and decides whether it goes live?
+9. Which folder holds the basic shared types and errors that every other part depends on?
+10. What is the name of the unit the system trains and keeps state for, which can be committed and recovered?
+11. Which folder holds the one component, per running process, that is in charge of all scenarios and of the threads that train them?
+12. Which folder keeps every published version as a snapshot that is never changed afterwards?
+13. Which folder starts the system's processes and accepts requests from other programs over HTTP?
+14. When starting up a trained model for serving fails, how long does the system wait before it retries on its own, and what is the longest it will ever wait between such retries?
+15. Finished work items are cleared out on a schedule. How much time passes between two clear-outs?
+16. When the system reads back the records it has used, at most how many record items does it read in one call?
+17. When the system makes up new practice tasks for itself, how many attempts does one generation get by default, and how much time do all those attempts get together?
+18. An agent reaches its model through a small local gateway. At most how much of one model reply does the gateway keep for its records?
+19. The system can keep its records in a relational database. Which version of the record layout does that database adapter read and write?
+20. How long does a data store keep a job's data folder that no job used?
+21. A constant is documented in the code as: "Seconds between the page's own reloads while the request is not settled." What is its value?
+22. A constant is documented in the code as: "The most items that one transaction of a group commit writes." What is its value?
+23. A constant is documented in the code as: "Bound regex input and wall time; Python's matcher has no execution-step limit." What is its value?
+24. A constant is documented in the code as: "How often to ask the judge whether its reaction has landed." What is its value?
+25. A constant is documented in the code as: "The limits of the one model call of a job. A stalled endpoint holds the training thread for the whole timeout before the job skips. Raise both for a local thinking model, which spends its reply budget on reasoning first." What is its value?
+26. A constant is documented in the code as: "seconds for one lap of serve, observe, grow, commit" What is its value?
+27. A constant is documented in the code as: "The tokens at the end of a rendered prompt that hold an open ``<think>``: the tag and the newline after it can be several tokens." What is its value?
+28. A constant is documented in the code as: "How much of a design the job records: a few paragraphs with its How to use section." What is its value?
+29. A constant is documented in the code as: "The bytes read from the body at a time." What is its value?
+30. A constant is documented in the code as: "A reply echoes the evaluated prompt as ``original_text``; Go's JSON encoder writes one byte as at most six." What is its value?
+31. A constant is documented in the code as: "Seconds that the start's sampler may take to answer its first sample before a task job's rollouts start." What is its value?
+32. A constant is documented in the code as: "Tokens one model call may generate; a local single slot server stalls every other caller behind an unbounded one." What is its value?
+33. A constant is documented in the code as: "The router's HTTP API inside its container (start-router.sh enables it there)." What is its value?
+34. A constant is documented in the code as: "The shortest time, in seconds, between two progress writes of one selection." What is its value?
+35. Which function has this docstring: "Return the placement group to the cluster; safe to call more than once."? Give its name and file.
+36. Which function has this docstring: "Close the SDK ``ServiceClient`` ``service``, ending its session with ``status`` (``success`` or ``errored``)."? Give its name and file.
+37. Which function has this docstring: "Every rollout's score, task by task, in run order."? Give its name and file.
+38. Which function has this docstring: "Import a bounded, atomic batch using the existing record contract."? Give its name and file.
+39. Which function has this docstring: "Whether any published route uses ``served``'s engine URL and model name."? Give its name and file.
+40. Which function has this docstring: "Freeze the critic's attention stack for an MoE value model (SAO Section 4)."? Give its name and file.
+41. Which function has this docstring: "The local ID of the image that a build loaded: the one of its ``digests`` that names a local image."? Give its name and file.
+42. Which function has this docstring: "The Slime fields of a rollout's assembled ``sample``, or None when it has no trained token or lacks a head."? Give its name and file.
+43. Which function has this docstring: "Cancel each training job of ``scenario`` that trains the request ``request_id``, as ``cancel_scenario_job``"? Give its name and file.
+44. Which function has this docstring: "Verify the committed pair before opening. A pre-PUT abort may only reopen the unchanged pair."? Give its name and file.
+45. Which function has this docstring: "Whether the runs play Harbor task directories rather than prompts"? Give its name and file.
+46. Which function has this docstring: "The flat ``reef.*`` keys that belong to the recipe, not the service."? Give its name and file.
+47. Which function has this docstring: "One record file of a job as JSON, created exclusively: a record file is never replaced."? Give its name and file.
+48. Which function has this docstring: "Arrange for the reef layer to sit under an ``AgentManager``-owned gateway."? Give its name and file.

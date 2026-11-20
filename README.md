@@ -1,12 +1,28 @@
-# lvs: a whole codebase in a few KB, every byte one lookup away
+# lvs: the shape of a whole codebase in a few KB, every byte one lookup away
+
+[![tests](https://github.com/devkancheti4-design/live-vector-space/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/devkancheti4-design/live-vector-space/actions/workflows/tests.yml)
+[![PyPI](https://img.shields.io/pypi/v/live-vector-space)](https://pypi.org/project/live-vector-space/)
+[![Python](https://img.shields.io/pypi/pyversions/live-vector-space)](https://pypi.org/project/live-vector-space/)
+
+**Python 3.10+ · Linux and macOS · maps Python code (`.py` files)**
 
 `lvs` gives an LLM a small map of a whole codebase (a few KB, however big the code) plus exact,
 numbered pieces of the code to look up. The store keeps every byte, compressed about as small as zip,
 and hands over any single piece on its own. So a model can know a codebase many times bigger than its
 context window without reading it whole, and without ever decompressing anything itself.
 
-Measured on two big Python codebases that no model had seen (66 blind runs, details in
-[MILESTONE.md](https://github.com/devkancheti4-design/live-vector-space/blob/main/MILESTONE.md)):
+**What it is, and what it isn't.** A map, a word index and an exact store. No neural embeddings, no
+vector database and no model calls: everything is computed from the code itself. The "vector space" in
+the name is where the map's shape comes from: every statement becomes a vector of its tokens, and in a
+3-D cube those vectors gather into cores of similar code, which the map lists with their words and pieces.
+
+**Supported:** Python source files (`.py`) of any size, read as UTF-8 (a file in another encoding is left
+out and named). Other languages aren't mapped yet. Tested on Linux and macOS with Python 3.10 to 3.14;
+Windows is untested.
+
+Measured on two big Python codebases that no model had seen (66 blind runs with Claude Sonnet 5.5; how the
+questions were made and graded, the prompts and the baselines are in
+[MILESTONE.md](https://github.com/devkancheti4-design/live-vector-space/blob/main/MILESTONE.md#method-of-the-66-runs)):
 
 | What was measured | Result |
 |---|---|
@@ -17,14 +33,13 @@ Measured on two big Python codebases that no model had seen (66 blind runs, deta
 
 ## Install
 
-Needs Python 3.14+ (for the built-in `compression.zstd`) and numpy.
-
 ```bash
 pip install live-vector-space
 ```
 
-The command it installs is `lvs`. For the latest code from GitHub instead:
-`pip install git+https://github.com/devkancheti4-design/live-vector-space`
+The command it installs is `lvs`. It needs Python 3.10+ and numpy; on Python 3.10 to 3.13, pip also
+installs `backports.zstd`, the zstd module that is built into Python from 3.14 on. For the latest code
+from GitHub instead: `pip install git+https://github.com/devkancheti4-design/live-vector-space`
 
 ## Use
 
@@ -61,6 +76,18 @@ Any other MCP client takes the same command in its config:
 {"mcpServers": {"lvs": {"command": "lvs", "args": ["mcp", "--root", "/path/to/your-project"]}}}
 ```
 
+### What the agent can touch
+
+- `map`, `files`, `find` and `get` only read the store.
+- `build` takes paths only inside `--root` (checked after following symlinks) and writes only the store's
+  three files (`code_map.json`, `code_store.bin` and `code_index.bin`, in `ROOT/.lvs/` by default). If
+  `--store` points outside `--root`, the `build` tool is off.
+- `--root` and `--store` are fixed when the server starts, so the agent can't change where anything goes.
+- The project's code is only read, split and tokenized: never imported, never run.
+
+The tests check each of these, including a symlink that leads out of the project and a file that would
+leave a mark if it were ever run.
+
 ## Watch code live
 
 ```bash
@@ -85,6 +112,15 @@ lvs live path/to/file.py   # every statement as a vector in 3-D space, redrawn o
 ```bash
 python3 -m unittest discover -s tests
 ```
+
+24 tests cover:
+- byte-exact rebuilds and piece splitting on 21 kinds of Python file (CRLF and old-Mac line endings, form
+  feeds and Unicode line separators, a byte order mark, tabs, Unicode names, empty and huge files, HTML,
+  CSS and JavaScript inside strings, a file that isn't UTF-8);
+- 500 random files;
+- every command, and an MCP session, including what the agent may write.
+
+CI runs them on Python 3.10 to 3.14 on Linux and macOS, and with the oldest supported numpy.
 
 ## License
 

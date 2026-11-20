@@ -1,0 +1,12 @@
+10 questions about one codebase. Answer every one.
+
+1. In one sentence, what is this codebase for?
+2. Which folder deals with cloud file storage, deploying to rented GPU machines, and running containers?
+3. Which folder reports how the product is being used?
+4. Which family of add-ons runs the AI agents themselves?
+5. Which family of add-ons provides the tools that agents call?
+6. Which family of add-ons is by far the biggest, by size?
+7. About what share of the whole repository, by size, is tests?
+8. What example task ships with the repository?
+9. Which file loads task specifications?
+10. Which file holds the legal terms that a user must accept?

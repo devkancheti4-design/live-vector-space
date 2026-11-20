@@ -1,0 +1,10 @@
+1. Praxist is a platform and CLI for running autonomous, multi-generation research loops (a research control plane) against task projects, with peers and an orchestrator dashboard.
+2. unsure
+3. unsure (the view only hints at praxist/cli/product_usage, a consent-gated usage observer)
+4. unsure
+5. unsure
+6. unsure
+7. unsure
+8. unsure
+9. unsure
+10. unsure

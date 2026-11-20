@@ -7,6 +7,11 @@
 Tools: map, files, find and get read the compressed store; build makes or refreshes it. The agent
 reads the small map first and then asks only for the pieces it needs, so the code stays compressed
 and the agent never has to decompress or read anything whole. No dependencies beyond lvs itself.
+
+What the agent can touch: the read tools only read the store. build takes paths only inside --root
+(after following symlinks) and writes only the store's three files, which must be inside --root too:
+if --store points outside it, build is off. --root and --store are fixed when the server starts, and
+the project's code is only read, never run.
 """
 
 import argparse
@@ -61,7 +66,8 @@ TOOLS = [
      "annotations": READ_ONLY},
     {"name": "build", "title": "Build the map",
      "description": "Make the map and the compressed store of the project's Python code, or refresh them "
-                    "after the code changed.",
+                    "after the code changed. Reads only inside the project folder and writes only the "
+                    "store's three files there.",
      "inputSchema": {"type": "object", "properties": {
          "paths": {"type": "array", "items": {"type": "string"},
                    "description": "files or folders inside the project (default: the whole project)"},
@@ -85,9 +91,16 @@ def strings(value, what):
     return value
 
 
+def within(path, folder):
+    """True if path is the folder or inside it, after following symlinks."""
+    path, folder = os.path.realpath(path), os.path.realpath(folder)
+    return os.path.commonpath([path, folder]) == folder
+
+
 class Server:
     def __init__(self, root, store):
         self.root, self.store = root, store
+        self.can_build = within(os.path.dirname(store), root)     # build writes only inside the project
 
     def lvs(self, argv):
         """Run one lvs command; return (ok, everything it printed)."""
@@ -107,12 +120,15 @@ class Server:
 
     def inside_root(self, path):
         full = os.path.abspath(os.path.join(self.root, os.path.expanduser(path)))
-        if os.path.commonpath([self.root, full]) != self.root:
+        if not within(full, self.root):
             raise ValueError(f"{path} is outside the project folder {self.root}")
         return full
 
     def tool(self, name, args):
         if name == "build":
+            if not self.can_build:
+                return False, (f"build is off: the store ({self.store}) is outside the project folder "
+                               f"({self.root}), and build only writes inside it. Run `lvs build` yourself.")
             paths = [self.inside_root(p) for p in strings(args.get("paths") or ["."], "paths")]
             exclude = strings(args.get("exclude") or [], "exclude")
             return self.lvs(["build", *paths] + (["--exclude", *exclude] if exclude else []))
@@ -218,8 +234,10 @@ def main(argv=None):
     store = os.path.join(root, os.path.expanduser(args.store or codemap.DEFAULT_STORE))
     real_out = sys.stdout.buffer
     sys.stdout = sys.stderr             # only protocol messages may reach the real stdout
-    print(f"lvs mcp {__version__}: project {root}, store {store}", file=sys.stderr, flush=True)
-    serve(Server(root, store), sys.stdin.buffer, real_out)
+    server = Server(root, store)
+    print(f"lvs mcp {__version__}: project {root}, store {store}"
+          + ("" if server.can_build else " (outside the project, so the build tool is off)"), file=sys.stderr, flush=True)
+    serve(server, sys.stdin.buffer, real_out)
 
 
 if __name__ == "__main__":

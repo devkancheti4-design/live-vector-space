@@ -1,0 +1,48 @@
+1. Praxist is a platform/control plane for autonomous AI research: cohorts of agents run research loops on tasks, with GPUs, evaluation, findings tracking and reporting — praxist/__init__.py:1
+2. praxist/infrastructure (S3 utils, RunPod, autonomous execution) — praxist/infrastructure/s3_utils.py:1
+3. praxist/product_usage (also services/product_usage) — praxist/product_usage/__init__.py:1
+4. agent_runtimes (claude_sdk, codex_sdk) — praxist/plugins/agent_runtimes/__init__.py:1
+5. tools (arxiv, brave_search, browser, pdf_reader, etc.) — praxist/plugins/tools/__init__.py:1
+6. workflow_stages (about 2.9 MB of the 4.0 MB of plugins) — praxist/plugins/workflow_stages/__init__.py:1
+7. About half (tests/ is ~6.4 MB versus ~5.2 MB praxist/ plus ~1.1 MB other, so roughly 50%) — tests/__init__.py:1
+8. rocket_booster_recovery (rocket booster recovery controller task; also a Rust variant) — examples/rocket_booster_recovery/src/evaluate.py:1
+9. praxist/task_spec.py (task_spec.yaml loader) — praxist/task_spec.py:1
+10. praxist/user_agreement.py — praxist/user_agreement.py:1
+11. praxist/plugins/ — praxist/plugins/__init__.py:1
+12. 5 agents per generation (DEFAULT_COHORT_SIZE), top 2 promoted (DEFAULT_PROMOTE_TOP_K) — praxist/core/run_config.py:151
+13. 5 days (5 * 24 * 3600 seconds) — praxist/core/run_config.py:83
+14. 20 minutes (1200 s) — praxist/plugins/workflow_stages/research_loop/backend/agent.py:233
+15. 4 — praxist/plugins/workflow_stages/research_loop/backend/gpu_governor.py:57
+16. Warning at 80% (0.80), shutdown at 92% (0.92) — praxist/plugins/workflow_stages/research_loop/backend/orchestrator_status.py:38
+17. 30 days — praxist/plugins/workflow_stages/research_loop/backend/baseline_cache.py:86
+18. 4000 characters — praxist/plugins/tools/result_envelope.py:22
+19. The gate constants: JIANG_TILT_GATE_RAD = 0.05, JIANG_SPEED_GATE_MPS = 2.0, JIANG_LATERAL_GATE_M = 3.0, JIANG_OMEGA_GATE_RADPS = 0.10 — examples/rocket_booster_recovery/vendor/frozen_c05_plant/terminal_reward.py:40
+20. _looks_like_evaluator_path — praxist/plugins/agent_runtimes/claude_sdk/adapter.py:201
+21. create_agent_request_id — praxist/plugins/workflow_stages/research_loop/backend/agent.py:935
+22. test_invalid_network_value_raises — tests/unit/test_runtime_sandbox_intent.py:46
+23. linear_schedule — praxist/plugins/workflow_stages/research_loop/backend/tools/schedule.py:70
+24. _drain_late_run_processes — praxist/cli/stop.py:878
+25. recover_pending_reset — praxist/plugins/workflow_stages/research_loop/backend/gems.py:3566
+26. test_dead_constants_removed_from_config_module — tests/unit/test_run_config.py:247
+27. lock_pid — praxist/plugins/workflow_stages/research_loop/backend/resume_state.py:846
+28. register — praxist/cli/resolve.py:31
+29. operator_codex_home — praxist/plugins/agent_runtimes/codex_sdk/_auth.py:120
+30. build_role_private_pack — praxist/plugins/workflow_stages/research_loop/backend/research_memory/evidence_pack_builder.py:2132
+31. _lane_capacity_identity — praxist/plugins/workflow_stages/research_loop/backend/frontier.py:1143
+32. warmup_then_schedule — praxist/plugins/workflow_stages/research_loop/backend/tools/schedule.py:134
+33. provider_key_var — praxist/plugins/agent_runtimes/codex_sdk/_relay.py:103
+34. to_dict (method in praxist/cli/registry.py, the one saying "tuples → lists") — praxist/cli/registry.py:99
+35. _apply_scheduler_assignment — templates/tasks/sam_optimizer/assets/harness/benchmark/run_benchmark.py:899
+36. _legacy_model_call_payload — praxist/plugins/workflow_stages/research_loop/backend/agent.py:851
+37. _role_coverage_retry_issues — praxist/plugins/workflow_stages/research_loop/backend/multi_pi/legacy_two_round_executor.py:151
+38. _stop_run_locked — praxist/cli/stop.py:342
+39. parse_agent_reply — praxist/product_usage/consent.py:53
+40. test_legacy_credential_ref_returns_none_when_run_config_has_no_key — tests/unit/test_agent_loop_contracts.py:1380
+41. stop_sidecars — praxist/plugins/workflow_stages/research_loop/backend/sidecars.py:124
+42. test_active_runs_default_workspace_uses_cwd_runs — tests/unit/test_system_tools.py:475
+43. test_legacy_agent_model_used_when_praxist_model_absent — tests/unit/test_run_config.py:92
+44. _with_current_aggregate_sources — praxist/plugins/workflow_stages/research_loop/backend/evidence_maturity.py:827
+45. smoothstep — examples/rocket_booster_recovery/vendor/frozen_c05_plant/contact_law.py:47
+46. test_protected_pid_telemetry_tolerates_missing_manifest_and_permissions — tests/unit/test_runtime_guard_and_memory_contracts.py:401
+47. _baseline_metric_values — praxist/plugins/workflow_stages/research_loop/backend/run_report.py:840
+48. infer_finding_type — praxist/plugins/workflow_stages/research_loop/backend/tools/findings_ingest.py:913

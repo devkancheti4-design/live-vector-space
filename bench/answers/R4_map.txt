@@ -1,0 +1,48 @@
+1. Reef is continual-learning infrastructure for self-improving agents: it records agent runs, turns them into training samples and jobs, trains and evaluates candidates, and serves the accepted snapshot — reef/__init__.py:1
+2. record2sample (records to samples), then sample2job (samples to the next training job) — reef/record2sample/__init__.py:1 ; reef/sample2job/__init__.py:1
+3. harness (reef/harness) — reef/harness/__init__.py:1
+4. inference (reef/inference) — reef/inference/serving.py:1
+5. storage (reef/storage) — reef/storage/__init__.py:1
+6. recipes/ (one package per method) — recipes/ace/method.py:1
+7. About 48% (tests ≈ 7,004 KB of ≈ 14,544 KB) — tests/ (map summary)
+8. evaluation (reef/evaluation) — reef/evaluation/__init__.py:14
+9. core (reef/core) — reef/core/__init__.py:15
+10. The Scenario — reef/scenario/registry.py:70
+11. dispatcher (reef/dispatcher) — reef/dispatcher/__init__.py:13
+12. artifact (reef/artifact) — reef/artifact/__init__.py:1
+13. service (reef/service) — reef/service/__main__.py:1
+14. First retry after 60 seconds (FIRST_RETRY_DELAY_SECONDS = 60.0), doubling each time, capped at 3600 seconds (MAX_RETRY_DELAY_SECONDS) — reef/dispatcher/served.py:27 and :30
+15. 3600 seconds (1 hour; SWEEP_INTERVAL_SECONDS = 3600.0) — reef/dispatcher/work_retention.py:18
+16. 256 (RECORD_PAGE_SIZE, for used_records) — reef/storage/record_items.py:49
+17. 3 attempts (DEFAULT_GENERATION_ATTEMPTS) and 1800 seconds in total (DEFAULT_GENERATION_DEADLINE_SECONDS = 1800.0) — reef/recipe/generated_tasks/processor.py:79-80
+18. 2 * 1024 * 1024 bytes = 2 MiB (MAX_RECORDED_BYTES) — reef/harness/gateway.py:44
+19. Version 23 (POSTGRES_SCHEMA_VERSION = 23) — reef/storage/postgres.py:45
+20. 7 days (JOB_DIRECTORY_TTL_SECONDS = 7 * 24 * 3600.0) — reef/storage/data.py:523
+21. UNBOUND_WARN_INTERVAL_S = 300.0 (seconds) and UNBOUND_WARN_FLOOR = 8 (dead-on-arrival sessions) — recipes/openclawrl/judging.py:44-45
+22. 420 (FINISH_SECONDS = 420) — recipes/beta/autoenvscaling/author.py:59
+23. DEFAULT_SEED = 42, DEFAULT_DAYS = 500, DEFAULT_TOOL_USER = "agent" — recipes/sao/examples/ceobench/harness/harbor_agent.py:118-120
+24. 300 (CANDIDATE_REASON_LIMIT = 300) — reef/service/lifecycle.py:60
+25. 7200.0 seconds (TRAIN_DRAIN_TIMEOUT_S) — recipes/sao/examples/ceobench/run.py:44
+26. 1 (BATCH_SIZE = 1) — tests/reef_recipe/test_generated_tasks.py:122
+27. 32768 (REALIGN_THRESHOLD) — reef/train/task_rollouts.py:39
+28. 900.0 seconds (INSTALL_TIMEOUT_S; VERSION_TIMEOUT_S is 60.0) — reef/harness/tasks/vendor_install.py:42
+29. MAX_STEPS = 12 and MAX_RESULT_CHARS = 20_000 (20000) — reef/harness/runners/native/__init__.py:49-50
+30. 256 (MAX_JOBS_IN_FLIGHT = 256) — reef/record2sample/generator/service.py:123
+31. 200 (MAX_CALL_LABEL_CHARACTERS = 200) — reef/core/evaluation.py:804
+32. 1024 * 1024 = 1048576 bytes (RESPONSE_ENVELOPE_BYTES) — reef/service/routing_preview.py:55
+33. 300.0 seconds (MAX_BACKGROUND_POLL_SECONDS) — reef/record2sample/service/worker.py:55
+34. 64 (MAX_CLIENT_COMMANDS = 64) — reef/core/training_request.py:30
+35. SlimeFacts.default_start — reef/train/slime_backend/facts.py:182
+36. artifact_chain — reef/core/requirements.py:103
+37. NOT FOUND (could not locate this docstring with the lookups) — unknown
+38. EvaluationStore.reopen — reef/storage/evaluations.py:159
+39. test_install_renders_the_source_tree_for_pi_with_a_binding_at_this_reef — tests/recipes/reefine/test_reefine_tutorial.py:251
+40. receipt_sse_events — reef/service/streaming.py:147
+41. Dispatcher.scenario_committed — reef/dispatcher/dispatcher.py:499
+42. health (the aiohttp handler method on the remote inference server) — reef/inference/remote/server.py:326
+43. json_object — reef/train/harness_backend/workspace.py:125
+44. TrainingPipeline.queue_requests — reef/train/pipeline.py:340
+45. SessionIndex.stats (property) — recipes/openclawrl/sessions.py:143
+46. ScenarioLifecycle.scenario_committed (abstract method) — reef/scenario/registry.py:70
+47. Trainer.job_running (property) — reef/train/trainer.py:377
+48. clip_ratio — tests/support/reference_algorithms/sao.py:55

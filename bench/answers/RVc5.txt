@@ -1,0 +1,10 @@
+1. A framework ("reef") for training and improving AI agents/models from recorded agent runs: it runs agents with harnesses, serves models, evaluates them, builds training samples and jobs, and trains via many recipes (RL/distillation/harness evolution).
+2. record2sample/ then sample2job/
+3. reef/harness/
+4. reef/inference/
+5. unsure (likely reef/storage/, which is in the tests list but not detailed in the view)
+6. recipes/
+7. unsure (tests have 496 files vs reef 493 files, so roughly half by file count)
+8. reef/evaluation/
+9. reef/core/
+10. unsure (likely a "scenario" / snapshot, reef/scenario/)

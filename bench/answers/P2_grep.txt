@@ -1,0 +1,48 @@
+1. A platform of autonomous research control-plane code (AI research agents running generations of experiments, with tools, budgets, frontier tracking and product-usage reporting) — praxist/__init__.py:1
+2. praxist/infrastructure (runpod.py, s3_utils.py, execute_autonomous.py) — praxist/infrastructure/
+3. praxist/product_usage — praxist/product_usage/__init__.py:1
+4. agent_runtimes (claude_sdk, codex_sdk) — praxist/plugins/agent_runtimes/
+5. tools — praxist/plugins/tools/
+6. workflow_stages (about 5.9 MB of plugins) — praxist/plugins/workflow_stages/
+7. About 50% (tests 6.5 MB of 12.9 MB) — tests/
+8. rocket_booster_recovery (rocket booster landing example; also rocket_booster_recovery_rust) — examples/rocket_booster_recovery/
+9. task_spec.py (Task specification loader) — praxist/task_spec.py:2
+10. user_agreement.py — praxist/user_agreement.py:1
+11. praxist/plugins — praxist/plugins/
+12. 5 peers per generation (DEFAULT_COHORT_SIZE), top 2 promoted (DEFAULT_PROMOTE_TOP_K) — praxist/core/run_config.py:149
+13. 5 days (5 * 24 * 3600 seconds = 432000) — praxist/core/run_config.py:83
+14. 20 minutes (1200 seconds) — praxist/plugins/workflow_stages/research_loop/backend/agent.py:233
+15. 4 — praxist/plugins/workflow_stages/research_loop/backend/gpu_governor.py:57
+16. Warning at 80% (0.80), shutdown at 92% (0.92) — praxist/plugins/workflow_stages/research_loop/backend/orchestrator_status.py:38
+17. 30 days — praxist/plugins/workflow_stages/research_loop/backend/baseline_cache.py:86
+18. 4000 characters — praxist/plugins/tools/result_envelope.py:22
+19. 5 (DEFAULT_PER_GENERATION_HOURS) — praxist/core/run_config.py:151
+20. enter_orchestrator_runtime_scope — praxist/plugins/workflow_stages/research_loop/backend/orchestrator_runtime.py:129
+21. test_intent_is_hashable_and_frozen — tests/unit/test_runtime_sandbox_intent.py:33
+22. _normalize_must_explore_axes — praxist/task_spec.py:76
+23. test_precheck_silent_for_unknown_provider_plugin_ref — tests/unit/test_cli_start.py:1217
+24. consent_path — praxist/product_usage/paths.py:11
+25. get_summary_for_generation — praxist/plugins/workflow_stages/research_loop/backend/frontier.py:5444
+26. _install_setup_skills — praxist/cli/setup.py:568
+27. create_provider — praxist/plugins/model_providers/deepseek_alias/adapter.py:8
+28. _download — praxist/plugins/graph_maintainers/finding_graph_mvp/viz.py:77
+29. compute_divert — examples/rocket_booster_recovery/vendor/frozen_c05_plant/guidance_divert.py:71
+30. _walk_for_metric — praxist/plugins/workflow_stages/research_loop/backend/frontier.py:265
+31. dataset_metric_stat — templates/tasks/sam_optimizer/evaluations/pareto_tiered/run.py:162
+32. mature_result_count — praxist/plugins/workflow_stages/research_loop/backend/synthesis_trigger.py:853
+33. _effective_generation_cap_seconds — praxist/plugins/workflow_stages/research_loop/backend/cohort_runner.py:38
+34. finding_source_published_after — praxist/plugins/workflow_stages/research_loop/backend/findings_collection.py:2794
+35. clear_generation_runtime_signals — praxist/plugins/workflow_stages/research_loop/backend/cohort_runner.py:313
+36. utc_now — praxist/core/storage.py:16
+37. effective_lateral_dose_py — examples/rocket_booster_recovery/vendor/frozen_c05_plant/residual_mask.py:179
+38. write_boundary_evidence_checkpoint — praxist/plugins/workflow_stages/research_loop/backend/resume_state.py:269
+39. _source_sort_key — praxist/cli/status.py:719
+40. _handle_wait_for_file_impl — praxist/plugins/tools/evaluation_tools/adapter.py:626
+41. test_plugin_roots_defaults_extra_kwargs_bypass_env_reads — tests/unit/test_registry_edge_contracts.py:417
+42. _is_auxiliary_numeric_metric — praxist/plugins/workflow_stages/research_loop/backend/research_memory_update.py:121
+43. create_provider — praxist/plugins/model_providers/orcarouter/adapter.py:8
+44. gear_height_multiplier — examples/rocket_booster_recovery/vendor/frozen_c05_plant/fuel_schedule.py:96
+45. begin_closing — praxist/plugins/workflow_stages/research_loop/backend/synthesis_trigger.py:1720
+46. _fetch_all_findings — praxist/plugins/workflow_stages/research_loop/backend/tools/findings_sync.py:400
+47. record_agent_reply — praxist/product_usage/client.py:71
+48. _replace_managed_skill — praxist/cli/install_skills.py:825
