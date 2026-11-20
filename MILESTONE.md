@@ -123,3 +123,37 @@ model's 1M window can hold it raw. One fresh model session, using only the map a
 - For one fact, grep is cheaper; the map's strength is the whole picture.
 - Next: test another compressor against the store, and give each shape a one-line intent, then rerun
   the shapes-only test.
+
+## Scaled up: 66 blind runs (20 Nov 2026)
+
+The claims were then retested at scale on reef and PRAXIST:
+- 5 runs per condition, each on fresh question sets that never repeat;
+- every answer graded by script against keys taken from the code;
+- every token count read from the run's own transcript.
+
+A model with no access to the code scored 1 of 48 on each repo, so both are truly unseen.
+
+**Exact facts through the map and lookups** (48 questions per session):
+
+| Repo | Right | 95% range | Tokens per session | Of reading the whole code |
+|---|---|---|---|---|
+| reef (14.5 MB, about 6.2M tokens) | 231/240 (96.2%) | 93.0–98.0% | 108k–233k | 1.7–3.8% |
+| PRAXIST (11.9 MB, about 5.1M tokens) | 237/240 (98.8%) | 96.4–99.6% | 89k–117k | 1.7–2.3% |
+| **Both** | **468/480 (97.5%)** | **95.7–98.6%** | | |
+
+Architecture and detail questions were 190 of 190. All 12 misses came from finding a function by its docstring
+or a constant by its comment.
+
+**The whole codebase from one small view** (same bytes, about 4.6 KB; 10 architecture questions; 5 runs on
+each repo):
+
+| View | Right | 95% range |
+|---|---|---|
+| **The map** | **100/100** | **96–100%** |
+| Plain docstrings | 85/100 | 77–91% |
+| File tree | 80/100 | 71–87% |
+| Raw code | 34/100 | 25–44% |
+| Nothing (guessing) | 10/40 | 14–40% |
+
+The map was perfect in all 10 runs. Through it, models answered 97.5% of exact questions about codebases 25 to
+60 times bigger than their context, for about 2–4% of the tokens a full read would take.
