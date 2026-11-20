@@ -1,7 +1,93 @@
-# Live Vector Space
+# lvs: a whole codebase in a few KB, every byte one lookup away
+
+`lvs` gives an LLM a small map of a whole codebase (a few KB, however big the code) plus exact,
+numbered pieces of the code to look up. The store keeps every byte, compressed about as small as zip,
+and hands over any single piece on its own. So a model can know a codebase many times bigger than its
+context window without reading it whole, and without ever decompressing anything itself.
+
+Measured on two big Python codebases that no model had seen (66 blind runs, details in
+[MILESTONE.md](MILESTONE.md)):
+
+| What was measured | Result |
+|---|---|
+| The map view alone (`map` plus a zoom into the main package, about 4.6 KB), 10 architecture questions per run | **100/100** right (raw code of the same size: 34/100) |
+| Map + lookups, exact questions about codebases of 5-6 million tokens | **97.5%** right (468/480), for **2-4%** of the tokens a full read would take |
+| A 6.2-million-token codebase, one session in a 1M-token window | **46/48** right in 111,501 tokens; **88.7%** of the code stayed compressed |
+| Store size (reef, 14.5 MB of Python) | **30.7%** of the code (zip -9: 30.3%), any of 17,660 pieces readable alone, byte-exact |
+
+## Install
+
+Needs Python 3.14+ (for the built-in `compression.zstd`) and numpy.
+
+```bash
+pip install git+https://github.com/devkancheti4-design/live-vector-space
+```
+
+## Use
+
+```bash
+cd your-project
+lvs build                  # the map and the compressed store, in .lvs/
+lvs map                    # the whole codebase in a few KB: read this first
+lvs files src/server       # zoom into a folder: its files, intents and piece numbers
+lvs find timeout retry     # the numbered pieces that mention each word, with the line that matches
+lvs get 812 813            # the exact code of those pieces
+lvs rebuild /tmp/copy      # every file back, byte-exact
+```
+
+Lookups work from any subfolder (`lvs` finds `.lvs/` in a parent folder, the way git finds `.git`).
+Run `lvs build` again after the code changes. `--store PREFIX` keeps several maps apart. Folders that
+are never the project's own code (hidden folders, `venv`, `site-packages`, `node_modules`, `build`,
+`dist`) are skipped; `--exclude NAME ...` skips more.
+
+## Give it to an AI agent (MCP)
+
+`lvs mcp` is a Model Context Protocol server over stdio, with five tools: `map`, `files`, `find`,
+`get` (read-only lookups in the compressed store) and `build` (make or refresh the store). It tells
+the agent to read the map first, then find and get only the pieces it needs.
+
+With Claude Code, from your project folder:
+
+```bash
+claude mcp add lvs -- lvs mcp --root "$PWD"
+```
+
+Any other MCP client takes the same command in its config:
+
+```json
+{"mcpServers": {"lvs": {"command": "lvs", "args": ["mcp", "--root", "/path/to/your-project"]}}}
+```
+
+## Watch code live
+
+```bash
+lvs live path/to/file.py   # every statement as a vector in 3-D space, redrawn on each save
+```
+
+## How it works
+
+- **Numbered exact pieces.** Each file is split at its natural joints (functions, classes, sections)
+  into pieces numbered across the whole codebase. Joined in order, they rebuild every file byte for byte.
+- **The store.** Every piece is compressed with zstd and a dictionary shared by all pieces, so the whole
+  store is about as small as zip, yet any one piece unpacks on its own in an instant.
+- **The map.** Folders and files with sizes and one-line intents, plus the code's shape: every statement
+  becomes a point in a 3-D cube, and the points gather into cores of similar code, each with its words
+  and its pieces. The map stays a few KB at any size (2.1 KB for reef's 14.5 MB of code), and `files`
+  zooms in, page by page.
+- **The word index.** `find` goes from words to piece numbers and shows the line that matched, so the
+  model reads only the pieces it needs.
+
+## Tests
+
+```bash
+python3 -m unittest discover -s tests
+```
+
+# The research behind it
 
 Watch a Python file live, as vectors in 3-D space, plus a set of experiments on
-squeezing code into shapes and maps that an LLM can read cheaply.
+squeezing code into shapes and maps that an LLM can read cheaply. The scripts below are the
+research versions; the `lvs` package in `src/lvs/` is the product built from them.
 
 ![The square minus the code path](code_square.svg)
 

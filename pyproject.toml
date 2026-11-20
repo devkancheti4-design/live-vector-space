@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "live-vector-space"
+dynamic = ["version"]
+description = "A whole codebase in a few KB, every byte one lookup away: a small map plus exact, numbered pieces for LLMs."
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = ["numpy>=1.24"]
+keywords = ["llm", "codebase map", "context window", "compression", "mcp", "code search"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.14",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development",
+]
+
+[project.urls]
+Homepage = "https://github.com/devkancheti4-design/live-vector-space"
+
+[project.scripts]
+lvs = "lvs.cli:main"
+
+[tool.setuptools.dynamic]
+version = {attr = "lvs.__version__"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
