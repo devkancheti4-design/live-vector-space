@@ -5,4 +5,4 @@ needs. The store keeps every byte of the code, compressed, and hands over any on
 so a codebase far bigger than the model's context window can be known without being read whole.
 """
 
-__version__ = "0.2.0"
+__version__ = "0.2.1"

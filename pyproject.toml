@@ -8,7 +8,7 @@ dynamic = ["version"]
 description = "The shape of a whole codebase in a few KB, every byte one lookup away: a map, a word index and an exact compressed store for LLMs. No embeddings."
 readme = "README.md"
 requires-python = ">=3.10"
-license = "AGPL-3.0-or-later"
+license = "Apache-2.0"
 license-files = ["LICENSE"]
 dependencies = [
     "numpy>=1.24",

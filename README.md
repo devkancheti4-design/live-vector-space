@@ -124,7 +124,7 @@ CI runs them on Python 3.10 to 3.14 on Linux and macOS, and with the oldest supp
 
 ## License
 
-GNU Affero General Public License v3.0 or later (AGPL-3.0-or-later); see [LICENSE](https://github.com/devkancheti4-design/live-vector-space/blob/main/LICENSE).
+Apache License 2.0 (Apache-2.0); see [LICENSE](https://github.com/devkancheti4-design/live-vector-space/blob/main/LICENSE).
 
 # The research behind it
 
