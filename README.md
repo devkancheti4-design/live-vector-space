@@ -6,7 +6,7 @@ and hands over any single piece on its own. So a model can know a codebase many 
 context window without reading it whole, and without ever decompressing anything itself.
 
 Measured on two big Python codebases that no model had seen (66 blind runs, details in
-[MILESTONE.md](MILESTONE.md)):
+[MILESTONE.md](https://github.com/devkancheti4-design/live-vector-space/blob/main/MILESTONE.md)):
 
 | What was measured | Result |
 |---|---|
@@ -20,8 +20,11 @@ Measured on two big Python codebases that no model had seen (66 blind runs, deta
 Needs Python 3.14+ (for the built-in `compression.zstd`) and numpy.
 
 ```bash
-pip install git+https://github.com/devkancheti4-design/live-vector-space
+pip install live-vector-space
 ```
+
+The command it installs is `lvs`. For the latest code from GitHub instead:
+`pip install git+https://github.com/devkancheti4-design/live-vector-space`
 
 ## Use
 
@@ -83,13 +86,17 @@ lvs live path/to/file.py   # every statement as a vector in 3-D space, redrawn o
 python3 -m unittest discover -s tests
 ```
 
+## License
+
+GNU Affero General Public License v3.0 or later (AGPL-3.0-or-later); see [LICENSE](https://github.com/devkancheti4-design/live-vector-space/blob/main/LICENSE).
+
 # The research behind it
 
 Watch a Python file live, as vectors in 3-D space, plus a set of experiments on
 squeezing code into shapes and maps that an LLM can read cheaply. The scripts below are the
 research versions; the `lvs` package in `src/lvs/` is the product built from them.
 
-![The square minus the code path](code_square.svg)
+![The square minus the code path](https://raw.githubusercontent.com/devkancheti4-design/live-vector-space/main/code_square.svg)
 
 ## What's here
 

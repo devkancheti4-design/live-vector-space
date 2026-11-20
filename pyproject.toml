@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=68"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -8,9 +8,12 @@ dynamic = ["version"]
 description = "A whole codebase in a few KB, every byte one lookup away: a small map plus exact, numbered pieces for LLMs."
 readme = "README.md"
 requires-python = ">=3.14"
+license = "AGPL-3.0-or-later"
+license-files = ["LICENSE"]
 dependencies = ["numpy>=1.24"]
 keywords = ["llm", "codebase map", "context window", "compression", "mcp", "code search"]
 classifiers = [
+    "Development Status :: 3 - Alpha",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.14",
     "Environment :: Console",
